@@ -1,0 +1,10 @@
+.header {
+  background-color: rgb(31, 134, 224);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.divItem {
+  padding: 0 10px 0 10px;
+}

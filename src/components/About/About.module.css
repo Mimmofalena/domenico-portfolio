@@ -1,0 +1,38 @@
+.container {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.container > h3 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.container > button {
+  border-radius: 5px;
+  border: none;
+  padding: 0.3rem;
+  background: rgba(255, 255, 255, 0.5);
+  align-self: flex-end;
+  margin-top: 0.5rem;
+}
+
+.link {
+  margin: 0 auto;
+
+  text-align: center;
+  background-color: rgba(235, 231, 231, 0.8);
+  border-radius: 10px;
+  line-height: 1.2em;
+  width: 90%;
+}
+
+.link:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
+
+.text {
+  margin-bottom: 0.5rem;
+}

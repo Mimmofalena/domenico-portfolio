@@ -1,0 +1,13 @@
+.container {
+  background-image: linear-gradient(90deg, var(--primary), #8cc5c1);
+  height: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.icon {
+  font-size: 1.5rem;
+}
+.copy {
+  font-size: 1.5rem;
+}

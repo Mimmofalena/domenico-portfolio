@@ -1,0 +1,12 @@
+.container {
+  padding: 0 1rem;
+}
+.imgContainer > img {
+  border-radius: 10px;
+}
+
+h1 {
+  /* padding: 0 1rem; */
+  letter-spacing: 0.08em;
+  text-align: center;
+}

@@ -45,7 +45,7 @@ const Projects = () => {
           </a>
         </li>
       </ul>
-      <LinkButton to="/projects" />
+      <LinkButton to="/domenico-portfolio/projects" />
     </Card>
   );
 };

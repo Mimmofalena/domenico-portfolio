@@ -78,7 +78,7 @@ const StackList = () => {
           }
         />
       </ul>
-      <LinkButton to="/stack" />
+      <LinkButton to="/domenico-portfolio/stack" />
     </Card>
   );
 };

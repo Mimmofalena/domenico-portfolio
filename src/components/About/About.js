@@ -44,7 +44,7 @@ const About = () => {
 
       <p className={classes.text}>{`${text.substring(0, 250)}`}</p>
 
-      <LinkButton to="about" />
+      <LinkButton to="/domenico-portfolio/about" />
 
       {/* <button onClick={displayHandler}>Discover more...</button> */}
     </Card>

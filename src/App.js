@@ -12,10 +12,13 @@ function App() {
     <div className={classes.app}>
       <Header />
       <Routes>
-        <Route path="/about" element={<AboutDetail />} />
-        <Route path="/projects" element={<ProjectsDetail />} />
-        <Route path="/stack" element={<StackDetail />} />
-        <Route path="/" element={<Body />} />
+        <Route path="/domenico-portfolio/about" element={<AboutDetail />} />
+        <Route
+          path="/domenico-portfolio/projects"
+          element={<ProjectsDetail />}
+        />
+        <Route path="/domenico-portfolio/stack" element={<StackDetail />} />
+        <Route path="/domenico-portfolio/" element={<Body />} />
 
         <Route path="*" element={<h1>NOT FOUND</h1>} />
       </Routes>

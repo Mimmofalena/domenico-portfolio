@@ -6,17 +6,22 @@ import { AiFillLinkedin } from "react-icons/ai";
 const Footer = () => {
   return (
     <footer className={classes.container}>
-      <div className={classes.copy}>&copy;</div>
+      <div className={classes.containerCopyright}>
+        <div className={classes.copy}>&copy;</div>
+        <p>Copyright by Domenico Cucinotta</p>
+      </div>
 
-      <AiFillGithub
-        href="https://www.linkedin.com/in/domenico-cucinotta-b102a167/"
-        className={classes.icon}
-      />
+      <div className={classes.containerIcons}>
+        <AiFillGithub
+          href="https://www.linkedin.com/in/domenico-cucinotta-b102a167/"
+          className={classes.icon}
+        />
 
-      <AiFillLinkedin
-        href="https://github.com/Mimmofalena"
-        className={classes.icon}
-      />
+        <AiFillLinkedin
+          href="https://github.com/Mimmofalena"
+          className={classes.icon}
+        />
+      </div>
     </footer>
   );
 };

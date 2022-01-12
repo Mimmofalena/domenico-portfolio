@@ -3,22 +3,16 @@ import Body from "./components/Body/Body";
 import Footer from "./components/Footer/Footer";
 import classes from "./App.module.css";
 import AboutDetail from "./components/About/AboutDetail";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, Switch } from "react-router-dom";
 
 function App() {
   return (
     <div className={classes.app}>
       <Header />
       <Routes>
-        {/* <Route path="/" >
-          <Body />
-        </Route>
-
-        <Route path="/about" element={<AboutDetail />}>
-          <AboutDetail />
-        </Route> */}
-        <Route path="/" element={<Body />} />
+        <Route exact={true} path="/" element={<Body />} />
         <Route path="/about" element={<AboutDetail />} />
+        <Route path="*" element={<h1>NOT FOUND</h1>} />
       </Routes>
       <Footer />
     </div>

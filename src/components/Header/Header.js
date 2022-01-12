@@ -1,14 +1,28 @@
 import React from "react";
 import HeaderItem from "./HeaderItem";
 import classes from "./Header.module.css";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <div className={classes.header}>
-      <Link to="/about" target="_blank">
-        <HeaderItem name="About" />
-      </Link>
+      <NavLink
+        to="/"
+        className={({ isActive }) =>
+          isActive ? classes.active : classes.inactive
+        }
+      >
+        Home
+      </NavLink>
+      <NavLink
+        to="about"
+        className={({ isActive }) =>
+          isActive ? classes.active : classes.inactive
+        }
+      >
+        About
+      </NavLink>
+
       <HeaderItem name="Stack" />
       <HeaderItem name="Projects" />
       <HeaderItem name="GitHub" />

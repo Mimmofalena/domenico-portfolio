@@ -39,11 +39,11 @@ const About = () => {
   console.log(text.length > 250);
   return (
     <Card>
-      <section className={classes.container}>
+      <section id="barabba" className={classes.container}>
         <h3>About me</h3>
 
         <p className={classes.text}>{`${text.substring(0, 250)}`}</p>
-        <Link className={classes.link} to="/about">
+        <Link className={classes.link} to="about">
           Discover more...
         </Link>
 

@@ -1,18 +1,18 @@
 .container {
-  margin: 1rem 0;
+  /* margin: 1rem 0; */
 }
 
 .gridList {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.5rem;
 }
 
 .listItem {
   display: flex;
   justify-content: center;
-  color: rgb(255, 255, 255);
-  background-color: #438ef0;
+
+  background-color: rgba(38, 70, 83, 0.418);
   padding: 1rem;
   margin-bottom: 0.5rem;
   /* line-height: 15px; */
@@ -30,4 +30,18 @@
 }
 .icon {
   font-size: 1.5em;
+}
+
+@media screen and (min-width: 620px) {
+}
+/* large tablet & small laptop styles */
+
+@media screen and (min-width: 960px) {
+  .gridList {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+/* desktop styles */
+
+@media screen and (min-width: 1200px) {
 }

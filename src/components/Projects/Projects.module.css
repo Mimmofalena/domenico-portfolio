@@ -1,10 +1,7 @@
-.container {
-  margin: 1rem 0;
-}
-
 .linkTitle {
   text-align: center;
   margin: 1rem 0;
+  opacity: 0.5;
 }
 
 .container > h3 {
@@ -12,16 +9,13 @@
 }
 
 .listContainer {
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .listItem {
-  width: 50%;
+  width: 100%;
   padding: 0.5rem;
 }
 
@@ -31,4 +25,21 @@
   margin: 0 auto;
   display: block;
   border-radius: 10px;
+}
+
+@media screen and (min-width: 620px) {
+  .listItem {
+    width: 50%;
+  }
+}
+/* large tablet & small laptop styles */
+
+@media screen and (min-width: 960px) {
+  .listItem {
+    width: 33.3%;
+  }
+}
+/* desktop styles */
+
+@media screen and (min-width: 1200px) {
 }

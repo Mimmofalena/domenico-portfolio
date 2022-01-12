@@ -11,11 +11,11 @@ import classes from "./Body.module.css";
 const Body = () => {
   return (
     <div className={classes.container}>
-      <h1>
-        Hello,
-        <br /> My name is Domenico and I am a web developer
-      </h1>
       <div className={classes.imgContainer}>
+        <h1>
+          Hello,
+          <br /> My name is Domenico and I am a web developer
+        </h1>
         <img src={domImgCover} alt="Ragazzo con vista nei tetti di Palermo" />
       </div>
       {/* <Slider /> */}

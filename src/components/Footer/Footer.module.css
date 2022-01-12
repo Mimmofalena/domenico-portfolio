@@ -1,5 +1,6 @@
 .container {
-  background-image: linear-gradient(90deg, var(--primary), #8cc5c1);
+  /* background-image: linear-gradient(90deg, var(--primary), #8cc5c1); */
+  background-color: var(--primary);
   height: 2rem;
   display: flex;
   justify-content: space-between;

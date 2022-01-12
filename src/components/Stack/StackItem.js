@@ -1,7 +1,7 @@
 import React from "react";
-import classes from "./SkillList.module.css";
+import classes from "./Stack.module.css";
 
-const SkillItem = (props) => {
+const StackItem = (props) => {
   return (
     <li className={classes.listItem}>
       <div className={classes.icon}>{props.icon}</div>
@@ -10,4 +10,4 @@ const SkillItem = (props) => {
   );
 };
 
-export default SkillItem;
+export default StackItem;

@@ -22,10 +22,23 @@ const Header = () => {
       >
         About
       </NavLink>
+      <NavLink
+        to="projects"
+        className={({ isActive }) =>
+          isActive ? classes.active : classes.inactive
+        }
+      >
+        Projects
+      </NavLink>
+      <NavLink
+        to="stack"
+        className={({ isActive }) =>
+          isActive ? classes.active : classes.inactive
+        }
+      >
+        Stack
+      </NavLink>
 
-      <HeaderItem name="Stack" />
-      <HeaderItem name="Projects" />
-      <HeaderItem name="GitHub" />
       <HeaderItem name="Contact" />
     </div>
   );

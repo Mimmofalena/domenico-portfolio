@@ -1,13 +1,12 @@
 import React from "react";
-import classes from "./Projects.module.css";
+import Card from "../../utils/Card";
 import doctorPicture from "../../assets/marina-studio-medico.jpeg";
 import pigGamePicture from "../../assets/pig-game.png";
 import theBankistPicture from "../../assets/the-bankist.png";
 import maptyPicture from "../../assets/mapty.png";
-import Card from "../../utils/Card";
-import LinkButton from "../../utils/LinkButton";
+import classes from "./Projects.module.css";
 
-const Projects = () => {
+const ProjectsDetail = () => {
   return (
     <Card>
       <h3>My Projects</h3>
@@ -45,9 +44,8 @@ const Projects = () => {
           </a>
         </li>
       </ul>
-      <LinkButton to="/projects" />
     </Card>
   );
 };
 
-export default Projects;
+export default ProjectsDetail;

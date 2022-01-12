@@ -2,6 +2,7 @@ import React from "react";
 import Card from "../../utils/Card";
 import classes from "./About.module.css";
 import { Routes, Route, Link } from "react-router-dom";
+import LinkButton from "../../utils/LinkButton";
 
 const About = () => {
   const displayHandler = () => {};
@@ -39,16 +40,13 @@ const About = () => {
   console.log(text.length > 250);
   return (
     <Card>
-      <section id="barabba" className={classes.container}>
-        <h3>About me</h3>
+      <h3 className={classes.title}>About me</h3>
 
-        <p className={classes.text}>{`${text.substring(0, 250)}`}</p>
-        <Link className={classes.link} to="about">
-          Discover more...
-        </Link>
+      <p className={classes.text}>{`${text.substring(0, 250)}`}</p>
 
-        {/* <button onClick={displayHandler}>Discover more...</button> */}
-      </section>
+      <LinkButton to="about" />
+
+      {/* <button onClick={displayHandler}>Discover more...</button> */}
     </Card>
   );
 };

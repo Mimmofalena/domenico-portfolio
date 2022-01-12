@@ -4,7 +4,7 @@ import About from "../About/About";
 import Contact from "../Contact/Contact";
 import Form from "../Form/Form";
 import Projects from "../Projects/Projects";
-import SkillList from "../SkillList/SkillList";
+import StackList from "../Stack/StackList";
 
 import classes from "./Body.module.css";
 
@@ -21,7 +21,7 @@ const Body = () => {
       {/* <Slider /> */}
 
       <About />
-      <SkillList />
+      <StackList />
       <Projects />
       {/* <Contact /> */}
       {/* <Form /> */}

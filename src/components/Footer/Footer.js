@@ -12,15 +12,12 @@ const Footer = () => {
       </div>
 
       <div className={classes.containerIcons}>
-        <AiFillGithub
-          href="https://www.linkedin.com/in/domenico-cucinotta-b102a167/"
-          className={classes.icon}
-        />
-
-        <AiFillLinkedin
-          href="https://github.com/Mimmofalena"
-          className={classes.icon}
-        />
+        <a href="https://github.com/Mimmofalena">
+          <AiFillGithub className={classes.icon} />
+        </a>
+        <a href="https://www.linkedin.com/in/domenico-cucinotta-b102a167/">
+          <AiFillLinkedin className={classes.icon} />
+        </a>
       </div>
     </footer>
   );

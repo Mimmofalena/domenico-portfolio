@@ -1,7 +1,3 @@
-.container {
-  /* margin: 1rem 0; */
-}
-
 .gridList {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -25,7 +21,6 @@
 }
 
 .title {
-  text-align: center;
   margin: 1rem 0;
 }
 .icon {

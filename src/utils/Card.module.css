@@ -6,4 +6,7 @@
   width: auto;
   padding: 1rem;
   margin: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }

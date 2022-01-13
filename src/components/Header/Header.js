@@ -7,6 +7,7 @@ const Header = () => {
   return (
     <div className={classes.header}>
       <NavLink
+        end
         to="domenico-portfolio"
         className={({ isActive }) =>
           isActive ? classes.active : classes.inactive
@@ -15,7 +16,7 @@ const Header = () => {
         Home
       </NavLink>
       <NavLink
-        to="/domenico-portfolio/about"
+        to="domenico-portfolio/about"
         className={({ isActive }) =>
           isActive ? classes.active : classes.inactive
         }
@@ -23,7 +24,7 @@ const Header = () => {
         About
       </NavLink>
       <NavLink
-        to="/domenico-portfolio/projects"
+        to="domenico-portfolio/projects"
         className={({ isActive }) =>
           isActive ? classes.active : classes.inactive
         }
@@ -31,7 +32,7 @@ const Header = () => {
         Projects
       </NavLink>
       <NavLink
-        to="/domenico-portfolio/stack"
+        to="domenico-portfolio/stack"
         className={({ isActive }) =>
           isActive ? classes.active : classes.inactive
         }

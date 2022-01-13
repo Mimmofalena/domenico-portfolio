@@ -1,4 +1,7 @@
 .app {
   background-image: linear-gradient(180deg, #003049, #2b6d99);
   background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }

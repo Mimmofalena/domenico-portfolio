@@ -6,7 +6,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 2rem;
+  /* min-height: 50px; */
+  min-height: 50px;
   margin-bottom: 1rem;
 }
 

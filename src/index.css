@@ -5,10 +5,18 @@
   box-sizing: border-box;
   outline: none;
 }
+/* #root {
+  min-height: 100vh;
+} */
 html,
-body {
+body,
+#root {
   height: 100%;
 }
+/* html,
+body {
+  height: 100%;
+} */
 
 :root {
   --primary: rgb(234, 226, 183);
@@ -20,6 +28,9 @@ body {
 /* RESET */
 li {
   list-style-type: none;
+}
+a {
+  color: inherit;
 }
 
 img {

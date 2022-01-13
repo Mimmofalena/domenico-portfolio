@@ -11,17 +11,19 @@ function App() {
   return (
     <div className={classes.app}>
       <Header />
-      <Routes>
-        <Route path="/domenico-portfolio/about" element={<AboutDetail />} />
-        <Route
-          path="/domenico-portfolio/projects"
-          element={<ProjectsDetail />}
-        />
-        <Route path="/domenico-portfolio/stack" element={<StackDetail />} />
-        <Route path="/domenico-portfolio/" element={<Body />} />
+      <div className={classes.main}>
+        <Routes>
+          <Route path="/domenico-portfolio/about" element={<AboutDetail />} />
+          <Route
+            path="/domenico-portfolio/projects"
+            element={<ProjectsDetail />}
+          />
+          <Route path="/domenico-portfolio/stack" element={<StackDetail />} />
+          <Route path="/domenico-portfolio/" element={<Body />} />
 
-        <Route path="*" element={<h1>NOT FOUND</h1>} />
-      </Routes>
+          <Route path="*" element={<h1>NOT FOUND</h1>} />
+        </Routes>
+      </div>
       <Footer />
     </div>
   );

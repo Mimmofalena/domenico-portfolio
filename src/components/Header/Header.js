@@ -8,6 +8,7 @@ const Header = () => {
     <div className={classes.header}>
       <NavLink
         end
+        // style={{ textDecoration: "none", color: "black" }}
         to="domenico-portfolio"
         className={({ isActive }) =>
           isActive ? classes.active : classes.inactive

@@ -5,6 +5,9 @@ import { DiJavascript } from "react-icons/di";
 import { DiHtml5 } from "react-icons/di";
 import { DiNodejsSmall } from "react-icons/di";
 import { DiMongodb } from "react-icons/di";
+import { SiMaterialui } from "react-icons/si";
+import { BiGitBranch } from "react-icons/bi";
+import { SiPostman } from "react-icons/si";
 import classes from "./Stack.module.css";
 import { Routes, Route, Link } from "react-router-dom";
 
@@ -73,6 +76,36 @@ const StackList = () => {
             <DiMongodb
               style={{
                 color: "#138d4d",
+              }}
+            />
+          }
+        />
+        <StackItem
+          name="Material"
+          icon={
+            <SiMaterialui
+              style={{
+                color: "#007bf7",
+              }}
+            />
+          }
+        />
+        <StackItem
+          name="Git"
+          icon={
+            <BiGitBranch
+              style={{
+                color: "#e84d31",
+              }}
+            />
+          }
+        />
+        <StackItem
+          name="PostMan"
+          icon={
+            <SiPostman
+              style={{
+                color: "#f76935",
               }}
             />
           }

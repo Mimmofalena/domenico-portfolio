@@ -40,8 +40,6 @@ const Header = () => {
       >
         Stack
       </NavLink>
-
-      <HeaderItem name="Contact" />
     </div>
   );
 };

@@ -23,7 +23,7 @@ const Body = () => {
       <About />
       <StackList />
       <Projects />
-      {/* <Contact /> */}
+      <Contact />
       {/* <Form /> */}
     </div>
   );

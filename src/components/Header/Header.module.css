@@ -15,10 +15,19 @@
   padding: 1rem;
   font-weight: 700;
   overflow: hidden;
+  transition: 0.5s ease;
+}
+.inactive:hover {
+  background-color: #2b6d99e5;
+  padding: 1rem;
+  opacity: 0.8;
+  font-weight: 700;
+  overflow: hidden;
 }
 .active {
   background-color: #2b6d99e5;
   padding: 1rem;
+  opacity: 0.8;
   font-weight: 700;
   overflow: hidden;
 }

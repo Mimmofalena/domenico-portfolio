@@ -12,7 +12,7 @@ const AboutDetail = () => {
   return (
     <Card>
       <section className={classes.container}>
-        <h3>About me</h3>
+        <h3 className={classes.title}>About me</h3>
         <p className={classes.text}>
           My name is Domenico. I am 32 years old and I am from Italy. I have
           always liked technology and my original plan was to study informatics
@@ -36,14 +36,16 @@ const AboutDetail = () => {
           <br />
           <strong>**Front End**</strong>
           <br />
-          <br /> I am able to use Material UI for an easier and consistent
-          visual implementation, CSS modules as well as plain CSS. I have some
-          knowledge of preprocessor SCSS. I Use chrome Dev tools to debug on a
-          daily basis. Version control Git and GitHub. Learned to fetch data
-          from APIs ,JSON. CSS modules Currently improving with NEXT JS, Context
-          API and REDUX. I know how to Use Formik as an easier way to implement
-          forms from scratch. I use Yup library as a tool for validation. .ENV
-          to store sensitive data like API_KEYS
+          <br />I use React as main framework, specifically CRA setting. I am
+          able to use Material UI for an easier and consistent visual
+          implementation, CSS modules as well as plain CSS(flex-box and
+          flex-grid). I have some knowledge of preprocessor SCSS. I Use chrome
+          Dev tools to debug on a daily basis. Version control Git and GitHub.
+          Learned to fetch data from APIs using both fetch and axios package.
+          Currently improving with NEXT JS, Context API and REDUX. I know how to
+          Use Formik as an easier way to implement forms from scratch. I use Yup
+          library as a tool for validation. .ENV to store sensitive data like
+          API_KEYS.
           <br />
           <br />
           <strong>**BackEnd**</strong>
@@ -52,8 +54,7 @@ const AboutDetail = () => {
           connect back end to front end. Took a course in detail on Node Js,
           Express, mongoDB.Mongoose. Using CRUD to relate with Database. MVC
           architecture Using middlewares such as Helmet, Sharp, bodyparser,
-          cookieParser. Create routes and test them with PostMan I am working on
-          personal projects to improve experience and confidence with the job.
+          cookieParser. Create routes and test them with PostMan.
           <br />
           <br />
           <strong>**Past and Present**</strong>
@@ -65,12 +66,14 @@ const AboutDetail = () => {
           especially in tech. I am resilient and I work well even under
           pressure. I believe also that being punctual and precise make me a
           good candidate for any job position. I am honest and I know my limits.
+          <br />
+          <br />
+          <strong>**Curiosities and hobbies**</strong> <br />
+          <br />I am a sociable person. I love sports, outdoor activities and
+          playing videogames. I love to travel and my dream is to visit all the
+          7 wonders! I have already visited the Coliseum and Chitchen Itza.
+          Hoping this pandemic gets under control to be able to travel again.
         </p>
-        <br />
-        <br />
-        <strong>**Curiosities and hobbies**</strong>
-        <br />
-        <br />
       </section>
     </Card>
   );

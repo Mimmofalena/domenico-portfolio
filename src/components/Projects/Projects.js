@@ -55,6 +55,12 @@ const Projects = () => {
             <img className={classes.itemImg} src={maptyPicture} alt="Mapty" />
           </a>
         </li>
+        {/* <li className={`${classes.listItem} `}>
+          <h4 className={classes.linkTitle}>Mapty</h4>
+          <a href="https://mimmofalena.github.io/Mapty/">
+            <img className={classes.itemImg} src={maptyPicture} alt="Mapty" />
+          </a>
+        </li> */}
       </ul>
       <LinkButton to="/domenico-portfolio/projects" />
     </Card>

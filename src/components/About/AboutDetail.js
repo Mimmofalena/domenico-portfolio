@@ -16,11 +16,12 @@ const AboutDetail = () => {
         <p className={classes.text}>
           My name is Domenico. I am 32 years old and I am from Italy. I have
           always liked technology and my original plan was to study informatics
-          at University. However I never did and followed another path. . Front
-          end developer. Currently looking for a junior front end web developer
-          position. I am interested in smart working only position but willing
-          to occasionally travel (even abroad) to work for meeting or other
-          business needs. Open to offers and discussion
+          at University. I followed another path up to now and I am ready to
+          take up a new challgend as a front end developer. Currently looking
+          for a junior front end web developer position. I am interested in
+          smart working only position but willing to occasionally travel (even
+          abroad) to work for meeting or other business needs. Open to offers
+          and discussion
           <br />
           <br />
           <strong>**Overview and skills**</strong>

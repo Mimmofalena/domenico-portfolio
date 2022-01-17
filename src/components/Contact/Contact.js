@@ -8,6 +8,7 @@ const Contact = () => {
   return (
     <Card>
       <h3 className={classes.title}>Get in touch</h3>
+
       <div className={classes.containerIcons}>
         <a
           className={classes.containerIcon}

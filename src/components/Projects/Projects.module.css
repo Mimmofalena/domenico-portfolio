@@ -1,7 +1,11 @@
 .linkTitle {
   text-align: center;
-  margin: 1rem 0;
+  margin-bottom: 0.5rem;
   opacity: 0.5;
+}
+
+.title {
+  margin-bottom: 0.5rem;
 }
 
 .container > h3 {

@@ -1,22 +1,19 @@
-.container {
-  margin: 1rem 0;
-}
-
 .title {
   text-align: center;
-  margin: 1rem 0;
+  margin-bottom: 0.5rem;
 }
 .containerIcons {
   display: flex;
-  align-self: flex-start;
+  align-self: center;
   flex-direction: column;
-  justify-content: flex-start;
 }
 .containerIcon {
   display: flex;
   margin-top: 0.5rem;
+  transition: 0.5s ease;
 }
 .containerIcon:hover {
+  transform: scale(1.2);
 }
 .icon {
   font-size: 1.5rem;

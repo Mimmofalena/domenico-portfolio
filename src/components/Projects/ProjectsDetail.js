@@ -4,6 +4,7 @@ import doctorPicture from "../../assets/marina-studio-medico.jpeg";
 import pigGamePicture from "../../assets/pig-game.png";
 import theBankistPicture from "../../assets/the-bankist.png";
 import maptyPicture from "../../assets/mapty.png";
+import natoursPicture from "../../assets/natours.png";
 import classes from "./Projects.module.css";
 
 const ProjectsDetail = () => {
@@ -23,6 +24,23 @@ const ProjectsDetail = () => {
             have used for my first time Material UI learning it from online
             resources. I used EmailJS and Formik library to implement the
             contact form.
+          </p>
+        </li>
+        <li className={classes.listItem}>
+          <h4 className={classes.linkTitle}>Natours</h4>
+          <a href="https://natours-domenico.herokuapp.com/">
+            <img
+              className={classes.itemImg}
+              src={natoursPicture}
+              alt="Natours"
+            />
+          </a>
+          <p className={classes.detailDescription}>
+            Natours project made with NODE JS. <br />
+            <br />I have created this project right after completing 'Node.js,
+            Express, MongoDB & More: The Complete Bootcamp 2022'. This is a tour
+            booking APP which allows you to book tours, pay the with stripe(test
+            only), and login onto your account.
           </p>
         </li>
         <li className={classes.listItem}>

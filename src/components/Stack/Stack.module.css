@@ -22,7 +22,7 @@
 }
 
 .title {
-  margin: 1rem 0;
+  margin-bottom: 0.5rem;
 }
 .icon {
   font-size: 1.5em;
@@ -31,8 +31,10 @@
 .textContainer {
   background-color: aliceblue;
 }
-.textContainer > p {
+.textContainer {
   padding: 1rem;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 @media screen and (min-width: 620px) {

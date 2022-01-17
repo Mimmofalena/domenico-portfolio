@@ -4,13 +4,14 @@ import doctorPicture from "../../assets/marina-studio-medico.jpeg";
 import pigGamePicture from "../../assets/pig-game.png";
 import theBankistPicture from "../../assets/the-bankist.png";
 import maptyPicture from "../../assets/mapty.png";
+import natoursPicture from "../../assets/natours.png";
 import Card from "../../utils/Card";
 import LinkButton from "../../utils/LinkButton";
 
 const Projects = () => {
   return (
     <Card>
-      <h3>My Projects</h3>
+      <h3 className={classes.title}>My Projects</h3>
       <ul className={classes.listContainer}>
         <li className={classes.listItem}>
           <h4 className={classes.linkTitle}>Doctor page</h4>
@@ -19,12 +20,22 @@ const Projects = () => {
           </a>
         </li>
         <li className={classes.listItem}>
+          <h4 className={classes.linkTitle}>Natours</h4>
+          <a href="https://natours-domenico.herokuapp.com/">
+            <img
+              className={classes.itemImg}
+              src={natoursPicture}
+              alt="Natours website"
+            />
+          </a>
+        </li>
+        <li className={classes.listItem}>
           <h4 className={classes.linkTitle}>Pig game</h4>
           <a href="https://mimmofalena.github.io/pig-game/">
             <img
               className={classes.itemImg}
               src={pigGamePicture}
-              alt="Doctor"
+              alt="The pig game"
             />
           </a>
         </li>
@@ -34,14 +45,14 @@ const Projects = () => {
             <img
               className={classes.itemImg}
               src={theBankistPicture}
-              alt="Doctor"
+              alt="The bankist "
             />
           </a>
         </li>
         <li className={classes.listItem}>
           <h4 className={classes.linkTitle}>Mapty</h4>
           <a href="https://mimmofalena.github.io/Mapty/">
-            <img className={classes.itemImg} src={maptyPicture} alt="Doctor" />
+            <img className={classes.itemImg} src={maptyPicture} alt="Mapty" />
           </a>
         </li>
       </ul>

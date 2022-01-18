@@ -4,7 +4,7 @@
   background-color: var(--tertiary);
   border-radius: 10px;
   line-height: 1.2em;
-  width: 90%;
+  width: 200px !important;
   padding: 0.5rem;
   margin-top: 1rem;
   transition: 0.5s ease;

@@ -1,11 +1,21 @@
+.title {
+  margin-bottom: 0.5rem;
+  font-size: 20px;
+}
 .linkTitle {
   text-align: center;
   margin-bottom: 0.5rem;
   opacity: 0.5;
 }
+.detailTitle {
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin: 1rem 0;
+}
 
-.title {
-  margin-bottom: 0.5rem;
+.detailTitle ~ div {
+  margin-top: 0;
 }
 
 .container > h3 {
@@ -19,8 +29,13 @@
 }
 
 .listItem {
-  width: 100%;
+  /* width: 100%; */
   padding: 0.5rem;
+  transition: 0.5s;
+}
+
+.listItem:hover {
+  opacity: 0.5;
 }
 
 .itemImg {
@@ -29,6 +44,7 @@
   margin: 0 auto;
   display: block;
   border-radius: 10px;
+  box-shadow: 1px 2px 4px rgba(32, 31, 31, 0.2);
 }
 .detailDescription {
   margin-top: 1rem;
@@ -42,8 +58,15 @@
 /* large tablet & small laptop styles */
 
 @media screen and (min-width: 960px) {
-  .listItem {
+  /* .listItem {
     width: 33.3%;
+  } */
+  .listContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .listItem {
+    width: 100%;
   }
 }
 /* desktop styles */

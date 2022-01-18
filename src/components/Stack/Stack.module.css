@@ -1,35 +1,50 @@
+.title {
+  margin-bottom: 0.5rem;
+  font-size: 20px;
+}
+.detailTitle {
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.detailTitle ~ div {
+  margin-top: 0;
+}
+
 .gridList {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .listItem {
   display: flex;
   justify-content: center;
-
-  background-color: rgba(38, 70, 83, 0.418);
+  /* align-items: center; */
+  background-color: rgba(38, 70, 83, 0.568);
   padding: 1rem;
   margin-bottom: 0.5rem;
   /* line-height: 15px; */
   border-radius: 10px;
-  box-shadow: 1px 2px 4px rgb(0 0 0 / 50%);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.233);
   /* box-shadow: 1px 2px rgba(66, 65, 65, 0.328); */
 }
+
 .listItem > p {
-  line-height: 25px;
-  margin-left: 0.2rem;
+  line-height: 30px;
+  margin-left: 0.5rem;
 }
 
-.title {
-  margin-bottom: 0.5rem;
-}
 .icon {
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 
 .textContainer {
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
+  margin-top: 1rem;
+  text-align: start;
 }
 .textContainer {
   padding: 1rem;
@@ -38,6 +53,12 @@
 }
 
 @media screen and (min-width: 620px) {
+  .icon {
+    font-size: 2.5em;
+  }
+  .listItem {
+    align-items: center;
+  }
 }
 /* large tablet & small laptop styles */
 
@@ -49,4 +70,7 @@
 /* desktop styles */
 
 @media screen and (min-width: 1200px) {
+  .icon {
+    font-size: 3em;
+  }
 }

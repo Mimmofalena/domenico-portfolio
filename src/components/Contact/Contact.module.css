@@ -1,15 +1,20 @@
 .title {
   text-align: center;
   margin-bottom: 0.5rem;
+  font-size: 20px;
 }
 .containerIcons {
+  /* width: 50%; */
   display: flex;
   align-self: center;
-  flex-direction: column;
+  justify-content: space-around;
+  /* flex-direction: column; */
 }
 .containerIcon {
   display: flex;
   margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
   transition: 0.5s ease;
 }
 .containerIcon:hover {

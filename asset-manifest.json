@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/domenico-portfolio/static/css/main.ff678141.css",
-    "main.js": "/domenico-portfolio/static/js/main.f1f4c225.js",
+    "main.css": "/domenico-portfolio/static/css/main.2f790ed5.css",
+    "main.js": "/domenico-portfolio/static/js/main.bb7f5a61.js",
     "static/js/787.aae47cb7.chunk.js": "/domenico-portfolio/static/js/787.aae47cb7.chunk.js",
     "static/media/mapty.png": "/domenico-portfolio/static/media/mapty.1066dbdad39b4d80075d.png",
     "static/media/domImgCover.jpg": "/domenico-portfolio/static/media/domImgCover.5ab52adb446d02d27972.jpg",
     "static/media/natours.png": "/domenico-portfolio/static/media/natours.5c649f9454aaea28399d.png",
+    "static/media/weather-app.png": "/domenico-portfolio/static/media/weather-app.08b2ce79ec3459892f7d.png",
     "static/media/the-bankist.png": "/domenico-portfolio/static/media/the-bankist.1dbe6818cd9d32768417.png",
     "static/media/pig-game.png": "/domenico-portfolio/static/media/pig-game.d7875d437ab8294cd7c9.png",
     "static/media/marina-studio-medico.jpeg": "/domenico-portfolio/static/media/marina-studio-medico.369715943bfc9c1fdf70.jpeg",
     "index.html": "/domenico-portfolio/index.html",
-    "main.ff678141.css.map": "/domenico-portfolio/static/css/main.ff678141.css.map",
-    "main.f1f4c225.js.map": "/domenico-portfolio/static/js/main.f1f4c225.js.map",
+    "main.2f790ed5.css.map": "/domenico-portfolio/static/css/main.2f790ed5.css.map",
+    "main.bb7f5a61.js.map": "/domenico-portfolio/static/js/main.bb7f5a61.js.map",
     "787.aae47cb7.chunk.js.map": "/domenico-portfolio/static/js/787.aae47cb7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff678141.css",
-    "static/js/main.f1f4c225.js"
+    "static/css/main.2f790ed5.css",
+    "static/js/main.bb7f5a61.js"
   ]
 }

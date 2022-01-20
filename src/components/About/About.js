@@ -1,11 +1,10 @@
 import React from "react";
-import Card from "../../utils/Card";
 import classes from "./About.module.css";
-import { Routes, Route, Link } from "react-router-dom";
+
+import Card from "../../utils/Card";
 import LinkButton from "../../utils/LinkButton";
 
 const About = () => {
-  const displayHandler = () => {};
   const text = `Front end developer. Currently looking for a junior front end web
         developer position. I am interested in smart working only position but
         willing to occasionally travel (even abroad) to work for meeting or
@@ -37,7 +36,7 @@ const About = () => {
         the best outcomes. I am resilient and I show professionalism being
         punctual,honest and knowing my limits. I am organized and I am able work
         under pressure and committed to deadlines`;
-  console.log(text.length > 250);
+
   return (
     <Card>
       <h3 className={classes.title}>About me</h3>
@@ -45,8 +44,6 @@ const About = () => {
       <p className={classes.text}>{`${text.substring(0, 250)}`}</p>
 
       <LinkButton to="/domenico-portfolio/about" />
-
-      {/* <button onClick={displayHandler}>Discover more...</button> */}
     </Card>
   );
 };

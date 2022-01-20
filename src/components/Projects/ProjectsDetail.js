@@ -1,11 +1,13 @@
 import React from "react";
+import classes from "./Projects.module.css";
+
 import Card from "../../utils/Card";
 import doctorPicture from "../../assets/marina-studio-medico.jpeg";
 import pigGamePicture from "../../assets/pig-game.png";
 import theBankistPicture from "../../assets/the-bankist.png";
 import maptyPicture from "../../assets/mapty.png";
 import natoursPicture from "../../assets/natours.png";
-import classes from "./Projects.module.css";
+import weatherPicture from "../../assets/weather-app.png";
 
 const ProjectsDetail = () => {
   return (
@@ -23,12 +25,29 @@ const ProjectsDetail = () => {
               />
             </a>
             <p className={classes.detailDescription}>
-              This is a Doctor landing page. <br />
-              <br />I have created this project right after completing React
+              This Doctor landing page created with React and Material UI.
+              <br /> I have created this project right after completing React
               Course. I have set it up using create-react-app. In this project I
               have used for my first time Material UI learning it from online
-              resources. I used EmailJS and Formik library to implement the
-              contact form.
+              resources. I also used EmailJS and Formik library to implement the
+              contact form. Consumed google MAPS API.
+            </p>
+          </li>
+          <li className={classes.listItem}>
+            <h4 className={classes.linkTitle}>Weather App</h4>
+            <a href="https://mimmofalena.github.io/weather-app/">
+              <img
+                className={classes.itemImg}
+                src={weatherPicture}
+                alt="Weather app"
+              />
+            </a>
+            <p className={classes.detailDescription}>
+              Created consuming Open weather API and Country Flags REST Api.
+              Made with simple HTML, CSS and JS.
+              <br /> You can search by city name and it gives you an overview of
+              the current weather. If a city is not found, it gives an alert box
+              shows.
             </p>
           </li>
           <li className={classes.listItem}>
@@ -41,7 +60,7 @@ const ProjectsDetail = () => {
               />
             </a>
             <p className={classes.detailDescription}>
-              Natours project made with NODE JS. <br />
+              Project created to book online tours. <br />
               <br />I have created this project right after completing 'Node.js,
               Express, MongoDB & More: The Complete Bootcamp 2022'. This is a
               tour booking APP which allows you to book tours, pay the with
@@ -54,7 +73,7 @@ const ProjectsDetail = () => {
               <img
                 className={classes.itemImg}
                 src={pigGamePicture}
-                alt="Doctor"
+                alt="game app"
               />
             </a>
             <p className={classes.detailDescription}>
@@ -72,7 +91,7 @@ const ProjectsDetail = () => {
               <img
                 className={classes.itemImg}
                 src={theBankistPicture}
-                alt="Doctor"
+                alt="bank app"
               />
             </a>
             <p className={classes.detailDescription}>
@@ -91,7 +110,7 @@ const ProjectsDetail = () => {
               <img
                 className={classes.itemImg}
                 src={maptyPicture}
-                alt="Doctor"
+                alt="map app"
               />
             </a>
             <p className={classes.detailDescription}>

@@ -1,9 +1,10 @@
-import Header from "./components/Header/Header";
-import Body from "./components/Body/Body";
-import Footer from "./components/Footer/Footer";
-import classes from "./App.module.css";
-import AboutDetail from "./components/About/AboutDetail";
 import { Routes, Route, Link, Switch } from "react-router-dom";
+import classes from "./App.module.css";
+
+import Header from "./components/Header/Header";
+import PageContent from "./components/PageContent/PageContent";
+import Footer from "./components/Footer/Footer";
+import AboutDetail from "./components/About/AboutDetail";
 import ProjectsDetail from "./components/Projects/ProjectsDetail";
 import StackDetail from "./components/Stack/StackDetail";
 
@@ -19,7 +20,7 @@ function App() {
             element={<ProjectsDetail />}
           />
           <Route path="/domenico-portfolio/stack" element={<StackDetail />} />
-          <Route path="/domenico-portfolio/" element={<Body />} />
+          <Route path="/domenico-portfolio/" element={<PageContent />} />
 
           <Route path="*" element={<h1>NOT FOUND</h1>} />
         </Routes>

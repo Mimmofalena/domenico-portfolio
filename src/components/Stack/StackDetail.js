@@ -1,5 +1,8 @@
 import React from "react";
+import classes from "./Stack.module.css";
+
 import StackItem from "./StackItem";
+import Card from "../../utils/Card";
 import { DiReact } from "react-icons/di";
 import { DiJavascript } from "react-icons/di";
 import { DiHtml5 } from "react-icons/di";
@@ -8,13 +11,8 @@ import { DiMongodb } from "react-icons/di";
 import { SiMaterialui } from "react-icons/si";
 import { BiGitBranch } from "react-icons/bi";
 import { SiPostman } from "react-icons/si";
-
-import classes from "./Stack.module.css";
-import { Routes, Route, Link } from "react-router-dom";
-
 import { DiCss3 } from "react-icons/di";
-import Card from "../../utils/Card";
-import LinkButton from "../../utils/LinkButton";
+
 const StackDetail = () => {
   return (
     <>

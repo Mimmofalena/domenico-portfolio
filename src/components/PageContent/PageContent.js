@@ -1,14 +1,13 @@
 import React from "react";
+import classes from "./PageContent.module.css";
+
 import domImgCover from "../../assets/domImgCover.jpg";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
-import Form from "../Form/Form";
 import Projects from "../Projects/Projects";
 import StackList from "../Stack/StackList";
 
-import classes from "./Body.module.css";
-
-const Body = () => {
+const PageContent = () => {
   return (
     <div className={classes.container}>
       <div className={classes.imgContainer}>
@@ -18,15 +17,13 @@ const Body = () => {
         </h1>
         <img src={domImgCover} alt="Ragazzo con vista nei tetti di Palermo" />
       </div>
-      {/* <Slider /> */}
 
       <About />
       <StackList />
       <Projects />
       <Contact />
-      {/* <Form /> */}
     </div>
   );
 };
 
-export default Body;
+export default PageContent;

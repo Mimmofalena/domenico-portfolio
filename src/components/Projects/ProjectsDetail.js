@@ -51,6 +51,21 @@ const ProjectsDetail = () => {
             </p>
           </li>
           <li className={classes.listItem}>
+            <h4 className={classes.linkTitle}>Pig game</h4>
+            <a href="https://mimmofalena.github.io/pig-game/">
+              <img
+                className={classes.itemImg}
+                src={pigGamePicture}
+                alt="game app"
+              />
+            </a>
+            <p className={classes.detailDescription}>
+              Simple game using static HTML, CSS and Javascript. It is a
+              turn-based game where the player the gets to 100 points firts
+              wins.
+            </p>
+          </li>
+          <li className={classes.listItem}>
             <h4 className={classes.linkTitle}>Natours</h4>
             <a href="https://natours-domenico.herokuapp.com/">
               <img
@@ -61,30 +76,14 @@ const ProjectsDetail = () => {
             </a>
             <p className={classes.detailDescription}>
               Project created to book online tours. <br />
-              <br />I have created this project right after completing 'Node.js,
-              Express, MongoDB & More: The Complete Bootcamp 2022'. This is a
-              tour booking APP which allows you to book tours, pay the with
+              <br />I have created this project as part of 'Node.js, Express,
+              MongoDB & More: The Complete Bootcamp 2022'. This is a tour
+              booking APP which allows you to book tours, pay the with
               stripe(test only), and login onto your account.
             </p>
           </li>
-          <li className={classes.listItem}>
-            <h4 className={classes.linkTitle}>Pig game</h4>
-            <a href="https://mimmofalena.github.io/pig-game/">
-              <img
-                className={classes.itemImg}
-                src={pigGamePicture}
-                alt="game app"
-              />
-            </a>
-            <p className={classes.detailDescription}>
-              <strong>
-                **NOT mobile friendly, please open it on a desktop**
-              </strong>
-              <br />
-              <br /> Simple game using static HTML completed as part of a JS
-              course. It improved my overall basic JS skills.
-            </p>
-          </li>
+          {/* 
+         
           <li className={classes.listItem}>
             <h4 className={classes.linkTitle}>The Bankist</h4>
             <a href="https://mimmofalena.github.io/The-bankist/">
@@ -122,7 +121,7 @@ const ProjectsDetail = () => {
               purpose is to add workouts which can be either running or cycling
               on a map. I have used Leaflet as a map library.
             </p>
-          </li>
+          </li> */}
         </ul>
       </Card>
     </>

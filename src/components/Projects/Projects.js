@@ -32,16 +32,6 @@ const Projects = () => {
           </a>
         </li>
         <li className={classes.listItem}>
-          <h4 className={classes.linkTitle}>Natours</h4>
-          <a href="https://natours-domenico.herokuapp.com/">
-            <img
-              className={classes.itemImg}
-              src={natoursPicture}
-              alt="Tour booking app"
-            />
-          </a>
-        </li>
-        <li className={classes.listItem}>
           <h4 className={classes.linkTitle}>Pig game</h4>
           <a href="https://mimmofalena.github.io/pig-game/">
             <img
@@ -51,6 +41,27 @@ const Projects = () => {
             />
           </a>
         </li>
+        <li className={classes.listItem}>
+          <h4 className={classes.linkTitle}>Natours</h4>
+          <a href="https://natours-domenico.herokuapp.com/">
+            <img
+              className={classes.itemImg}
+              src={natoursPicture}
+              alt="Tour booking app"
+            />
+          </a>
+        </li>
+        {/* <li className={classes.listItem}>
+          <h4 className={classes.linkTitle}>Natours</h4>
+          <a href="https://natours-domenico.herokuapp.com/">
+            <img
+              className={classes.itemImg}
+              src={natoursPicture}
+              alt="Tour booking app"
+            />
+          </a>
+        </li>
+        
         <li className={classes.listItem}>
           <h4 className={classes.linkTitle}>The Bankist</h4>
           <a href="https://mimmofalena.github.io/The-bankist/">
@@ -66,7 +77,7 @@ const Projects = () => {
           <a href="https://mimmofalena.github.io/Mapty/">
             <img className={classes.itemImg} src={maptyPicture} alt="Mapty" />
           </a>
-        </li>
+        </li> */}
       </ul>
       <LinkButton to="/domenico-portfolio/projects" />
     </Card>

@@ -35,7 +35,7 @@ const ProjectsDetail = () => {
           </li>
           <li className={classes.listItem}>
             <h4 className={classes.linkTitle}>Weather App</h4>
-            <a href="https://mimmofalena.github.io/weather-app/">
+            <a href="https://checktheclouds.netlify.app/">
               <img
                 className={classes.itemImg}
                 src={weatherPicture}

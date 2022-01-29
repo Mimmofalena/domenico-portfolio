@@ -10,10 +10,9 @@
   border-radius: 10px;
 }
 
-h1 {
+.typewriter {
   position: absolute;
   font-size: 18px;
-  text-justify: auto;
   top: 10%;
   left: 30%;
 

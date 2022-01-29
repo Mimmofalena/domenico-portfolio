@@ -23,14 +23,14 @@
 }
 
 @media screen and (min-width: 620px) {
-  h1 {
+  .typewriter {
     font-size: 32px;
   }
 }
 /* large tablet & small laptop styles */
 
 @media screen and (min-width: 960px) {
-  h1 {
+  .typewriter {
     padding: 1rem;
     font-size: 32px;
   }
@@ -42,9 +42,10 @@
 /* desktop styles */
 
 @media screen and (min-width: 1200px) {
-  /* h1 {
+  .typewriter {
     padding: 1rem;
-  } */
+    font-size: 64px;
+  }
 
   /* .imgContainer {
     padding: 1rem;

@@ -23,10 +23,7 @@ const PageContent = () => {
         transition={{ duration: 1.5 }}
       >
         <div className={classes.imgContainer}>
-          <div
-            className={classes.typewriter}
-            style={{ height: "50px", color: "white" }}
-          >
+          <div className={classes.typewriter}>
             <TypeWriter
               onInit={(typewriter) => {
                 typewriter
@@ -44,7 +41,7 @@ const PageContent = () => {
         </div>
       </motion.div>
       <About />
-      ;
+
       <StackList />
       <Projects />
       <Contact />

@@ -8,6 +8,7 @@ import theBankistPicture from "../../assets/the-bankist.png";
 import maptyPicture from "../../assets/mapty.png";
 import natoursPicture from "../../assets/natours.png";
 import weatherPicture from "../../assets/weather-app.png";
+import todoAppImage from "../../assets/Todo-app-redux.png";
 
 const ProjectsDetail = () => {
   return (
@@ -31,6 +32,20 @@ const ProjectsDetail = () => {
               have used for my first time Material UI learning it from online
               resources. I also used EmailJS and Formik library to implement the
               contact form. Consumed google MAPS API.
+            </p>
+          </li>
+          <li className={classes.listItem}>
+            <h4 className={classes.linkTitle}>Todo app with redux</h4>
+            <a href="https://mimmofalena.github.io/Todo-REDUX/">
+              <img
+                className={classes.itemImg}
+                src={todoAppImage}
+                alt="todo app"
+              />
+            </a>
+            <p className={classes.detailDescription}>
+              Todo app using react, redux and localstorage to persist data.
+              <br /> Great pratice to improve redux skills.
             </p>
           </li>
           <li className={classes.listItem}>

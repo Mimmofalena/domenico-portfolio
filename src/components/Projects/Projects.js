@@ -1,8 +1,8 @@
 import React from "react";
 import classes from "./Projects.module.css";
 
-import doctorPicture from "../../assets/marina-studio-medico.jpeg";
 import pigGamePicture from "../../assets/pig-game.png";
+import todoAppImage from "../../assets/Todo-app-redux.png";
 import theBankistPicture from "../../assets/the-bankist.png";
 import maptyPicture from "../../assets/mapty.png";
 import DocLandingPagePicture from "../../assets/Doctor-landing-page.png";
@@ -23,6 +23,16 @@ const Projects = () => {
               className={classes.itemImg}
               src={DocLandingPagePicture}
               alt="Doctor"
+            />
+          </a>
+        </li>
+        <li className={classes.listItem}>
+          <h4 className={classes.linkTitle}>Todo app using Redux</h4>
+          <a href="https://mimmofalena.github.io/Todo-REDUX/">
+            <img
+              className={classes.itemImg}
+              src={todoAppImage}
+              alt="redux app"
             />
           </a>
         </li>

@@ -5,6 +5,7 @@ import doctorPicture from "../../assets/marina-studio-medico.jpeg";
 import pigGamePicture from "../../assets/pig-game.png";
 import theBankistPicture from "../../assets/the-bankist.png";
 import maptyPicture from "../../assets/mapty.png";
+import DocLandingPagePicture from "../../assets/Doctor-landing-page.png";
 import natoursPicture from "../../assets/natours.png";
 import weatherPicture from "../../assets/weather-app.png";
 import Card from "../../utils/Card";
@@ -18,7 +19,11 @@ const Projects = () => {
         <li className={classes.listItem}>
           <h4 className={classes.linkTitle}>Doctor page</h4>
           <a href="https://mimmofalena.github.io/dottoressa-marina/">
-            <img className={classes.itemImg} src={doctorPicture} alt="Doctor" />
+            <img
+              className={classes.itemImg}
+              src={DocLandingPagePicture}
+              alt="Doctor"
+            />
           </a>
         </li>
         <li className={classes.listItem}>

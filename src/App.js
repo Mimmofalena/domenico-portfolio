@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer";
 import AboutDetail from "./components/About/AboutDetail";
 import ProjectsDetail from "./components/Projects/ProjectsDetail";
 import StackDetail from "./components/Stack/StackDetail";
+import { useEffect } from "react";
 
 function App() {
   return (
@@ -14,13 +15,13 @@ function App() {
       <Header />
       <div className={classes.main}>
         <Routes>
+          <Route path="/domenico-portfolio/" element={<PageContent />} />
           <Route path="/domenico-portfolio/about" element={<AboutDetail />} />
           <Route
             path="/domenico-portfolio/projects"
             element={<ProjectsDetail />}
           />
           <Route path="/domenico-portfolio/stack" element={<StackDetail />} />
-          <Route path="/domenico-portfolio/" element={<PageContent />} />
 
           <Route path="*" element={<h1>NOT FOUND</h1>} />
         </Routes>

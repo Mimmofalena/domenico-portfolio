@@ -30,7 +30,7 @@ const PageContent = () => {
                   .typeString(
                     `  Hello, My name is Domenico and I am a web developer...`
                   )
-                  .pauseFor(2500)
+                  .pauseFor(1000)
                   .deleteAll()
                   .typeString("Welcome to my page 😊")
                   .start();

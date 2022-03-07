@@ -80,7 +80,7 @@ const ProjectsDetail = () => {
               wins.
             </p>
           </li>
-          <li className={classes.listItem}>
+          {/* <li className={classes.listItem}>
             <h4 className={classes.linkTitle}>Natours</h4>
             <a href="https://natours-domenico.herokuapp.com/">
               <img
@@ -96,7 +96,7 @@ const ProjectsDetail = () => {
               booking APP which allows you to book tours, pay the with
               stripe(test only), and login onto your account.
             </p>
-          </li>
+          </li> */}
           {/* 
          
           <li className={classes.listItem}>

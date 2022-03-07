@@ -37,7 +37,11 @@ const PageContent = () => {
               }}
             />
           </div>
-          <img src={domImgCover} alt="Ragazzo con vista nei tetti di Palermo" />
+          <img
+            className={classes.image}
+            src={domImgCover}
+            alt="Ragazzo con vista nei tetti di Palermo"
+          />
         </div>
       </motion.div>
       <About />

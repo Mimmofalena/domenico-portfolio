@@ -24,7 +24,7 @@ const StackList = () => {
     <Card>
       <h3 className={classes.title}>Tech Stack</h3>
       <ul className={classes.gridList}>
-        <FadeInWhenVisible delay={0.1}>
+        <FadeInWhenVisible delay={0.2}>
           <StackItem
             className={classes.javascript}
             name="Js"
@@ -37,7 +37,7 @@ const StackList = () => {
             }
           />
         </FadeInWhenVisible>
-        <FadeInWhenVisible delay={0.1}>
+        <FadeInWhenVisible delay={0.2}>
           <StackItem
             name="HTML"
             icon={
@@ -49,7 +49,7 @@ const StackList = () => {
             }
           />
         </FadeInWhenVisible>
-        <FadeInWhenVisible delay={0.3}>
+        <FadeInWhenVisible delay={0.4}>
           <StackItem
             name="CSS"
             icon={
@@ -61,7 +61,7 @@ const StackList = () => {
             }
           />
         </FadeInWhenVisible>
-        <FadeInWhenVisible delay={0.3}>
+        <FadeInWhenVisible delay={0.4}>
           <StackItem
             name="React"
             icon={
@@ -97,7 +97,7 @@ const StackList = () => {
             }
           />
         </FadeInWhenVisible>
-        <FadeInWhenVisible delay={0.9}>
+        <FadeInWhenVisible delay={0.8}>
           <StackItem
             name="Material"
             icon={
@@ -109,7 +109,7 @@ const StackList = () => {
             }
           />
         </FadeInWhenVisible>
-        <FadeInWhenVisible delay={0.9}>
+        <FadeInWhenVisible delay={0.8}>
           <StackItem
             name="Git"
             icon={
@@ -121,7 +121,7 @@ const StackList = () => {
             }
           />
         </FadeInWhenVisible>
-        <FadeInWhenVisible delay={1.2}>
+        <FadeInWhenVisible delay={1}>
           <StackItem
             name="PostMan"
             icon={

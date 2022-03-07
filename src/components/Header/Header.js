@@ -6,6 +6,8 @@ import { Routes, Route, Link, NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <div className={classes.header}>
+      {/* <h2 className={classes.logo}>Logo</h2> */}
+      {/* <div className={classes.containerLinks}> */}
       <NavLink
         end
         // style={{ textDecoration: "none", color: "black" }}
@@ -41,6 +43,7 @@ const Header = () => {
         Stack
       </NavLink>
     </div>
+    // </div>
   );
 };
 

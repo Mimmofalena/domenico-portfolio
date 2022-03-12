@@ -29,7 +29,7 @@
   width: 18rem;
   line-height: 2;
   transform: translate3d(0%, -100%, 0);
-
+  pointer-events: none;
   opacity: 0;
 }
 
@@ -40,6 +40,7 @@
   width: 18rem;
   line-height: 2;
   transform: translate3d(0%, 0%, 0);
+  pointer-events: none;
 }
 
 .section_hide {

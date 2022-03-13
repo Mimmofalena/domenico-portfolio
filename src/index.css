@@ -20,9 +20,9 @@ body {
 } */
 
 :root {
-  --primary: rgb(234, 226, 183);
-  --secondary: rgb(0, 48, 73);
-  --tertiary: rgb(247, 127, 0);
+  --primary: #70d7eb;
+  --secondary: #ebb270;
+  --tertiary: #eb7570;
   --quarto: rgb(234, 226, 183);
 }
 

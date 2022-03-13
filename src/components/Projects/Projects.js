@@ -19,34 +19,39 @@ import LinkButton from "../../utils/LinkButton";
 
 const Projects = () => {
   return (
-    <Card>
-      <h3 className={classes.title}>My Projects</h3>
-      <ul className={classes.listContainer}>
-        <li className={classes.listItem}>
-          <h4 className={classes.linkTitle}>Doctor page</h4>
-          <a href="https://mimmofalena.github.io/dottoressa-marina/">
-            <img className={classes.itemImg} src={doc} alt="Doctor" />
-          </a>
-        </li>
-        <li className={classes.listItem}>
-          <h4 className={classes.linkTitle}>Todo app using Redux</h4>
-          <a href="https://mimmofalena.github.io/Todo-REDUX/">
-            <img className={classes.itemImg} src={todo} alt="redux app" />
-          </a>
-        </li>
-        <li className={classes.listItem}>
-          <h4 className={classes.linkTitle}>Weather App</h4>
-          <a href="https://checktheclouds.netlify.app/">
-            <img className={classes.itemImg} src={weather} alt="Weather app" />
-          </a>
-        </li>
-        <li className={classes.listItem}>
-          <h4 className={classes.linkTitle}>Pig game</h4>
-          <a href="https://mimmofalena.github.io/pig-game/">
-            <img className={classes.itemImg} src={pig} alt="Game app" />
-          </a>
-        </li>
-        {/* <li className={classes.listItem}>
+    <div>
+      <Card>
+        <h3 className={classes.title}>My Projects</h3>
+        <ul className={classes.listContainer}>
+          <li className={classes.listItem}>
+            <h4 className={classes.linkTitle}>Doctor page</h4>
+            <a href="https://mimmofalena.github.io/dottoressa-marina/">
+              <img className={classes.itemImg} src={doc} alt="Doctor" />
+            </a>
+          </li>
+          <li className={classes.listItem}>
+            <h4 className={classes.linkTitle}>Todo app using Redux</h4>
+            <a href="https://mimmofalena.github.io/Todo-REDUX/">
+              <img className={classes.itemImg} src={todo} alt="redux app" />
+            </a>
+          </li>
+          <li className={classes.listItem}>
+            <h4 className={classes.linkTitle}>Weather App</h4>
+            <a href="https://checktheclouds.netlify.app/">
+              <img
+                className={classes.itemImg}
+                src={weather}
+                alt="Weather app"
+              />
+            </a>
+          </li>
+          <li className={classes.listItem}>
+            <h4 className={classes.linkTitle}>Pig game</h4>
+            <a href="https://mimmofalena.github.io/pig-game/">
+              <img className={classes.itemImg} src={pig} alt="Game app" />
+            </a>
+          </li>
+          {/* <li className={classes.listItem}>
           <h4 className={classes.linkTitle}>Natours</h4>
           <a href="https://natours-domenico.herokuapp.com/">
             <img
@@ -56,7 +61,7 @@ const Projects = () => {
             />
           </a>
         </li> */}
-        {/* <li className={classes.listItem}>
+          {/* <li className={classes.listItem}>
           <h4 className={classes.linkTitle}>Natours</h4>
           <a href="https://natours-domenico.herokuapp.com/">
             <img
@@ -83,9 +88,10 @@ const Projects = () => {
             <img className={classes.itemImg} src={maptyPicture} alt="Mapty" />
           </a>
         </li> */}
-      </ul>
-      <LinkButton to="/domenico-portfolio/projects" />
-    </Card>
+        </ul>
+        <LinkButton to="/domenico-portfolio/projects" />
+      </Card>
+    </div>
   );
 };
 

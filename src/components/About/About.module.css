@@ -84,6 +84,12 @@
   margin-bottom: 0.5rem;
   text-align: left;
 }
+.image {
+  max-width: 60%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
 
 @media screen and (min-width: 992px) {
   .section {

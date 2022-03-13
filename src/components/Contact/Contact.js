@@ -6,25 +6,27 @@ import { AiFillLinkedin } from "react-icons/ai";
 
 const Contact = () => {
   return (
-    <Card>
-      <h3 className={classes.title}>Get in touch</h3>
+    <div className={classes.container}>
+      <Card>
+        <h3 className={classes.title}>Get in touch</h3>
 
-      <div className={classes.containerIcons}>
-        <a
-          className={classes.containerIcon}
-          href="https://github.com/Mimmofalena"
-        >
-          <AiFillGithub className={classes.icon} /> <p>GitHub</p>
-        </a>
+        <div className={classes.containerIcons}>
+          <a
+            className={classes.containerIcon}
+            href="https://github.com/Mimmofalena"
+          >
+            <AiFillGithub className={classes.icon} /> <p>GitHub</p>
+          </a>
 
-        <a
-          className={classes.containerIcon}
-          href="https://www.linkedin.com/in/domenico-cucinotta-b102a167/"
-        >
-          <AiFillLinkedin className={classes.icon} /> <p>LinkedIn</p>
-        </a>
-      </div>
-    </Card>
+          <a
+            className={classes.containerIcon}
+            href="https://www.linkedin.com/in/domenico-cucinotta-b102a167/"
+          >
+            <AiFillLinkedin className={classes.icon} /> <p>LinkedIn</p>
+          </a>
+        </div>
+      </Card>
+    </div>
   );
 };
 

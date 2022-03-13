@@ -1,5 +1,6 @@
 .app {
-  background-image: linear-gradient(180deg, #003049, #2b6d99);
+  /* background-image: linear-gradient(180deg, #003049, #2b6d99); */
+  background-color: var(--primary);
   background-repeat: no-repeat;
   min-height: 100vh;
   display: flex;

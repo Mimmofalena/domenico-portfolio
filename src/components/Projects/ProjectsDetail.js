@@ -13,11 +13,11 @@ import todoAppImage from "../../assets/Todo-app-redux.png";
 const ProjectsDetail = () => {
   return (
     <>
-      <h3 className={classes.detailTitle}>My Projects</h3>
+      <h2 className={classes.detailTitle}>My Projects</h2>
       <Card>
         <ul className={classes.listContainer}>
           <li className={classes.listItem}>
-            <h4 className={classes.linkTitle}>Doctor page</h4>
+            <h3 className={classes.linkTitle}>Doctor page</h3>
             <a href="https://mimmofalena.github.io/dottoressa-marina/">
               <img
                 className={classes.itemImg}
@@ -35,7 +35,7 @@ const ProjectsDetail = () => {
             </p>
           </li>
           <li className={classes.listItem}>
-            <h4 className={classes.linkTitle}>Todo app with redux</h4>
+            <h3 className={classes.linkTitle}>Todo app with redux</h3>
             <a href="https://mimmofalena.github.io/Todo-REDUX/">
               <img
                 className={classes.itemImg}
@@ -49,7 +49,7 @@ const ProjectsDetail = () => {
             </p>
           </li>
           <li className={classes.listItem}>
-            <h4 className={classes.linkTitle}>Weather App</h4>
+            <h3 className={classes.linkTitle}>Weather App</h3>
             <a href="https://checktheclouds.netlify.app/">
               <img
                 className={classes.itemImg}
@@ -66,7 +66,7 @@ const ProjectsDetail = () => {
             </p>
           </li>
           <li className={classes.listItem}>
-            <h4 className={classes.linkTitle}>Pig game</h4>
+            <h3 className={classes.linkTitle}>Pig game</h3>
             <a href="https://mimmofalena.github.io/pig-game/">
               <img
                 className={classes.itemImg}

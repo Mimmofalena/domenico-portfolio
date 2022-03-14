@@ -5,7 +5,7 @@ import { useEffect, useState, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import { aboutData } from "./aboutData";
 
-const AboutDetail = () => {
+const AboutDetail = (props) => {
   const ref = useRef();
 
   const [showSection, setShowSection] = useState(false);
@@ -14,10 +14,6 @@ const AboutDetail = () => {
 
   const showSectionHandler = (e) => {
     setShowSection(!showSection);
-
-    setSelectedItem(e.target.id);
-    console.log(showSection);
-    console.log("clicked item", selectedItem);
   };
 
   const location = useLocation();
@@ -26,8 +22,33 @@ const AboutDetail = () => {
   }, [location]);
   return (
     <>
-      <h3 className={classes.detailTitle}>About</h3>
       <Card>
+        <>
+          <section
+            ref={ref}
+            id={props.id}
+            onClick={showSectionHandler}
+            className={
+              showSection
+                ? [classes.section]
+                : [classes.section, classes.section_hide].join(" , ")
+            }
+          >
+            {showSection ? (
+              <>
+                <h3 className={classes.title}>{props.title}</h3>
+                <p className={classes.text}>{props.text}</p>
+              </>
+            ) : (
+              <>
+                <h2 className={classes.title_hide}>{props.title}</h2>
+                <h2 className={classes.subtitle}>Reveal</h2>
+              </>
+            )}
+          </section>
+        </>
+      </Card>
+      {/* <Card>
         {aboutData.map((item, index) => (
           <>
             <section
@@ -54,7 +75,7 @@ const AboutDetail = () => {
             </section>
           </>
         ))}
-      </Card>
+      </Card> */}
     </>
   );
 };

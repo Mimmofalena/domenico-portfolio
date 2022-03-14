@@ -21,7 +21,7 @@ const Projects = () => {
   return (
     <div>
       <Card>
-        <h3 className={classes.title}>My Projects</h3>
+        <h2 className={classes.title}>My Projects</h2>
         <ul className={classes.listContainer}>
           <li className={classes.listItem}>
             <h4 className={classes.linkTitle}>Doctor page</h4>

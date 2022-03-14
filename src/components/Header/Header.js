@@ -14,51 +14,54 @@ const Header = () => {
     <div className={classes.header}>
       <h2 className={classes.logo}>DOMENICO PORTFOLIO</h2>
       <div className={classes.menu}>
-        {!isOpen ? (
+        {isOpen ? (
           <h2 className={classes.more} onClick={menuHandler}>
             <CgDetailsMore />
           </h2>
         ) : (
-          <div className={classes.openMenu}>
-            <h2 className={classes.close} onClick={menuHandler}>
-              X
-            </h2>
-            <NavLink
-              end
-              // style={{ textDecoration: "none", color: "black" }}
-              to="domenico-portfolio"
-              className={({ isActive }) =>
-                isActive ? classes.active : classes.inactive
-              }
-            >
-              Home
-            </NavLink>
+          <>
+            <div className={classes.mask} />
+            <div className={classes.openMenu}>
+              <h2 className={classes.close} onClick={menuHandler}>
+                X
+              </h2>
+              <NavLink
+                end
+                // style={{ textDecoration: "none", color: "black" }}
+                to="domenico-portfolio"
+                className={({ isActive }) =>
+                  isActive ? classes.active : classes.inactive
+                }
+              >
+                Home
+              </NavLink>
 
-            <NavLink
-              to="domenico-portfolio/about"
-              className={({ isActive }) =>
-                isActive ? classes.active : classes.inactive
-              }
-            >
-              About
-            </NavLink>
-            <NavLink
-              to="domenico-portfolio/projects"
-              className={({ isActive }) =>
-                isActive ? classes.active : classes.inactive
-              }
-            >
-              Projects
-            </NavLink>
-            <NavLink
-              to="domenico-portfolio/stack"
-              className={({ isActive }) =>
-                isActive ? classes.active : classes.inactive
-              }
-            >
-              Stack
-            </NavLink>
-          </div>
+              <NavLink
+                to="domenico-portfolio/about"
+                className={({ isActive }) =>
+                  isActive ? classes.active : classes.inactive
+                }
+              >
+                About
+              </NavLink>
+              <NavLink
+                to="domenico-portfolio/projects"
+                className={({ isActive }) =>
+                  isActive ? classes.active : classes.inactive
+                }
+              >
+                Projects
+              </NavLink>
+              <NavLink
+                to="domenico-portfolio/stack"
+                className={({ isActive }) =>
+                  isActive ? classes.active : classes.inactive
+                }
+              >
+                Stack
+              </NavLink>
+            </div>
+          </>
         )}
       </div>
       <HeaderList className={classes.largeScreen} />

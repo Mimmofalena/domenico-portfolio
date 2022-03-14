@@ -13,7 +13,7 @@ const About = () => {
   return (
     <div>
       <Card>
-        <h3 className={classes.title}>About me</h3>
+        <h3 className={classes.title}>About</h3>
         <img
           className={classes.image}
           src={domImgCover}

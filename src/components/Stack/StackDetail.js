@@ -17,7 +17,7 @@ import FadeInWhenVisible from "../../utils/FadeInWhenVisible";
 const StackDetail = () => {
   return (
     <>
-      <h3 className={classes.detailTitle}>Tech Stack</h3>
+      <h2 className={classes.detailTitle}>Tech Stack</h2>
       <Card>
         <ul className={classes.gridList}>
           <FadeInWhenVisible delay={0.2}>

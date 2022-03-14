@@ -10,7 +10,7 @@
   min-height: 250px;
   margin-bottom: 1rem;
   transition: all 0.3s;
-  opacity: 0.8;
+  opacity: 0.9;
   cursor: pointer;
 }
 
@@ -56,8 +56,6 @@
   transform: translate3d(0%, 0%, 0);
   transform: scale(1.1);
   transition: all 0.3s;
-
-  /* opacity: 0; */
 }
 .section_hide:hover .subtitle {
   transform: translate3d(0%, -0%, 0);

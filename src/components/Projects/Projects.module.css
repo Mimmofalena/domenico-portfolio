@@ -45,6 +45,7 @@
 }
 .detailDescription {
   margin-top: 1rem;
+  text-align: left;
 }
 
 @media screen and (min-width: 620px) {

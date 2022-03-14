@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div className={classes.container}>
       <Card>
-        <h3 className={classes.title}>Get in touch</h3>
+        <h2 className={classes.title}>Get in touch</h2>
 
         <div className={classes.containerIcons}>
           <a
@@ -31,26 +31,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-{
-  /* <ul>
-        <li>
-          <a
-            href="https://github.com/Mimmofalena"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Github
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/domenico-cucinotta-b102a167/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            LinkedIn
-          </a>
-        </li>
-      </ul> */
-}

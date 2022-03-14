@@ -9,6 +9,7 @@ import ProjectsDetail from "./components/Projects/ProjectsDetail";
 import StackDetail from "./components/Stack/StackDetail";
 import { useEffect } from "react";
 import AboutList from "./components/About/AboutList";
+import ProjectsList from "./components/Projects/ProjectsList";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
           <Route path="/domenico-portfolio/about" element={<AboutList />} />
           <Route
             path="/domenico-portfolio/projects"
-            element={<ProjectsDetail />}
+            element={<ProjectsList />}
           />
           <Route path="/domenico-portfolio/stack" element={<StackDetail />} />
 

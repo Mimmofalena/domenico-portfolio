@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/domenico-portfolio/static/css/main.47635fea.css",
+    "main.css": "/domenico-portfolio/static/css/main.148aa547.css",
     "main.js": "/domenico-portfolio/static/js/main.9877507b.js",
     "static/js/787.aae47cb7.chunk.js": "/domenico-portfolio/static/js/787.aae47cb7.chunk.js",
     "static/media/weather-1.png": "/domenico-portfolio/static/media/weather-1.1200472571a4097567b2.png",
@@ -17,12 +17,12 @@
     "static/media/Todo-app-redux.png": "/domenico-portfolio/static/media/Todo-app-redux.b3056b8931c43845a93f.png",
     "static/media/marina-studio-medico.jpeg": "/domenico-portfolio/static/media/marina-studio-medico.369715943bfc9c1fdf70.jpeg",
     "index.html": "/domenico-portfolio/index.html",
-    "main.47635fea.css.map": "/domenico-portfolio/static/css/main.47635fea.css.map",
+    "main.148aa547.css.map": "/domenico-portfolio/static/css/main.148aa547.css.map",
     "main.9877507b.js.map": "/domenico-portfolio/static/js/main.9877507b.js.map",
     "787.aae47cb7.chunk.js.map": "/domenico-portfolio/static/js/787.aae47cb7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.47635fea.css",
+    "static/css/main.148aa547.css",
     "static/js/main.9877507b.js"
   ]
 }

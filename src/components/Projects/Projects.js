@@ -16,12 +16,14 @@ import todo from "../../assets/todo-1.png";
 
 import Card from "../../utils/Card";
 import LinkButton from "../../utils/LinkButton";
+import ProjectsList from "./ProjectsList";
 
 const Projects = () => {
   return (
-    <div>
+    <div className={classes.container}>
       <Card>
         <h2 className={classes.title}>My Projects</h2>
+        {/* <ProjectsList /> */}
         <ul className={classes.listContainer}>
           <li className={classes.listItem}>
             <h3 className={classes.linkTitle}>Doctor page</h3>

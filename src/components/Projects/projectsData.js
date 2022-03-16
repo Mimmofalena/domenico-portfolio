@@ -1,13 +1,18 @@
-import weatherPicture from "../../assets/weather-app.png";
-import todoAppImage from "../../assets/Todo-app-redux.png";
-import doctorPicture from "../../assets/marina-studio-medico.jpeg";
-import pigGamePicture from "../../assets/pig-game.png";
+// import weatherPicture from "../../assets/weather-app.png";
+// import todoAppImage from "../../assets/Todo-app-redux.png";
+// import doctorPicture from "../../assets/marina-studio-medico.jpeg";
+// import pigGamePicture from "../../assets/pig-game.png";
+
+import weather from "../../assets/weather-1.png";
+import doc from "../../assets/doc-1.png";
+import pig from "../../assets/pig-1.png";
+import todo from "../../assets/todo-1.png";
 
 export const projectsData = [
   {
     title: "Doctor page",
     href: "https://mimmofalena.github.io/dottoressa-marina/",
-    src: doctorPicture,
+    src: doc,
     alt: "Doctor",
     descriptionProject: `GP Doctor landing page. The aim of this project is to give essential informations, such as 
     visiting time, COVID news and useful links. Hence, patients do no need to call the doctor all the time for minor problems.
@@ -19,7 +24,7 @@ export const projectsData = [
   {
     title: "Todo app with redux",
     href: "https://mimmofalena.github.io/Todo-REDUX/",
-    src: todoAppImage,
+    src: todo,
     alt: "todo app",
     descriptionProject: ` Todo app to keep track of what you need to do. You can add, remove and mark todos as completed.
     This app uses local storage to persist data.`,
@@ -27,8 +32,8 @@ export const projectsData = [
   },
   {
     title: "Weather App",
-    image: "https://mimmofalena.github.io/Todo-REDUX/",
-    src: weatherPicture,
+    href: "https://mimmofalena.github.io/weather-app/",
+    src: weather,
     alt: "Weather app",
     descriptionProject: `Weather forecast app, showcasing main weather information on a searched location.`,
     descriptionTech: "HTML, CSS, JS, AJAX, OPEN WEATHER API, COUNTRY FLAGS API",
@@ -36,7 +41,7 @@ export const projectsData = [
   {
     title: "Pig game",
     href: "https://mimmofalena.github.io/pig-game/",
-    src: pigGamePicture,
+    src: pig,
     alt: "game app",
     descriptionProject: `Just luck or skills? See if you manage to get to 100 points before you opponent!`,
     descriptionTech: "HTML, CSS, JS",

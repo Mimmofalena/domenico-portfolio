@@ -11,7 +11,7 @@ const About = () => {
 `;
 
   return (
-    <div>
+    <div className={classes.container}>
       <Card>
         <h2 className={classes.title}>About</h2>
         <img

@@ -20,9 +20,9 @@ body {
 } */
 
 :root {
-  --primary: #70d7eb;
-  --secondary: #ebb270;
-  --tertiary: #eb7570;
+  --primary: #7faaeb;
+  --secondary: #eb8f7f;
+  --tertiary: #ebc57f;
   --quarto: rgb(234, 226, 183);
 }
 
@@ -41,10 +41,11 @@ img {
 
 body {
   margin: 0;
-  /* font-family: "Montserrat", sans-serif; */
-  font-family: -apple-system, BlinkMacSystemFont, "Montserrat", "Open Sans",
-    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-    "Droid Sans", "Helvetica Neue", sans-serif;
+
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Montserrat",
+    "Open Sans", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

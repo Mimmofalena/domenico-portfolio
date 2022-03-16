@@ -1,11 +1,19 @@
 import React from "react";
 import classes from "./Header.module.css";
+import { NavLink } from "react-router-dom";
 
 const HeaderItem = (props) => {
   return (
-    <a href={props.href} className={classes.divItem}>
-      {props.name}
-    </a>
+    <NavLink
+      end
+      // style={{ textDecoration: "none", color: "black" }}
+      to="domenico-portfolio"
+      className={({ isActive }) =>
+        isActive ? classes.active : classes.inactive
+      }
+    >
+      Home
+    </NavLink>
   );
 };
 

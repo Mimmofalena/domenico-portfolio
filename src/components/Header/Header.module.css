@@ -8,7 +8,7 @@
   align-items: center;
 
   min-height: 50px;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 .mask {
@@ -49,29 +49,36 @@
 }
 
 .inactive {
-  width: fit-content;
+  width: 100%;
   margin-left: auto;
   border-radius: 5px;
   padding: 1rem;
   font-weight: 700;
   overflow: hidden;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
 }
 .inactive:hover {
-  width: fit-content;
+  width: 100%;
+  border-bottom: var(--tertiary) 3px solid;
+  padding: 1rem;
+  opacity: 1;
+  font-weight: 700;
+  overflow: hidden;
+}
+.inactive:focus {
+  width: 100%;
   background-color: var(--tertiary);
   padding: 1rem;
-  opacity: 0.8;
+  opacity: 1;
   font-weight: 700;
   overflow: hidden;
 }
 .active {
   margin-left: auto;
-  width: fit-content;
-  background-color: var(--tertiary);
+  width: 100%;
+  border-bottom: var(--tertiary) 3px solid;
   padding: 1rem;
-  border-radius: 5px;
-  opacity: 0.8;
+  opacity: 1;
   font-weight: 700;
   overflow: hidden;
 }
@@ -87,10 +94,45 @@
 
 @media screen and (min-width: 768px) {
   .largeScreen {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
   }
   .menu {
     display: none;
+  }
+  .inactive {
+    margin-left: auto;
+    min-width: 8rem;
+    border-radius: 5px;
+    padding: 1.5rem;
+    font-weight: 700;
+    overflow: hidden;
+    transition: 0.5s ease;
+    border-bottom: none;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+  }
+  .inactive:hover {
+    background-color: var(--tertiary);
+    padding: 1.5rem;
+    min-width: 8rem;
+    opacity: 1;
+    font-weight: 700;
+    overflow: hidden;
+    border-bottom: none;
+  }
+  .active {
+    margin-left: auto;
+    min-width: 8rem;
+    background-color: var(--tertiary);
+    padding: 1.5rem;
+    border-radius: 5px;
+    opacity: 1;
+    font-weight: 700;
+    overflow: hidden;
+    border-bottom: none;
   }
 }
 /* desktop styles */

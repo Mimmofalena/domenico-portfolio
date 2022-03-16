@@ -21,7 +21,7 @@ const AboutDetail = (props) => {
     window.scrollTo(0, 0);
   }, [location]);
   return (
-    <>
+    <div>
       <Card>
         <>
           <section
@@ -76,7 +76,7 @@ const AboutDetail = (props) => {
           </>
         ))}
       </Card> */}
-    </>
+    </div>
   );
 };
 

@@ -1,6 +1,9 @@
 .title {
   margin-bottom: 1rem;
 }
+.container {
+  background-color: var(--primary);
+}
 
 .section {
   border: 1px solid black;
@@ -12,6 +15,7 @@
   transition: all 0.3s;
   opacity: 0.9;
   cursor: pointer;
+  background-color: white;
 }
 
 /* .hide {
@@ -35,16 +39,17 @@
 
 .title_hide {
   margin: 0 auto;
-  background-color: var(--primary);
+  background-color: var(--secondary);
   height: 50px;
   width: 18rem;
   line-height: 2;
   transform: translate3d(0%, 0%, 0);
   pointer-events: none;
+  border-radius: 5px;
 }
 
 .section_hide {
-  background-color: var(--secondary);
+  background-color: var(--primary);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -64,14 +69,15 @@
   background-color: var(--tertiary);
   transform: scale(1.1);
   transition: all 0.3s;
+  border-radius: 5px;
   /* transition-delay: 0.2s; */
 }
 
 .detailTitle {
   /* font-size: 22px; */
   /* color: rgb(255, 255, 255); */
+  padding: 1rem;
   text-align: center;
-  margin: 1rem 0;
 }
 
 .detailTitle ~ div {

@@ -8,7 +8,7 @@ export const aboutData = [
                 Currently looking for a junior front end web developer position.
                 I am interested in smart working only position but willing to
                 occasionally travel (even abroad) to work for meeting or other
-                business needs. Open to offers and discussion`,
+                business needs. Open to offers and discussion.`,
     id: 0,
   },
   {

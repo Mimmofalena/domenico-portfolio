@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./Header.module.css";
-import { Routes, Route, Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const HeaderList = (props) => {
   return (

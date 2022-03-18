@@ -17,8 +17,8 @@ const PageContent = () => {
       <Welcome />
       <About />
 
-      <StackList />
       <Projects />
+      <StackList />
       <Contact />
     </div>
   );

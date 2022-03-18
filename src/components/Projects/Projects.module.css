@@ -3,9 +3,31 @@
   font-size: 20px;
 }
 .container {
-  background-color: var(--primary);
-  padding: 1rem;
+  background-color: white;
+  padding: 4rem 0;
+  position: relative;
 }
+
+.custom-shape-divider-top-1647591263 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1647591263 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+}
+
+.custom-shape-divider-top-1647591263 .shape-fill {
+  fill: var(--primary);
+}
+
 .linkTitle {
   text-align: center;
   margin-bottom: 0.5rem;

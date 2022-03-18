@@ -13,7 +13,7 @@ const About = () => {
   return (
     <div className={classes.container}>
       <Card>
-        <h2 className={classes.title}>About</h2>
+        {/* <h2 className={classes.title}>About</h2> */}
         <img
           className={classes.image}
           src={domImgCover}

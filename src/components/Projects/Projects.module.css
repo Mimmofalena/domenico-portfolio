@@ -3,10 +3,17 @@
   font-size: 20px;
 }
 .container {
+  background-color: var(--primary);
+  padding: 4rem 0;
+  position: relative;
+}
+.containerDetail {
   background-color: white;
   padding: 4rem 0;
   position: relative;
 }
+
+/* shape divider 1*/
 
 .custom-shape-divider-top-1647591263 {
   position: absolute;
@@ -25,7 +32,30 @@
 }
 
 .custom-shape-divider-top-1647591263 .shape-fill {
-  fill: var(--primary);
+  fill: white;
+}
+
+/* shape divider 2 */
+
+.custom-shape-divider-bottom-1648543190 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1648543190 svg {
+  position: relative;
+  display: block;
+  width: calc(161% + 1.3px);
+  height: 92px;
+}
+
+.custom-shape-divider-bottom-1648543190 .shape-fill {
+  fill: #ffffff;
 }
 
 .linkTitle {
@@ -71,6 +101,14 @@
 .detailDescription {
   margin-top: 1rem;
   text-align: left;
+  color: var(--primary);
+}
+.detailText {
+  color: initial;
+}
+
+.iconContainer {
+  font-size: 5rem;
 }
 
 @media screen and (min-width: 620px) {

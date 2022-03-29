@@ -20,7 +20,7 @@ const Header = () => {
           </h2>
         ) : (
           <>
-            <div className={classes.mask} />
+            <div className={classes.mask} onClick={menuHandler} />
             <div className={classes.openMenu}>
               <h2 className={classes.close} onClick={menuHandler}>
                 X
@@ -37,14 +37,6 @@ const Header = () => {
               </NavLink>
 
               <NavLink
-                to="domenico-portfolio/about"
-                className={({ isActive }) =>
-                  isActive ? classes.active : classes.inactive
-                }
-              >
-                About
-              </NavLink>
-              <NavLink
                 to="domenico-portfolio/projects"
                 className={({ isActive }) =>
                   isActive ? classes.active : classes.inactive
@@ -59,6 +51,14 @@ const Header = () => {
                 }
               >
                 Stack
+              </NavLink>
+              <NavLink
+                to="domenico-portfolio/about"
+                className={({ isActive }) =>
+                  isActive ? classes.active : classes.inactive
+                }
+              >
+                About
               </NavLink>
             </div>
           </>

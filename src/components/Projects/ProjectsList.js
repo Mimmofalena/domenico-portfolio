@@ -6,7 +6,7 @@ import Card from "../../utils/Card";
 
 const ProjectsList = () => {
   return (
-    <div className={classes.container}>
+    <div className={classes.containerDetail}>
       <h2 className={classes.detailTitle}>My projects</h2>
       <Card>
         <ul className={classes.listContainer}>

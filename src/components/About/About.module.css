@@ -2,7 +2,7 @@
   margin-bottom: 1rem;
 }
 .container {
-  background-color: var(--primary);
+  /* background-color: var(--primary); */
 }
 
 .section {
@@ -88,10 +88,24 @@
   text-align: left;
 }
 .image {
-  max-width: 60%;
+  max-width: 100%;
   margin: 0 auto;
   margin-bottom: 1rem;
   border-radius: 10px;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  justify-content: center;
+}
+
+.quote {
+  max-width: 30%;
+}
+.motion {
+  /* grid-column: 1/2; */
 }
 
 @media screen and (min-width: 992px) {

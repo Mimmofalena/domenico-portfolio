@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className={classes.container}>
       <div className={classes.containerCopyright}>
         <div className={classes.copy}>&copy;</div>
-        <p>Copyright by Domenico Cucinotta</p>
+        <p>Designed and Developed by Domenico Cucinotta</p>
       </div>
 
       {/* <div className={classes.containerIcons}>

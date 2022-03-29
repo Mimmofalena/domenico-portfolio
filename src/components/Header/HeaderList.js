@@ -15,14 +15,7 @@ const HeaderList = (props) => {
       >
         Home
       </NavLink>
-      <NavLink
-        to="domenico-portfolio/about"
-        className={({ isActive }) =>
-          isActive ? classes.active : classes.inactive
-        }
-      >
-        About
-      </NavLink>
+
       <NavLink
         to="domenico-portfolio/projects"
         className={({ isActive }) =>
@@ -38,6 +31,14 @@ const HeaderList = (props) => {
         }
       >
         Stack
+      </NavLink>
+      <NavLink
+        to="domenico-portfolio/about"
+        className={({ isActive }) =>
+          isActive ? classes.active : classes.inactive
+        }
+      >
+        About
       </NavLink>
     </div>
   );

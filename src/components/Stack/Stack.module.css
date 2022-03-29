@@ -1,8 +1,8 @@
 .container {
-  background-color: white;
+  /* background-color: white; */
   padding: 3rem 0;
   position: relative;
-  background-color: var(--primary);
+  /* background-color: var(--primary); */
 }
 
 /* Divider stack list*/
@@ -103,6 +103,9 @@
 }
 .textContainer ul {
   padding: 1rem;
+}
+.iconContainer {
+  font-size: 5rem;
 }
 
 @media screen and (min-width: 620px) {

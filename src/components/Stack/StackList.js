@@ -16,13 +16,14 @@ import { DiCss3 } from "react-icons/di";
 import Card from "../../utils/Card";
 import LinkButton from "../../utils/LinkButton";
 import FadeInWhenVisible from "../../utils/FadeInWhenVisible";
+import { GrMonitor } from "react-icons/gr";
 
 const StackList = () => {
   const animation = useAnimation();
 
   return (
     <div className={classes.container}>
-      <div class={classes["custom-shape-divider-top-1647591263"]}>
+      {/* <div class={classes["custom-shape-divider-top-1647591263"]}>
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -34,9 +35,12 @@ const StackList = () => {
             class={classes["shape-fill"]}
           ></path>
         </svg>
-      </div>
+      </div> */}
       <Card>
-        <h3 className={classes.title}>Tech Stack</h3>
+        <div className={classes.iconContainer}>
+          <GrMonitor />
+        </div>
+
         <ul className={classes.gridList}>
           <FadeInWhenVisible delay={0.2}>
             <StackItem

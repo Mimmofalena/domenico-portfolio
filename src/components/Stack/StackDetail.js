@@ -12,6 +12,7 @@ import { SiMaterialui } from "react-icons/si";
 import { BiGitBranch } from "react-icons/bi";
 import { SiPostman } from "react-icons/si";
 import { DiCss3 } from "react-icons/di";
+
 import FadeInWhenVisible from "../../utils/FadeInWhenVisible";
 
 const StackDetail = () => {

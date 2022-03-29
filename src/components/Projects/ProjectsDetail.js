@@ -19,10 +19,13 @@ const ProjectsDetail = (props) => {
           <img className={classes.itemImg} src={props.src} alt={props.alt} />
         </a>
         <p className={classes.detailDescription}>
-          <strong>About the project:</strong> {props.descriptionProject}
+          About the project:&nbsp;
+          <span className={classes.detailText}>{props.descriptionProject}</span>
         </p>
+
         <p className={classes.detailDescription}>
-          <strong>Technologies used:</strong> {props.descriptionTech}
+          Technologies used:&nbsp;
+          <span className={classes.detailText}>{props.descriptionTech}</span>
         </p>
       </li>
 

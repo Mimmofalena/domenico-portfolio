@@ -14,7 +14,7 @@ import Welcome from "../Welcome/Welcome";
 const PageContent = () => {
   return (
     <div className={classes.container}>
-      <Welcome />
+      {/* <Welcome /> */}
       <About />
 
       <Projects />

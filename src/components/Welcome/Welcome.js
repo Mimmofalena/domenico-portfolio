@@ -12,7 +12,7 @@ const Welcome = () => {
           <motion.div
             initial={{ opacity: 0, translateX: "-100%" }}
             animate={{ opacity: 1, translateX: 0 }}
-            transition={{ duration: 1.5 }}
+            transition={{ duration: 1 }}
           >
             <div className={classes.imgContainer}>
               <h2 className={classes.typewriter}>
@@ -22,7 +22,7 @@ const Welcome = () => {
                       .typeString(
                         `  Hello, My name is Domenico and I am a web developer...`
                       )
-                      .pauseFor(500)
+                      .pauseFor(100)
                       .deleteAll()
                       .typeString("Welcome to my page 😊")
                       .start();

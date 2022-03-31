@@ -10,10 +10,10 @@ import natoursPicture from "../../assets/natours.png";
 import weatherPicture from "../../assets/weather-app.png";
 import { FaHammer } from "react-icons/fa";
 
-import weather from "../../assets/weather-1.png";
+import weather from "../../assets/weather-app-new.jpg";
 import doc from "../../assets/doc-1.png";
-import pig from "../../assets/pig-1.png";
-import todo from "../../assets/todo-1.png";
+import pig from "../../assets/pig-game.jpg";
+import todo from "../../assets/todo-app-redux-new.jpg";
 
 import Card from "../../utils/Card";
 import LinkButton from "../../utils/LinkButton";

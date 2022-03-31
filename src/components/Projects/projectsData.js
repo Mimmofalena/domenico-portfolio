@@ -3,10 +3,10 @@
 // import doctorPicture from "../../assets/marina-studio-medico.jpeg";
 // import pigGamePicture from "../../assets/pig-game.png";
 
-import weather from "../../assets/weather-1.png";
+import weather from "../../assets/weather-app-new.jpg";
 import doc from "../../assets/doc-1.png";
-import pig from "../../assets/pig-1.png";
-import todo from "../../assets/todo-1.png";
+import pig from "../../assets/pig-game.jpg";
+import todo from "../../assets/todo-app-redux-new.jpg";
 
 export const projectsData = [
   {

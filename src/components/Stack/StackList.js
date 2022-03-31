@@ -38,7 +38,7 @@ const StackList = () => {
       </div> */}
       <Card>
         <div className={classes.iconContainer}>
-          <GrMonitor />
+          <GrMonitor className={classes.iconMonitor} />
         </div>
 
         <ul className={classes.gridList}>

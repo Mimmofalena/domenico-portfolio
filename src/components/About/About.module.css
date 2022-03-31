@@ -103,7 +103,9 @@
 
 .quote {
   max-width: 30%;
+  text-shadow: 1px 1px 2px var(--primary);
 }
+
 .motion {
   /* grid-column: 1/2; */
 }

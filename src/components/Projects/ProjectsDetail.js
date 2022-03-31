@@ -18,15 +18,15 @@ const ProjectsDetail = (props) => {
         <a href={props.href}>
           <img className={classes.itemImg} src={props.src} alt={props.alt} />
         </a>
-        <p className={classes.detailDescription}>
+        <div className={classes.detailDescription}>
           About the project:&nbsp;
-          <span className={classes.detailText}>{props.descriptionProject}</span>
-        </p>
+          <p className={classes.detailText}>{props.descriptionProject}</p>
+        </div>
 
-        <p className={classes.detailDescription}>
+        <div className={classes.detailDescription}>
           Technologies used:&nbsp;
-          <span className={classes.detailText}>{props.descriptionTech}</span>
-        </p>
+          <p className={classes.detailText}>{props.descriptionTech}</p>
+        </div>
       </li>
 
       {/* <li className={classes.listItem}>

@@ -14,10 +14,19 @@ export const projectsData = [
     href: "https://mimmofalena.github.io/dottoressa-marina/",
     src: doc,
     alt: "Doctor",
-    descriptionProject: `GP Doctor landing page. The aim of this project is to give essential informations, such as 
-    visiting time, COVID news and useful links. Hence, patients do no need to call the doctor all the time for minor problems.
-     Patients can find the doctor contact details or send an email straight through the app.
-    There is also google maps API to show where the GP practice is located.`,
+    descriptionProject: (
+      <p>
+        GP Doctor landing page. The aim of this project is to give essential
+        informations, such as visiting time, COVID news and useful links. Hence,
+        patients do no need to call the doctor all the time for minor problems.
+        Patients can find the doctor contact details or send an email straight
+        through the app. There is also google maps API to show where the GP
+        practice is located.&nbsp; <br /> <br /> Ongoing changes: Awaiting for
+        last content from the owner and the site will be live soon. The backend
+        is working perfectly on development, I will need to host the backend on
+        a server.,
+      </p>
+    ),
     descriptionTech:
       "REACT, HTML, CSS, JS, NODEJS, NODEMAILER, FORMIK, MATERIAL UI, FRAMER MOTION, GOOGLE MAPS API, ",
   },

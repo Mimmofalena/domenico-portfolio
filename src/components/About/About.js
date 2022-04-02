@@ -6,6 +6,7 @@ import LinkButton from "../../utils/LinkButton";
 import { motion } from "framer-motion";
 import domenicoPicture from "../../assets/immagine-curriculum.jpg";
 import Welcome from "../Welcome/Welcome";
+
 const About = () => {
   const text = `My name is Domenico and I am a front end developer from Italy. I am passionate about developing and I have been coding
   since 2020 despite the pandemic and a full time job as a front line ICU nurse. I am excited to be applying for new jobs and take on new challenges.

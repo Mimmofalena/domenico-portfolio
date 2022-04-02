@@ -1,21 +1,12 @@
 import React from "react";
-import classes from "./About.module.css";
+
 import Card from "../../utils/Card";
-import { useEffect, useState, useRef } from "react";
+import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { aboutData } from "./aboutData";
+import classes from "./About.module.css";
+import Timeline from "./Timeline";
 
 const AboutDetail = (props) => {
-  const ref = useRef();
-
-  const [showSection, setShowSection] = useState(false);
-  const [selectedItem, setSelectedItem] = useState(null);
-  console.log(selectedItem);
-
-  const showSectionHandler = (e) => {
-    setShowSection(!showSection);
-  };
-
   const location = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -23,59 +14,31 @@ const AboutDetail = (props) => {
   return (
     <div>
       <Card>
-        <>
-          <section
-            ref={ref}
-            id={props.id}
-            onClick={showSectionHandler}
-            className={
-              showSection
-                ? [classes.section]
-                : [classes.section, classes.section_hide].join(" , ")
-            }
-          >
-            {showSection ? (
-              <>
-                <h3 className={classes.title}>{props.title}</h3>
-                <p className={classes.text}>{props.text}</p>
-              </>
-            ) : (
-              <>
-                <h2 className={classes.title_hide}>{props.title}</h2>
-                <h2 className={classes.subtitle}>Reveal</h2>
-              </>
-            )}
-          </section>
-        </>
+        <Timeline />
+        <div>
+          <h2 className={classes.title}>Did you know?</h2>
+          <ul>
+            <li className={classes.text}>
+              I love sports. I did martial arts for almost 10 years. I won
+              Italian light contact muay thai Championship in 2008 and 2nd place
+              in 2009 in Rome. Currently doing Cross Fit.
+            </li>
+            <li className={classes.text}>
+              {" "}
+              I love to travel. I would like to see all the 7 wonders! I have
+              already visited Chitchen Itza and the Coliseum. Also, I could not
+              believe that the Reef in Mexico had brighter colors than the Great
+              Barrier Reef in Australia!
+            </li>
+            <li className={classes.text}>
+              {" "}
+              I like videogames especially RTS. I was in top 10 in Age of
+              Empires 3 in Italy and currenly between the first 1000 in Age of
+              Empires 4. Currently enjoying streaming on Twitch.{" "}
+            </li>
+          </ul>
+        </div>
       </Card>
-      {/* <Card>
-        {aboutData.map((item, index) => (
-          <>
-            <section
-              ref={ref}
-              id={item.id}
-              onClick={showSectionHandler}
-              className={
-                showSection && +selectedItem === item.id
-                  ? [classes.section]
-                  : [classes.section, classes.section_hide].join(" , ")
-              }
-            >
-              {showSection && +selectedItem === item.id ? (
-                <>
-                  <h3 className={classes.title}>{item.title}</h3>
-                  <p className={classes.text}>{item.text}</p>
-                </>
-              ) : (
-                <>
-                  <h2 className={classes.title_hide}>{item.title}</h2>
-                  <h2 className={classes.subtitle}>Reveal</h2>
-                </>
-              )}
-            </section>
-          </>
-        ))}
-      </Card> */}
     </div>
   );
 };

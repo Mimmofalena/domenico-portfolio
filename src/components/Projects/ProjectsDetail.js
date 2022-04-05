@@ -12,24 +12,31 @@ import todoAppImage from "../../assets/Todo-app-redux.png";
 
 const ProjectsDetail = (props) => {
   return (
-    <Card>
-      <li className={classes.listItem}>
-        <h3 className={classes.linkTitle}>{props.title}</h3>
-        <a href={props.href}>
-          <img className={classes.itemImg} src={props.src} alt={props.alt} />
-        </a>
+    // <Card>
+    <div className={classes.listItem}>
+      <a href={props.href} className={classes.itemImg}>
+        <img src={props.src} alt={props.alt} />
+      </a>
+      <div className={classes.content}>
         <div className={classes.detailDescription}>
           About the project:&nbsp;
-          <p className={classes.detailText}>{props.descriptionProject}</p>
         </div>
+        <p className={classes.detailText}>{props.descriptionProject}</p>
 
         <div className={classes.detailDescription}>
           Technologies used:&nbsp;
-          <p className={classes.detailText}>{props.descriptionTech}</p>
         </div>
-      </li>
+        <p className={classes.detailText}>{props.descriptionTech}</p>
+      </div>
+    </div>
+    // </Card>
+  );
+};
 
-      {/* <li className={classes.listItem}>
+export default ProjectsDetail;
+
+{
+  /* <li className={classes.listItem}>
             <h4 className={classes.linkTitle}>Natours</h4>
             <a href="https://natours-domenico.herokuapp.com/">
               <img
@@ -45,8 +52,10 @@ const ProjectsDetail = (props) => {
               booking APP which allows you to book tours, pay the with
               stripe(test only), and login onto your account.
             </p>
-          </li> */}
-      {/* 
+          </li> */
+}
+{
+  /* 
          
           <li className={classes.listItem}>
             <h4 className={classes.linkTitle}>The Bankist</h4>
@@ -85,9 +94,5 @@ const ProjectsDetail = (props) => {
               purpose is to add workouts which can be either running or cycling
               on a map. I have used Leaflet as a map library.
             </p>
-          </li> */}
-    </Card>
-  );
-};
-
-export default ProjectsDetail;
+          </li> */
+}

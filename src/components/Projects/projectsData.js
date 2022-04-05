@@ -49,7 +49,7 @@ export const projectsData = [
     href: "https://mimmofalena.github.io/pig-game/",
     src: pig,
     alt: "game app",
-    descriptionProject: `Just luck or skills? See if you manage to get to 100 points before you opponent!`,
+    descriptionProject: `Turn based game 1 vs 1. Try you manage to get to 100 points before you opponent! Want to challenge a friend? Try it out!  `,
     descriptionTech: "HTML, CSS, JS",
   },
 ];

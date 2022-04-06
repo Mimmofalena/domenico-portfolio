@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/domenico-portfolio/static/css/main.097d619a.css",
-    "main.js": "/domenico-portfolio/static/js/main.cf18d077.js",
+    "main.css": "/domenico-portfolio/static/css/main.617d8534.css",
+    "main.js": "/domenico-portfolio/static/js/main.c735f395.js",
     "static/js/787.aae47cb7.chunk.js": "/domenico-portfolio/static/js/787.aae47cb7.chunk.js",
     "static/media/mapty.png": "/domenico-portfolio/static/media/mapty.1066dbdad39b4d80075d.png",
     "static/media/domImgCover.jpg": "/domenico-portfolio/static/media/domImgCover.5ab52adb446d02d27972.jpg",
@@ -18,12 +18,12 @@
     "static/media/immagine-curriculum.jpg": "/domenico-portfolio/static/media/immagine-curriculum.34b1c9abd0cae4fc3e28.jpg",
     "static/media/marina-studio-medico.jpeg": "/domenico-portfolio/static/media/marina-studio-medico.369715943bfc9c1fdf70.jpeg",
     "index.html": "/domenico-portfolio/index.html",
-    "main.097d619a.css.map": "/domenico-portfolio/static/css/main.097d619a.css.map",
-    "main.cf18d077.js.map": "/domenico-portfolio/static/js/main.cf18d077.js.map",
+    "main.617d8534.css.map": "/domenico-portfolio/static/css/main.617d8534.css.map",
+    "main.c735f395.js.map": "/domenico-portfolio/static/js/main.c735f395.js.map",
     "787.aae47cb7.chunk.js.map": "/domenico-portfolio/static/js/787.aae47cb7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.097d619a.css",
-    "static/js/main.cf18d077.js"
+    "static/css/main.617d8534.css",
+    "static/js/main.c735f395.js"
   ]
 }

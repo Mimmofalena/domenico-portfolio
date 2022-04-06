@@ -32,6 +32,7 @@ const Header = () => {
                 className={({ isActive }) =>
                   isActive ? classes.active : classes.inactive
                 }
+                onClick={menuHandler}
               >
                 Home
               </NavLink>
@@ -41,6 +42,7 @@ const Header = () => {
                 className={({ isActive }) =>
                   isActive ? classes.active : classes.inactive
                 }
+                onClick={menuHandler}
               >
                 Projects
               </NavLink>
@@ -49,6 +51,7 @@ const Header = () => {
                 className={({ isActive }) =>
                   isActive ? classes.active : classes.inactive
                 }
+                onClick={menuHandler}
               >
                 Stack
               </NavLink>
@@ -57,6 +60,7 @@ const Header = () => {
                 className={({ isActive }) =>
                   isActive ? classes.active : classes.inactive
                 }
+                onClick={menuHandler}
               >
                 About
               </NavLink>

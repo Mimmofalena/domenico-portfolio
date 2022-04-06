@@ -19,7 +19,7 @@ const StackDetail = () => {
   return (
     <>
       <div className={classes.container}>
-        <div class={classes["custom-shape-divider-bottom-1647593320"]}>
+        <div className={classes["custom-shape-divider-bottom-1647593320"]}>
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +28,7 @@ const StackDetail = () => {
           >
             <path
               d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
-              class={classes["shape-fill"]}
+              className={classes["shape-fill"]}
             ></path>
           </svg>
         </div>
@@ -198,43 +198,41 @@ const StackDetail = () => {
             <strong>React course</strong> by Maximilian Schwarzmuller. The
             course gave a brief overview of class-based components and focused
             mostly on functional components. After completing the course, I have
-            made different projects using REACT only, such as &nbsp;
-            <a
-              style={{ textDecoration: "underline" }}
-              href="https://mimmofalena.github.io/dottoressa-marina/"
-            >
-              Doctor page.
-            </a>
-            &nbsp; <br />
-            To sum up my REACT skills:
-            <ul>
-              <li>Functional components</li>
-              <li>
-                Most used React Hooks (useState, useEffect, useRef, useContext)
-              </li>
-              <li>Sending http request to API using useEffect</li>
-              <li>Using props</li>
-              <li>working with main events and listening to user input</li>
-              <li>Handling forms with react</li>
-              <li>
-                <li>Working with lists and understaing "Keys"</li>
-                <li>Conditional rendering</li>
-                <li>Debugging react</li>
-                <li>Css modules</li>
-                <li>Making reusable components such as Buttons, Cards</li>
-                Redux (used in this{" "}
-                <a
-                  href="https://mimmofalena.github.io/Todo-REDUX/"
-                  style={{ textDecoration: "underline" }}
-                >
-                  DEMO project
-                </a>
-                )
-              </li>
-            </ul>
-            <br />
-            <br />
+            made different projects using REACT only, such as &nbsp;{" "}
           </p>
+          <a
+            style={{ textDecoration: "underline" }}
+            href="https://mimmofalena.github.io/dottoressa-marina/"
+          >
+            Doctor page.
+          </a>
+          &nbsp; <br />
+          To sum up my REACT skills:
+          <ul>
+            <li>Functional components</li>
+            <li>
+              Most used React Hooks (useState, useEffect, useRef, useContext)
+            </li>
+            <li>Sending http request to API using useEffect</li>
+            <li>Using props</li>
+            <li>working with main events and listening to user input</li>
+            <li>Handling forms with react</li>
+            <li>Working with lists and understaing "Keys"</li>
+            <li>Conditional rendering</li>
+            <li>Debugging react</li>
+            <li>Css modules</li>
+            <li>Making reusable components such as Buttons, Cards</li>
+            Redux (used in this{" "}
+            <a
+              href="https://mimmofalena.github.io/Todo-REDUX/"
+              style={{ textDecoration: "underline" }}
+            >
+              DEMO project
+            </a>
+            )
+          </ul>
+          <br />
+          <br />
           Right after I finished React course and after some digging, I made
           &nbsp;
           <a

@@ -12,6 +12,7 @@ const ProjectsList = () => {
         {projectsData.map((item) => {
           return (
             <ProjectsDetail
+              key={Math.random()}
               title={item.title}
               href={item.href}
               alt={item.alt}

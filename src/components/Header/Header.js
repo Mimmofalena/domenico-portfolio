@@ -22,9 +22,9 @@ const Header = () => {
           <>
             <div className={classes.mask} onClick={menuHandler} />
             <div className={classes.openMenu}>
-              <h2 className={classes.close} onClick={menuHandler}>
+              <p className={classes.close} onClick={menuHandler}>
                 X
-              </h2>
+              </p>
               <NavLink
                 end
                 // style={{ textDecoration: "none", color: "black" }}

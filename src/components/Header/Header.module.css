@@ -83,6 +83,13 @@
   overflow: hidden;
 }
 
+.close {
+  cursor: pointer;
+  width: fit-content;
+  margin-left: auto;
+  font-weight: 600;
+}
+
 /* small tablet styles */
 
 @media screen and (min-width: 620px) {

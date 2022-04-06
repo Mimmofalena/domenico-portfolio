@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import classes from "./Stack.module.css";
 
 import StackItem from "./StackItem";
@@ -16,6 +17,10 @@ import { DiCss3 } from "react-icons/di";
 import FadeInWhenVisible from "../../utils/FadeInWhenVisible";
 
 const StackDetail = () => {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
   return (
     <>
       <div className={classes.container}>

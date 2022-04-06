@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import classes from "./Projects.module.css";
-
+import { useLocation } from "react-router-dom";
 import Card from "../../utils/Card";
 import doctorPicture from "../../assets/marina-studio-medico.jpeg";
 import pigGamePicture from "../../assets/pig-game.png";
@@ -11,6 +11,10 @@ import weatherPicture from "../../assets/weather-app.png";
 import todoAppImage from "../../assets/Todo-app-redux.png";
 
 const ProjectsDetail = (props) => {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
   return (
     // <Card>
     <div className={classes.listItem}>

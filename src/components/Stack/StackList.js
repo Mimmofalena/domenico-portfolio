@@ -6,7 +6,7 @@ import { DiJavascript } from "react-icons/di";
 import { DiHtml5 } from "react-icons/di";
 import { DiNodejsSmall } from "react-icons/di";
 import { DiMongodb } from "react-icons/di";
-import { SiMaterialui } from "react-icons/si";
+import { SiMui } from "react-icons/si";
 import { BiGitBranch } from "react-icons/bi";
 import { SiPostman } from "react-icons/si";
 import classes from "./Stack.module.css";
@@ -103,7 +103,7 @@ const StackList = () => {
             <StackItem
               name="Material"
               icon={
-                <SiMaterialui
+                <SiMui
                   style={{
                     color: "#007bf7",
                   }}

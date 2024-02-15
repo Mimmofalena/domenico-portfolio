@@ -9,10 +9,13 @@ import { DiJavascript } from "react-icons/di";
 import { DiHtml5 } from "react-icons/di";
 import { DiNodejsSmall } from "react-icons/di";
 import { DiMongodb } from "react-icons/di";
-import { SiMaterialui } from "react-icons/si";
+import { SiMui } from "react-icons/si";
 import { BiGitBranch } from "react-icons/bi";
 import { SiPostman } from "react-icons/si";
 import { DiCss3 } from "react-icons/di";
+import { TbBrandNextjs } from "react-icons/tb";
+import { FaAngular } from "react-icons/fa";
+import { FaBootstrap } from "react-icons/fa";
 
 import FadeInWhenVisible from "../../utils/FadeInWhenVisible";
 
@@ -118,7 +121,7 @@ const StackDetail = () => {
               <StackItem
                 name="Material"
                 icon={
-                  <SiMaterialui
+                  <SiMui
                     style={{
                       color: "#007bf7",
                     }}
@@ -150,132 +153,127 @@ const StackDetail = () => {
                 }
               />
             </FadeInWhenVisible>
+            <FadeInWhenVisible delay={2.0}>
+              <StackItem
+                name="Nextjs"
+                icon={
+                  <TbBrandNextjs
+                    style={{
+                      color: "#000",
+                    }}
+                  />
+                }
+              />
+            </FadeInWhenVisible>
+            <FadeInWhenVisible delay={2.2}>
+              <StackItem
+                name="Angular"
+                icon={
+                  <FaAngular
+                    style={{
+                      color: "#d32f2f",
+                    }}
+                  />
+                }
+              />
+            </FadeInWhenVisible>
+            <FadeInWhenVisible delay={2.4}>
+              <StackItem
+                name="Angular Material"
+                icon={
+                  <FaAngular
+                    style={{
+                      color: "#f76935",
+                    }}
+                  />
+                }
+              />
+            </FadeInWhenVisible>
+            <FadeInWhenVisible delay={2.6}>
+              <StackItem
+                name="Bootstrap"
+                icon={
+                  <FaBootstrap
+                    style={{
+                      color: "#4c0bce",
+                    }}
+                  />
+                }
+              />
+            </FadeInWhenVisible>
           </ul>
         </Card>
       </div>
       <Card>
         <div className={classes.textContainer}>
-          <p>
-            I have started my journey as a self-taught front end developer in
-            November 2020.
-          </p>
-          <br />
-          The very first course I undertook with the&nbsp;
-          <a
-            style={{ textDecoration: "underline" }}
-            href="https://coursera.org/share/d19868e048232bdf5982c63fca84b95b"
-          >
-            Johns Hopkins University.
-          </a>
-          <p>
-            It covered the basics of web development (
-            <strong>HTML, CSS and JS</strong> ). I then attended and completed a
-            Javascript course that covered the language in detail. (The complete
-            Javascript Course: from zero to expert by Jonas Schmedtmann). The
-            following are some of the topics covered:
-          </p>
-          <ul>
-            <br />
-            <li>
-              Javascript fundamentals including data types and variables (const
-              and let)
-            </li>
-            <li>
-              ES6 syntax including arrow functions, spread operator, object
-              desctructuring
-            </li>
-            <li>
-              Working with arrays, objects, short circuiting && and ||, loops,
-              map(), filter(), find()
-            </li>
-            <li> Manipulating CSS through JS</li>
-            <li> How Javascript works behind the scene</li>
-            <li> DOM manipulation</li>
-            <li> Code refactoring and DRY principles</li>
-            <li>Asynchronous Javascript: promises, async/await, try/catch </li>
-          </ul>
-          <br />
-          <p>
-            In the meantime I improved my <strong>CSS</strong> skills too. I
-            read articles, watched youtube videos and completed various
-            challenges within the 'freecodecamp' website.
-            <br /> I soon started a &nbsp;
-            <strong>React course</strong> by Maximilian Schwarzmuller. The
-            course gave a brief overview of class-based components and focused
-            mostly on functional components. After completing the course, I have
-            made different projects using REACT only, such as &nbsp;{" "}
-          </p>
-          <a
-            style={{ textDecoration: "underline" }}
-            href="https://mimmofalena.github.io/dottoressa-marina/"
-          >
-            Doctor page.
-          </a>
-          &nbsp; <br />
-          To sum up my REACT skills:
-          <ul>
-            <li>Functional components</li>
-            <li>
-              Most used React Hooks (useState, useEffect, useRef, useContext)
-            </li>
-            <li>Sending http request to API using useEffect</li>
-            <li>Using props</li>
-            <li>working with main events and listening to user input</li>
-            <li>Handling forms with react</li>
-            <li>Working with lists and understaing "Keys"</li>
-            <li>Conditional rendering</li>
-            <li>Debugging react</li>
-            <li>Css modules</li>
-            <li>Making reusable components such as Buttons, Cards</li>
-            Redux (used in this{" "}
-            <a
-              href="https://mimmofalena.github.io/Todo-REDUX/"
-              style={{ textDecoration: "underline" }}
-            >
-              DEMO project
-            </a>
-            )
-          </ul>
-          <br />
-          <br />
-          Right after I finished React course and after some digging, I made
-          &nbsp;
-          <a
-            style={{ textDecoration: "underline" }}
-            href="https://mimmofalena.github.io/dottoressa-marina/"
-          >
-            this project
-          </a>
-          &nbsp; using and learning <strong>Material UI</strong>.
-          <br />I have recently completed a full comprehensive&nbsp;
-          <strong>NODE</strong> js course by Jonas Schmedtmann. During this
-          course I made&nbsp;
-          <a
-            style={{ textDecoration: "underline" }}
-            href="https://natours-domenico.herokuapp.com/"
-          >
-            Natours Project
-          </a>
-          &nbsp; which involves using the following technologies :
-          <br />
-          <br />
-          <ul>
-            <li> Node JS with Express</li>
-            <li> Mongo DB as database</li>
-            <li> PostMan to test API endpoints</li>
-            <li> Deployment on Heroku</li>
-          </ul>
-          <br />
-          Even though I have not made a full NODE JS app on my own yet, I have
-          implemented little back end functionality, for example using
-          nodemailer &nbsp;
-          <a
-            style={{ textDecoration: "underline" }}
-            href="https://mimmofalena.github.io/dottoressa-marina/"
-          >
-            in this project.
-          </a>
-          &nbsp;
+          <section class={classes.bio}>
+            <h2>About Me</h2>
+            <p>
+              I'm on a mission to create exceptional user experiences through
+              the power of code. My journey as a self-taught front-end developer
+              began in November 2020, fueled by a thirst for knowledge and a
+              passion for building beautiful, functional web applications.
+            </p>
+
+            <h3>Building a Strong Foundation</h3>
+            <ul>
+              <li>
+                Johns Hopkins University web development course: HTML, CSS,
+                JavaScript fundamentals.
+              </li>
+              <li>
+                Jonas Schmedtmann's "The complete Javascript Course: from zero
+                to expert": ES6 syntax, DOM manipulation, asynchronous
+                programming, code refactoring.
+              </li>
+            </ul>
+
+            <h3>Honing My Skills</h3>
+            <ul>
+              <li>
+                FreeCodeCamp challenges: Sharpened CSS skills through articles,
+                YouTube videos, and practice.
+              </li>
+              <li>
+                Maximilian Schwarzmüller's React course: Functional components,
+                React hooks, API interactions, reusable components (Doctor Page
+                project).
+              </li>
+            </ul>
+
+            <h3>Expanding My Horizons</h3>
+            <ul>
+              <li>
+                Material UI project: Explored advanced front-end development
+                techniques.
+              </li>
+              <li>
+                Jonas Schmedtmann's Node.js course: Node.js with Express,
+                MongoDB, Heroku deployment (Natours Project). Used Nodemailer in
+                individual projects.
+              </li>
+            </ul>
+
+            <h3>Professional Experience</h3>
+            <ul>
+              <li>Online payment enterprise: React, Redux, Sagas.</li>
+              <li>American company automotive project: Angular, RxJS.</li>
+            </ul>
+
+            <h3>Always Learning, Always Creating</h3>
+            <p>
+              In my free time, I experiment with Next.js and MongoDB in a
+              personal side project, pushing the boundaries of my full-stack
+              development skills.
+            </p>
+
+            <p>
+              I'm constantly seeking new challenges and opportunities to learn
+              and grow as a developer. If you're looking for a passionate and
+              dedicated individual with a diverse skillset and a commitment to
+              excellence, I'd love to connect!
+            </p>
+          </section>
         </div>
       </Card>
     </>

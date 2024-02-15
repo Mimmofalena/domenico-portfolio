@@ -130,3 +130,10 @@
     font-size: 3em;
   }
 }
+
+.bio h2,
+h3,
+li,
+p {
+  margin-bottom: 0.5rem;
+}

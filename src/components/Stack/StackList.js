@@ -1,4 +1,5 @@
 import React from "react";
+import classes from "./Stack.module.css";
 
 import StackItem from "./StackItem";
 import { DiReact } from "react-icons/di";
@@ -9,7 +10,9 @@ import { DiMongodb } from "react-icons/di";
 import { SiMui } from "react-icons/si";
 import { BiGitBranch } from "react-icons/bi";
 import { SiPostman } from "react-icons/si";
-import classes from "./Stack.module.css";
+import { TbBrandNextjs } from "react-icons/tb";
+import { FaAngular } from "react-icons/fa";
+import { FaBootstrap } from "react-icons/fa";
 
 import { DiCss3 } from "react-icons/di";
 import Card from "../../utils/Card";
@@ -130,6 +133,54 @@ const StackList = () => {
                 <SiPostman
                   style={{
                     color: "#f76935",
+                  }}
+                />
+              }
+            />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible delay={1.2}>
+            <StackItem
+              name="Nextjs"
+              icon={
+                <TbBrandNextjs
+                  style={{
+                    color: "#000",
+                  }}
+                />
+              }
+            />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible delay={1.4}>
+            <StackItem
+              name="Angular"
+              icon={
+                <FaAngular
+                  style={{
+                    color: "#d32f2f",
+                  }}
+                />
+              }
+            />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible delay={1.6}>
+            <StackItem
+              name="Angular Material"
+              icon={
+                <FaAngular
+                  style={{
+                    color: "#f76935",
+                  }}
+                />
+              }
+            />
+          </FadeInWhenVisible>
+          <FadeInWhenVisible delay={1.8}>
+            <StackItem
+              name="Bootstrap"
+              icon={
+                <FaBootstrap
+                  style={{
+                    color: "#4c0bce",
                   }}
                 />
               }

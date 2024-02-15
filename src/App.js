@@ -1,13 +1,11 @@
-import { Routes, Route, Link, Switch } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import classes from "./App.module.css";
 
 import Header from "./components/Header/Header";
 import PageContent from "./components/PageContent/PageContent";
 import Footer from "./components/Footer/Footer";
 import AboutDetail from "./components/About/AboutDetail";
-import ProjectsDetail from "./components/Projects/ProjectsDetail";
 import StackDetail from "./components/Stack/StackDetail";
-import { useEffect } from "react";
 
 import ProjectsList from "./components/Projects/ProjectsList";
 

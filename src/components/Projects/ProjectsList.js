@@ -2,7 +2,6 @@ import React from "react";
 import { projectsData } from "./projectsData";
 import ProjectsDetail from "./ProjectsDetail";
 import classes from "./Projects.module.css";
-import Card from "../../utils/Card";
 
 const ProjectsList = () => {
   return (

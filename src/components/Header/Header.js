@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import HeaderItem from "./HeaderItem";
 import classes from "./Header.module.css";
-import { Routes, Route, Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { CgDetailsMore } from "react-icons/cg";
 import HeaderList from "./HeaderList";
 

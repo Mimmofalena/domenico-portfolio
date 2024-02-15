@@ -1,13 +1,5 @@
 import React from "react";
 import classes from "./Projects.module.css";
-
-import pigGamePicture from "../../assets/pig-game.png";
-import todoAppImage from "../../assets/Todo-app-redux.png";
-import theBankistPicture from "../../assets/the-bankist.png";
-import maptyPicture from "../../assets/mapty.png";
-import DocLandingPagePicture from "../../assets/Doctor-landing-page.png";
-import natoursPicture from "../../assets/natours.png";
-import weatherPicture from "../../assets/weather-app.png";
 import { FaHammer } from "react-icons/fa";
 
 import weather from "../../assets/weather-app-new.jpg";
@@ -18,7 +10,6 @@ import todo from "../../assets/todo-app-redux-new.jpg";
 import Card from "../../utils/Card";
 import LinkButton from "../../utils/LinkButton";
 import { motion } from "framer-motion";
-import ProjectsList from "./ProjectsList";
 
 const Projects = () => {
   return (
@@ -110,45 +101,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
-{
-  /* <li className={classes.listItem}>
-          <h4 className={classes.linkTitle}>Natours</h4>
-          <a href="https://natours-domenico.herokuapp.com/">
-          <img
-          className={classes.itemImg}
-              src={natoursPicture}
-              alt="Tour booking app"
-            />
-          </a>
-        </li> */
-}
-{
-  /* <li className={classes.listItem}>
-          <h4 className={classes.linkTitle}>Natours</h4>
-          <a href="https://natours-domenico.herokuapp.com/">
-            <img
-              className={classes.itemImg}
-              src={natoursPicture}
-              alt="Tour booking app"
-            />
-          </a>
-        </li>
-        
-        <li className={classes.listItem}>
-          <h4 className={classes.linkTitle}>The Bankist</h4>
-          <a href="https://mimmofalena.github.io/The-bankist/">
-            <img
-              className={classes.itemImg}
-              src={theBankistPicture}
-              alt="Bank app"
-            />
-          </a>
-        </li>
-        <li className={classes.listItem}>
-          <h4 className={classes.linkTitle}>Mapty</h4>
-          <a href="https://mimmofalena.github.io/Mapty/">
-            <img className={classes.itemImg} src={maptyPicture} alt="Mapty" />
-          </a>
-        </li> */
-}

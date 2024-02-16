@@ -1,31 +1,30 @@
 .container {
-  /* background-image: linear-gradient(90deg, var(--primary), #8cc5c1); */
-  background-color: var(--primary);
-  /* min-height: 50px; */
+  background-color: var(--tertiary-color-bg);
+  color: var(--tertiaty-color-font);
   min-height: 50px;
   margin-top: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: auto;
-  /* position: absolute;
-  bottom: 0;
-  width: 100%; */
 }
+
+.container p {
+  margin: 0;
+}
+
 .containerCopyright {
   display: flex;
   align-items: center;
-  margin: 0 0 0 0.5rem;
 }
 .containerIcons {
   display: flex;
   align-items: center;
-  margin: 0 0.5rem 0 0;
 }
 .icon {
   font-size: 1.5rem;
 }
 .copy {
   font-size: 1.5rem;
-  margin: 0 0.5rem 0 0;
+  margin-right: 0.5rem;
 }

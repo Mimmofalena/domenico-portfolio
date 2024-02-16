@@ -9,18 +9,55 @@ const Timeline = () => {
 
       <FadeInWhenVisible delay={0.2}>
         <li>
-          <div className={classes["direction-r"]}>
+          <div className={classes["direction-l"]}>
             <div className={classes["flag-wrapper"]}>
               <span className={classes.hexa}></span>
               <span className={classes.flag}>Current</span>
+              <span className={classes["time-wrapper"]}>
+                <span className={classes.time}>2024</span>
+              </span>
+            </div>
+            <div className={classes.desc}>
+              Working for an IT consulting company in an American automotive
+              project using Angular and continuing learning and making side
+              projects in React, Nextjs and MongoDB.
+            </div>
+          </div>
+        </li>
+      </FadeInWhenVisible>
+      <FadeInWhenVisible delay={0.2}>
+        <li>
+          <div className={classes["direction-r"]}>
+            <div className={classes["flag-wrapper"]}>
+              <span className={classes.hexa}></span>
+              <span className={classes.flag}>
+                Electronic payment enterprise
+              </span>
               <span className={classes["time-wrapper"]}>
                 <span className={classes.time}>2022</span>
               </span>
             </div>
             <div className={classes.desc}>
-              Continuing learning web development focusing mainly on the front
-              end and approaching back end too. Still working as a full time
-              nurse
+              Worked in an electronic payments enterprise as a front end
+              developer. Developed new features and mantained existing code
+              across different projects in React.
+            </div>
+          </div>
+        </li>
+      </FadeInWhenVisible>
+      <FadeInWhenVisible delay={0.2}>
+        <li>
+          <div className={classes["direction-l"]}>
+            <div className={classes["flag-wrapper"]}>
+              <span className={classes.hexa}></span>
+              <span className={classes.flag}>Developed IT skills</span>
+              <span className={classes["time-wrapper"]}>
+                <span className={classes.time}>2021</span>
+              </span>
+            </div>
+            <div className={classes.desc}>
+              Refreshed IT foundation and studied trending technologies such as
+              React and ES6.
             </div>
           </div>
         </li>
@@ -28,7 +65,7 @@ const Timeline = () => {
 
       <FadeInWhenVisible delay={0.2}>
         <li>
-          <div className={classes["direction-l"]}>
+          <div className={classes["direction-r"]}>
             <div className={classes["flag-wrapper"]}>
               <span className={classes.hexa}></span>
               <span className={classes.flag}>Back to Italy</span>
@@ -46,7 +83,7 @@ const Timeline = () => {
       </FadeInWhenVisible>
       <FadeInWhenVisible delay={0.2}>
         <li>
-          <div className={classes["direction-r"]}>
+          <div className={classes["direction-l"]}>
             <div className={classes["flag-wrapper"]}>
               <span className={classes.hexa}></span>
               <span className={classes.flag}>Australia</span>
@@ -63,7 +100,7 @@ const Timeline = () => {
       </FadeInWhenVisible>
       <FadeInWhenVisible delay={0.2}>
         <li>
-          <div className={classes["direction-l"]}>
+          <div className={classes["direction-r"]}>
             <div className={classes["flag-wrapper"]}>
               <span className={classes.hexa}></span>
               <span className={classes.flag}>Moved to the UK</span>
@@ -83,7 +120,7 @@ const Timeline = () => {
       </FadeInWhenVisible>
       <FadeInWhenVisible delay={0.2}>
         <li>
-          <div className={classes["direction-r"]}>
+          <div className={classes["direction-l"]}>
             <div className={classes["flag-wrapper"]}>
               <span className={classes.hexa}></span>
               <span className={classes.flag}>Nursing Degree</span>
@@ -100,7 +137,7 @@ const Timeline = () => {
 
       <FadeInWhenVisible delay={0.2}>
         <li>
-          <div className={classes["direction-l"]}>
+          <div className={classes["direction-r"]}>
             <div className={classes["flag-wrapper"]}>
               <span className={classes.hexa}></span>
               <span className={classes.flag}>Italian Army</span>
@@ -118,7 +155,7 @@ const Timeline = () => {
 
       <FadeInWhenVisible delay={0.2}>
         <li>
-          <div className={classes["direction-r"]}>
+          <div className={classes["direction-l"]}>
             <div className={classes["flag-wrapper"]}>
               <span className={classes.hexa}></span>
               <span className={classes.flag}>Finished High School</span>

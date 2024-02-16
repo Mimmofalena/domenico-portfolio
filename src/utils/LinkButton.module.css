@@ -1,7 +1,9 @@
 .link {
   margin: 0 auto;
   text-align: center;
-  background-color: var(--tertiary);
+  background-color: var(--tertiary-color-bg);
+  color: var(--tertiaty-color-font);
+  border: 1px solid var(--secondary-color-bg);
   border-radius: 10px;
   line-height: 1.2em;
   width: 200px !important;
@@ -11,7 +13,8 @@
 }
 
 .link:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--primary-color-bg);
+  color: var(--primary-color-font);
   transform: scale(1.1);
 }
 

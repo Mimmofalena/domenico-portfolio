@@ -3,7 +3,7 @@
   font-size: 20px;
 }
 .container {
-  background-color: var(--primary);
+  background-color: var(--tertiary-color-bg);
   padding: 4rem 0;
   position: relative;
 }
@@ -53,69 +53,57 @@
   fill: #ffffff;
 }
 
-
-
 .container > h3 {
   text-align: center;
 }
 
-
-
-
 .iconContainer {
   font-size: 5rem;
+  color: var(--secondary-color-bg);
 }
 
 .gridContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap:1rem;
+  gap: 1rem;
 }
 
-
-.gridContainer > div > a> img {
+.gridContainer > div > a > img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   /* border-radius: 10px; */
   box-shadow: 1px 2px 4px rgba(32, 31, 31, 0.4);
-  
 }
 .gridContainer > div > a > img:hover {
   opacity: 0.5;
   transition-duration: 0.3s;
 }
 
-
-
 /* DETAIL SECTION*/
 
 .detailTitle {
   text-align: center;
   margin: 1rem 0;
-
 }
 .containerDetail {
-
-display: flex;
-flex-wrap: wrap;
-gap: 1rem;
-
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 .listItem {
   display: grid;
-  grid-template-columns: repeat(2 ,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   padding: 1rem;
-
 }
 
 .itemImg {
-height: 100%;
-width: 100%;
-object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 
-box-shadow: 1px 2px 4px rgba(32, 31, 31, 0.5);
+  box-shadow: 1px 2px 4px rgba(32, 31, 31, 0.5);
 }
 .itemImg > img {
   /* border-radius: 10px; */
@@ -124,50 +112,39 @@ box-shadow: 1px 2px 4px rgba(32, 31, 31, 0.5);
   object-fit: cover;
 }
 
-
 .linkTitle {
   text-align: center;
   margin-bottom: 0.5rem;
 }
 
-
 .detailDescription {
   margin-bottom: 0.5rem;
-  
-  color: var(--primary); 
+
+  color: var(--primary);
 }
 
 .detailText {
-  
-    margin-bottom: 0.5rem;
-  
-  
+  margin-bottom: 0.5rem;
 }
-
 
 /* large tablet & small laptop styles */
 
 @media screen and (min-width: 960px) {
-
   .listContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-
- 
 }
 
 @media screen and (max-width: 960px) {
-    .gridContainer {
-      grid-template-columns: repeat(1, 1fr);
-    }
+  .gridContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 /* desktop styles */
 
 @media screen and (max-width: 1200px) {
-
- .listItem {
-   grid-template-columns: repeat(1, 1fr);
- }
-
+  .listItem {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

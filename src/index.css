@@ -20,10 +20,15 @@ body {
 } */
 
 :root {
-  --primary: #7faaeb;
-  --secondary: #eb8f7f;
-  --tertiary: #ebc57f;
-  --quarto: rgb(234, 226, 183);
+  --primary-color-bg: #fff;
+  --secondary-color-bg: #dc3545;
+  --tertiary-color-bg: #000;
+  --quarto-color-bg: #fff;
+
+  --primary-color-font: #000;
+  --secondary-color-font: #fff;
+  --tertiaty-color-font: #fff;
+  --quarto-color-font: #000;
 }
 
 /* RESET */

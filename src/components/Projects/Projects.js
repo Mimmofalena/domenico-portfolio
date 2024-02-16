@@ -28,7 +28,6 @@ const Projects = () => {
         </svg>
       </div>
       <Card>
-        {/* <h2 className={classes.title}>My Projects</h2> */}
         <div className={classes.iconContainer}>
           <FaHammer />
         </div>

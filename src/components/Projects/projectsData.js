@@ -33,7 +33,7 @@ export const projectsData = [
     src: todo,
     alt: "todo app",
     descriptionProject: ` Todo app to keep track of what you need to do. You can add, remove and mark todos as completed.
-    This app uses local storage to persist data.`,
+    This app uses local storage to persist data. I tried out redux as an alternative of usual Context used in React.`,
     descriptionTech: "REACT, HTML, CSS, JS, REDUX, LOCALSTORAGE ",
   },
   {
@@ -41,7 +41,7 @@ export const projectsData = [
     href: "https://mimmofalena.github.io/weather-app/",
     src: weather,
     alt: "Weather app",
-    descriptionProject: `Weather forecast app, showcasing main weather information on a searched location.`,
+    descriptionProject: `Simple Weather forecast app, showcasing main weather information on a searched location. With this project I improved my knowledge of calling api and using REST services`,
     descriptionTech: "HTML, CSS, JS, AJAX, OPEN WEATHER API, COUNTRY FLAGS API",
   },
   {
@@ -49,7 +49,7 @@ export const projectsData = [
     href: "https://mimmofalena.github.io/pig-game/",
     src: pig,
     alt: "game app",
-    descriptionProject: `Turn based game 1 vs 1. Try you manage to get to 100 points before you opponent! Want to challenge a friend? Try it out!  `,
+    descriptionProject: `One my first project. Although not fancy, it helped me to improve basic javascript knowledge. This is a turn based game 1 vs 1. Try you manage to get to 100 points before you opponent! Want to challenge a friend? Try it out!  `,
     descriptionTech: "HTML, CSS, JS",
   },
 ];

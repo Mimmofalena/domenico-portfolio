@@ -46,13 +46,13 @@ const CarouselComponent = ({ items }) => {
               <Box
                 component="img"
                 sx={{
-                  height: 300,
+                  height: 400,
                   display: "block",
                   maxWidth: "100%",
                   overflow: "hidden",
                   width: "100%",
                   objectFit: "cover",
-                  objectPosition: "center top",
+                  objectPosition: "left center",
                 }}
                 src={item.image}
                 alt={`Slide ${index}`}

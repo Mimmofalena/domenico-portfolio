@@ -140,6 +140,10 @@
   .gridContainer {
     grid-template-columns: repeat(1, 1fr);
   }
+  :global(.slick-prev),
+  :global(.slick-next) {
+    display: none !important;
+  }
 }
 /* desktop styles */
 
@@ -154,9 +158,9 @@
 }
 
 :global(.slick-prev) {
-  left: -15px; /* Adjust this value */
+  left: -15px !important; /* Adjust this value */
 }
 
 :global(.slick-next) {
-  right: -15px; /* Adjust this value */
+  right: -15px !important; /* Adjust this value */
 }

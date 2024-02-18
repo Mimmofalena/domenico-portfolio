@@ -5,7 +5,7 @@ import { FaHammer } from "react-icons/fa";
 import weather from "../../assets/weather-app-new.jpg";
 import doc from "../../assets/doc-1.png";
 import pig from "../../assets/pig-game.jpg";
-import todo from "../../assets/todo-app-redux-new.jpg";
+import todo from "../../assets/todo-app-redux-new.png";
 
 import Card from "../../utils/Card";
 import LinkButton from "../../utils/LinkButton";

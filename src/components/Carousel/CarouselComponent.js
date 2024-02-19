@@ -56,7 +56,15 @@ const CarouselComponent = ({ items }) => {
                 src={item.image}
                 alt={`Slide ${index}`}
               />
-              <Box sx={{ padding: theme.spacing(2), backgroundColor: "#DDD" }}>
+              <Box
+                sx={{
+                  padding: theme.spacing(2),
+                  backgroundColor: "#000",
+                  color: "#FFF",
+                  border: "1px solid #FFF",
+                  boxShadow: "2px 4px 8px #333",
+                }}
+              >
                 <p>{item.description}</p>
               </Box>
             </Paper>

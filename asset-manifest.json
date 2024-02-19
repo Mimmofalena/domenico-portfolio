@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/domenico-portfolio/static/css/main.d7170e5b.css",
-    "main.js": "/domenico-portfolio/static/js/main.3ab5b120.js",
+    "main.js": "/domenico-portfolio/static/js/main.7f05f047.js",
     "static/js/453.057d4e85.chunk.js": "/domenico-portfolio/static/js/453.057d4e85.chunk.js",
     "static/media/immagine-curriculum.jpg": "/domenico-portfolio/static/media/immagine-curriculum.34b1c9abd0cae4fc3e28.jpg",
     "static/media/doctor-webapp.png": "/domenico-portfolio/static/media/doctor-webapp.145f4ae0c4590f79c231.png",
@@ -14,11 +14,11 @@
     "static/media/slick.woff": "/domenico-portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/domenico-portfolio/index.html",
     "main.d7170e5b.css.map": "/domenico-portfolio/static/css/main.d7170e5b.css.map",
-    "main.3ab5b120.js.map": "/domenico-portfolio/static/js/main.3ab5b120.js.map",
+    "main.7f05f047.js.map": "/domenico-portfolio/static/js/main.7f05f047.js.map",
     "453.057d4e85.chunk.js.map": "/domenico-portfolio/static/js/453.057d4e85.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d7170e5b.css",
-    "static/js/main.3ab5b120.js"
+    "static/js/main.7f05f047.js"
   ]
 }

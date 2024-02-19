@@ -256,7 +256,7 @@ const StackDetail = () => {
 
             <h3>Professional Experience</h3>
             <ul>
-              <li>Online payment enterprise: React, Redux, Sagas.</li>
+              <li>Nexi Online payment enterprise: React, Redux, Sagas.</li>
               <li>American company automotive project: Angular, RxJS.</li>
             </ul>
 

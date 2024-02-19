@@ -1,24 +1,10 @@
 import React from "react";
 import classes from "./Stack.module.css";
-
-import StackItem from "./StackItem";
-import { DiReact } from "react-icons/di";
-import { DiJavascript } from "react-icons/di";
-import { DiHtml5 } from "react-icons/di";
-import { DiNodejsSmall } from "react-icons/di";
-import { DiMongodb } from "react-icons/di";
-import { SiMui } from "react-icons/si";
-import { BiGitBranch } from "react-icons/bi";
-import { SiPostman } from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
-import { FaAngular } from "react-icons/fa";
-import { FaBootstrap } from "react-icons/fa";
-
-import { DiCss3 } from "react-icons/di";
 import Card from "../../utils/Card";
 import LinkButton from "../../utils/LinkButton";
 import FadeInWhenVisible from "../../utils/FadeInWhenVisible";
 import { GrMonitor } from "react-icons/gr";
+import { Container, Paper, Typography } from "@mui/material";
 
 const StackList = () => {
   return (
@@ -27,166 +13,40 @@ const StackList = () => {
         <div className={classes.iconContainer}>
           <GrMonitor className={classes.iconMonitor} />
         </div>
-
-        <ul className={classes.gridList}>
+        <Container component="main">
           <FadeInWhenVisible delay={0.2}>
-            <StackItem
-              className={classes.javascript}
-              name="Js"
-              icon={
-                <DiJavascript
-                  style={{
-                    color: "#efd81d",
-                  }}
-                />
-              }
-            />
+            <Paper style={{ padding: "20px", marginTop: "20px" }}>
+              <Typography variant="h5" gutterBottom>
+                Tech Stack
+              </Typography>
+              <Typography variant="body1" gutterBottom>
+                As an enthusiastic web developer with two years of experience, I
+                excel in transforming design mockups into fully-functional
+                websites. My skill set includes a strong foundation in
+                JavaScript, HTML, and CSS, enabling me to develop responsive and
+                interactive web interfaces with precision. I am proficient in
+                React and Next.js, which aids in crafting efficient and engaging
+                user interfaces. Through my experience with SASS, I am adept at
+                applying advanced styling techniques to align with given design
+                specifications.
+              </Typography>
+              <Typography variant="body1" gutterBottom>
+                My backend capabilities include Node.js and MongoDB, ensuring
+                robust server-side functionality and effective database
+                management. While I may not specialize in original design
+                creation, my ability to utilize tools like Material-UI, Angular
+                Material, and Bootstrap allows me to faithfully recreate and
+                implement designs with a keen eye for detail. Proficient in Git
+                for version control and collaboration, and skilled in using
+                Postman for API testing, I ensure that the technical aspects of
+                web development are handled with utmost efficiency. Furthermore,
+                my experience with Angular empowers me to provide comprehensive
+                full-stack development solutions, turning design concepts into
+                reality.
+              </Typography>
+            </Paper>
           </FadeInWhenVisible>
-          <FadeInWhenVisible delay={0.2}>
-            <StackItem
-              name="HTML"
-              icon={
-                <DiHtml5
-                  style={{
-                    color: "#e96228",
-                  }}
-                />
-              }
-            />
-          </FadeInWhenVisible>
-          <FadeInWhenVisible delay={0.4}>
-            <StackItem
-              name="CSS"
-              icon={
-                <DiCss3
-                  style={{
-                    color: "#2862e9",
-                  }}
-                />
-              }
-            />
-          </FadeInWhenVisible>
-          <FadeInWhenVisible delay={0.4}>
-            <StackItem
-              name="React"
-              icon={
-                <DiReact
-                  style={{
-                    color: "#03d1f7",
-                  }}
-                />
-              }
-            />
-          </FadeInWhenVisible>
-          <FadeInWhenVisible delay={0.6}>
-            <StackItem
-              name="Node"
-              icon={
-                <DiNodejsSmall
-                  style={{
-                    color: "#7cb701",
-                  }}
-                />
-              }
-            />
-          </FadeInWhenVisible>
-          <FadeInWhenVisible delay={0.6}>
-            <StackItem
-              name="Mongo"
-              icon={
-                <DiMongodb
-                  style={{
-                    color: "#138d4d",
-                  }}
-                />
-              }
-            />
-          </FadeInWhenVisible>
-          <FadeInWhenVisible delay={0.8}>
-            <StackItem
-              name="Material"
-              icon={
-                <SiMui
-                  style={{
-                    color: "#007bf7",
-                  }}
-                />
-              }
-            />
-          </FadeInWhenVisible>
-          <FadeInWhenVisible delay={0.8}>
-            <StackItem
-              name="Git"
-              icon={
-                <BiGitBranch
-                  style={{
-                    color: "#e84d31",
-                  }}
-                />
-              }
-            />
-          </FadeInWhenVisible>
-          <FadeInWhenVisible delay={1}>
-            <StackItem
-              name="PostMan"
-              icon={
-                <SiPostman
-                  style={{
-                    color: "#f76935",
-                  }}
-                />
-              }
-            />
-          </FadeInWhenVisible>
-          <FadeInWhenVisible delay={1.2}>
-            <StackItem
-              name="Nextjs"
-              icon={
-                <TbBrandNextjs
-                  style={{
-                    color: "#000",
-                  }}
-                />
-              }
-            />
-          </FadeInWhenVisible>
-          <FadeInWhenVisible delay={1.4}>
-            <StackItem
-              name="Angular"
-              icon={
-                <FaAngular
-                  style={{
-                    color: "#d32f2f",
-                  }}
-                />
-              }
-            />
-          </FadeInWhenVisible>
-          <FadeInWhenVisible delay={1.6}>
-            <StackItem
-              name="Angular Material"
-              icon={
-                <FaAngular
-                  style={{
-                    color: "#f76935",
-                  }}
-                />
-              }
-            />
-          </FadeInWhenVisible>
-          <FadeInWhenVisible delay={1.8}>
-            <StackItem
-              name="Bootstrap"
-              icon={
-                <FaBootstrap
-                  style={{
-                    color: "#4c0bce",
-                  }}
-                />
-              }
-            />
-          </FadeInWhenVisible>
-        </ul>
+        </Container>
         <LinkButton to="/domenico-portfolio/stack" />
       </Card>
     </div>

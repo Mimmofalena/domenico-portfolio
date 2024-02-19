@@ -3,7 +3,6 @@ import Slider from "react-slick";
 import Paper from "@mui/material/Paper";
 import { useTheme } from "@mui/material/styles";
 import { Box } from "@mui/system";
-import { Typography } from "@mui/material";
 
 const CarouselComponent = ({ items }) => {
   const theme = useTheme();
@@ -57,7 +56,7 @@ const CarouselComponent = ({ items }) => {
                 src={item.image}
                 alt={`Slide ${index}`}
               />
-              <Box sx={{ padding: theme.spacing(2) }}>
+              <Box sx={{ padding: theme.spacing(2), backgroundColor: "#DDD" }}>
                 <p>{item.description}</p>
               </Box>
             </Paper>

@@ -9,7 +9,6 @@ const PageContent = () => {
   return (
     <div className={classes.container}>
       <About />
-
       <Projects />
       <StackList />
       <Contact />

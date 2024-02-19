@@ -29,11 +29,6 @@ const Welcome = () => {
                   }}
                 />
               </h2>
-              {/* <img
-            className={classes.image}
-            src={domImgCover}
-            alt="Ragazzo con vista nei tetti di Palermo"
-          /> */}
             </div>
           </motion.div>
         </div>

@@ -52,7 +52,7 @@ const CarouselComponent = ({ items }) => {
                   overflow: "hidden",
                   width: "100%",
                   objectFit: "cover",
-                  objectPosition: "left center",
+                  // objectPosition: "left center",
                 }}
                 src={item.image}
                 alt={`Slide ${index}`}

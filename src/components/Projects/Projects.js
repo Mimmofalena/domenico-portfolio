@@ -57,9 +57,18 @@ const Projects = () => {
           </svg>
         </div>
         <Card>
-          <div className={classes.iconContainer}>
+          {/* <div className={classes.iconContainer}>
             <FaHammer />
-          </div>
+          </div> */}
+          <p style={{ color: "#DDD", padding: "1rem" }}>
+            This section dedicated to my personal and academic projects.&nbsp;
+            In this area, I am pleased to share with you a selection of works
+            that I have created independently or during my educational journey.
+            &nbsp;I would like to clarify that projects carried out for the
+            companies I have collaborated with are not included in this space. I
+            deeply respect the confidentiality and privacy aspects, therefore
+            such works remain confidential and cannot be publicly displayed.
+          </p>
           <CarouselComponent items={carouselItems} autoplay="false" />
           <LinkButton to="/domenico-portfolio/projects" />
         </Card>

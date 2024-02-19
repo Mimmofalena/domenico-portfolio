@@ -9,42 +9,210 @@ export const projectsData = [
     href: "https://mimmofalena.github.io/dottoressa-marina/",
     src: doc,
     alt: "Doctor",
-    descriptionProject: `   GP Doctor landing page. The aim of this project is to give essential
-        informations, such as visiting time, COVID news and useful links. Hence,
-        patients do no need to call the doctor all the time for minor problems.
-        Patients can find the doctor contact details or send an email straight
-        through the app. There is also google maps API to show where the GP
-        practice is located. Ongoing changes: Awaiting for
-        last content from the owner and the site will be live soon. The backend
-        is working perfectly on development, I will need to host the backend on
-        a server.`,
+    descriptionProject: (
+      <div>
+        <h3>Project Overview: GP Doctor Landing Page&nbsp;</h3>
+        <p>
+          The GP Doctor landing page is designed to streamline patient-doctor
+          communication by providing key information at a glance. This
+          innovative platform is not only user-friendly but also significantly
+          reduces the need for direct calls to the doctor for minor queries.,
+        </p>
+      </div>
+    ),
 
-    descriptionTech:
-      "REACT, HTML, CSS, JS, NODEJS, NODEMAILER, FORMIK, MATERIAL UI, FRAMER MOTION, GOOGLE MAPS API, ",
+    descriptionTech: (
+      <div>
+        <h4>Technologies Employed:</h4>
+        <br />
+        <ul>
+          <li>Frontend Development: React, HTML, CSS, JavaScript</li>
+          <li>Backend Development: Node.js</li>
+          <li>Email Integration: Nodemailer</li>
+          <li>Form Handling: Formik</li>
+          <li>UI Design: Material-UI</li>
+          <li>Animation and Interaction: Framer Motion</li>
+          <li>Location Services: Google Maps API</li>
+        </ul>
+        <p>
+          This combination of cutting-edge technologies and thoughtful design
+          elements makes the GP Doctor landing page a powerful tool in modern
+          healthcare communication, enhancing the overall experience for both
+          patients and healthcare providers.
+        </p>
+      </div>
+    ),
   },
   {
     title: "Todo app with redux",
     href: "https://mimmofalena.github.io/Todo-REDUX/",
     src: todo,
     alt: "todo app",
-    descriptionProject: ` Todo app to keep track of what you need to do. You can add, remove and mark todos as completed.
-    This app uses local storage to persist data. I tried out redux as an alternative of usual Context used in React.`,
-    descriptionTech: "REACT, HTML, CSS, JS, REDUX, LOCALSTORAGE ",
+    descriptionProject: (
+      <div>
+        <h3>Project Overview: Advanced Todo Application&nbsp;</h3>
+        <p>
+          Our Advanced Todo Application is a sophisticated tool designed to
+          enhance personal productivity and task management. With an intuitive
+          interface, this app allows users to efficiently organize their daily
+          tasks, ensuring nothing important gets overlooked.,
+        </p>
+      </div>
+    ),
+    descriptionTech: (
+      <div>
+        <h4>Technologies Employed:</h4>
+        <br />
+        <ul>
+          <li>
+            Core Framework: React, offering a seamless user interface experience
+          </li>
+          <li>
+            Styling: HTML and CSS for structured and visually appealing design
+          </li>
+          <li>Scripting: JavaScript for dynamic and interactive features</li>
+          <li>
+            State Management: Redux, providing a predictable state container for
+            JavaScript apps
+          </li>
+          <li>
+            Data Storage: LocalStorage, enabling the app to maintain state even
+            after the browser is closed
+          </li>
+        </ul>
+        <p>
+          This project not only serves as a practical tool for end-users but
+          also as a testament to our commitment to leveraging cutting-edge
+          technologies to deliver efficient and effective solutions.
+        </p>
+      </div>
+    ),
   },
   {
     title: "Weather App",
     href: "https://mimmofalena.github.io/weather-app/",
     src: weather,
     alt: "Weather app",
-    descriptionProject: `Simple Weather forecast app, showcasing main weather information on a searched location. With this project I improved my knowledge of calling api and using REST services`,
-    descriptionTech: "HTML, CSS, JS, AJAX, OPEN WEATHER API, COUNTRY FLAGS API",
+    descriptionProject: (
+      <div>
+        <h3>
+          Project Overview: Interactive Weather Forecast Application&nbsp;
+        </h3>
+        <p>
+          The Interactive Weather Forecast Application is an elegantly designed
+          tool that provides real-time weather information for any searched
+          location. This application stands as a testament to the power of
+          modern web technologies in delivering critical information in an
+          accessible format.
+        </p>
+        <h4>Key Features:</h4>
+        <br />
+        <ul>
+          <li>
+            <strong>Real-Time Weather Data:</strong> Users can obtain up-to-date
+            weather forecasts for any location of their choice, including
+            temperature, humidity, wind speed, and more.
+          </li>
+          <li>
+            <strong>Search Functionality:</strong> The app allows for easy
+            searching of locations, instantly displaying the relevant weather
+            details.
+          </li>
+          <li>
+            <strong>Enhanced Learning Experience:</strong> This project was a
+            significant step in advancing my skills in API integration and
+            RESTful service utilization, demonstrating a deeper understanding of
+            data fetching and backend communication.
+          </li>
+        </ul>
+      </div>
+    ),
+    descriptionTech: (
+      <div>
+        <h4>Technologies Employed:</h4>
+        <ul>
+          <li>
+            Frontend Development: Structured with HTML and styled using CSS for
+            a clean and user-friendly interface.
+          </li>
+          <li>
+            Client-Side Scripting: JavaScript, enhancing the application with
+            dynamic content and interactive elements.
+          </li>
+          <li>
+            API Integration: AJAX for asynchronous web requests, coupled with
+            Open Weather API for accurate weather data and Country Flags API for
+            location-specific details.
+          </li>
+        </ul>
+        <p>
+          This application not only serves as a practical tool for users seeking
+          weather information but also showcases my growing expertise in API
+          integration and interactive web development.
+        </p>
+      </div>
+    ),
   },
   {
     title: "Pig game",
     href: "https://mimmofalena.github.io/pig-game/",
     src: pig,
     alt: "game app",
-    descriptionProject: `One my first project. Although not fancy, it helped me to improve basic javascript knowledge. This is a turn based game 1 vs 1. Try you manage to get to 100 points before you opponent! Want to challenge a friend? Try it out!  `,
-    descriptionTech: "HTML, CSS, JS",
+    descriptionProject: (
+      <div>
+        <h3>Project Overview: Turn-Based 1v1 Challenge Game&nbsp;</h3>
+        <p>
+          As one of my initial forays into web development, the Turn-Based 1v1
+          Challenge Game represents a foundational step in my journey as a
+          developer. While maintaining a straightforward design, this project
+          was instrumental in enhancing my proficiency in basic JavaScript,
+          HTML, and CSS.
+        </p>
+        <h4>Game Overview:</h4>
+        <br />
+        <ul>
+          <li>
+            <strong>Engaging Gameplay: </strong> The game is a simple yet
+            captivating turn-based competition where two players vie to reach
+            100 points first. It's an excellent test of strategy and luck.
+          </li>
+          <li>
+            <strong>Friendly Competition:</strong> Designed with interactivity
+            in mind, it offers a fun way to challenge a friend in a
+            light-hearted battle of points.
+          </li>
+          <li>
+            <strong>Skill Development:</strong> This project was pivotal in
+            solidifying my understanding of JavaScript fundamentals. It allowed
+            me to explore the basics of game logic, user interaction, and
+            dynamic web content.
+          </li>
+        </ul>
+      </div>
+    ),
+    descriptionTech: (
+      <div>
+        <h4>Technologies Employed:</h4>
+        <ul>
+          <li>
+            HTML for the basic structure, offering a clean and straightforward
+            user interface.
+          </li>
+          <li>
+            CSS is used to create an engaging visual experience, making the game
+            not only functional but also aesthetically pleasing.
+          </li>
+          <li>
+            JavaScript forms the backbone of the game's mechanics, handling
+            turn-based actions, score calculations, and overall game logic.
+          </li>
+        </ul>
+        <p>
+          This project, while simple in its nature, was a significant step in my
+          development journey, laying the groundwork for more complex projects
+          and solidifying my understanding of essential web technologies.
+        </p>
+      </div>
+    ),
   },
 ];

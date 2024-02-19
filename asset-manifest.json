@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/domenico-portfolio/static/css/main.d7170e5b.css",
-    "main.js": "/domenico-portfolio/static/js/main.3bb0dadf.js",
+    "main.js": "/domenico-portfolio/static/js/main.19603ed4.js",
     "static/js/453.057d4e85.chunk.js": "/domenico-portfolio/static/js/453.057d4e85.chunk.js",
-    "static/media/weather-app-new.jpg": "/domenico-portfolio/static/media/weather-app-new.055506a92569f51d389d.jpg",
-    "static/media/doc-1.png": "/domenico-portfolio/static/media/doc-1.58a0bf14cbfdb424980c.png",
-    "static/media/pig-game.jpg": "/domenico-portfolio/static/media/pig-game.3daca5546b00dc402af8.jpg",
     "static/media/immagine-curriculum.jpg": "/domenico-portfolio/static/media/immagine-curriculum.34b1c9abd0cae4fc3e28.jpg",
-    "static/media/todo-app-redux-new.png": "/domenico-portfolio/static/media/todo-app-redux-new.25b6d6bc0d3fc30a5319.png",
+    "static/media/doctor-webapp.png": "/domenico-portfolio/static/media/doctor-webapp.145f4ae0c4590f79c231.png",
+    "static/media/pig-game.png": "/domenico-portfolio/static/media/pig-game.fa7e96c90c149789570e.png",
+    "static/media/todoapp-with-redux.png": "/domenico-portfolio/static/media/todoapp-with-redux.75ebd13c36c453d22961.png",
+    "static/media/weather-app.png": "/domenico-portfolio/static/media/weather-app.5ce6a98d8addaae55f15.png",
     "static/media/slick.svg": "/domenico-portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/domenico-portfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/domenico-portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/domenico-portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/domenico-portfolio/index.html",
     "main.d7170e5b.css.map": "/domenico-portfolio/static/css/main.d7170e5b.css.map",
-    "main.3bb0dadf.js.map": "/domenico-portfolio/static/js/main.3bb0dadf.js.map",
+    "main.19603ed4.js.map": "/domenico-portfolio/static/js/main.19603ed4.js.map",
     "453.057d4e85.chunk.js.map": "/domenico-portfolio/static/js/453.057d4e85.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d7170e5b.css",
-    "static/js/main.3bb0dadf.js"
+    "static/js/main.19603ed4.js"
   ]
 }

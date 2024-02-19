@@ -1,6 +1,6 @@
 import weather from "../../assets/weather-app.png";
 import doc from "../../assets/doctor-webapp.png";
-import pig from "../../assets/pig-game.jpg";
+import pig from "../../assets/pig-game.png";
 import todo from "../../assets/todoapp-with-redux.png";
 
 export const projectsData = [

@@ -26,6 +26,7 @@ const StackDetail = () => {
   }, [location]);
   return (
     <>
+      <h2 className={classes.detailTitle}>Tech Stack</h2>
       <div className={classes.container}>
         <div className={classes["custom-shape-divider-bottom-1647593320"]}>
           <svg
@@ -40,7 +41,6 @@ const StackDetail = () => {
             ></path>
           </svg>
         </div>
-        <h2 className={classes.detailTitle}>Tech Stack</h2>
 
         <Card>
           <ul className={classes.gridList}>

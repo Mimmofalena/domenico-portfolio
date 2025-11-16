@@ -20,29 +20,28 @@ const StackList = () => {
                 Tech Stack
               </Typography>
               <Typography variant="body1" gutterBottom>
-                As an enthusiastic web developer with two years of experience, I
-                excel in transforming design mockups into fully-functional
-                websites. My skill set includes a strong foundation in
-                JavaScript, HTML, and CSS, enabling me to develop responsive and
-                interactive web interfaces with precision. I am proficient in
-                React and Next.js, which aids in crafting efficient and engaging
-                user interfaces. Through my experience with SASS, I am adept at
-                applying advanced styling techniques to align with given design
-                specifications.
+                As an experienced web developer with expertise in full-stack
+                development, I excel in transforming design mockups into
+                fully-functional websites. My skill set includes a strong
+                foundation in JavaScript, HTML, and CSS, enabling me to develop
+                responsive and interactive web interfaces with precision. I am
+                proficient in React and Next.js for frontend development, and
+                Angular for enterprise applications. Through my experience with
+                SASS, I am adept at applying advanced styling techniques to
+                align with given design specifications.
               </Typography>
               <Typography variant="body1" gutterBottom>
-                My backend capabilities include Node.js and MongoDB, ensuring
-                robust server-side functionality and effective database
-                management. While I may not specialize in original design
-                creation, my ability to utilize tools like Material-UI, Angular
-                Material, and Bootstrap allows me to faithfully recreate and
-                implement designs with a keen eye for detail. Proficient in Git
-                for version control and collaboration, and skilled in using
-                Postman for API testing, I ensure that the technical aspects of
-                web development are handled with utmost efficiency. Furthermore,
-                my experience with Angular empowers me to provide comprehensive
-                full-stack development solutions, turning design concepts into
-                reality.
+                My backend capabilities include Node.js, MongoDB, C#, .NET, and
+                Java, ensuring robust server-side functionality and effective
+                database management. Currently working on an automotive project
+                where I use Angular, Azure DevOps, C#, Java, Gen AI, and GitHub
+                Copilot, while managing project coordination and supporting the
+                development team. I utilize tools like Material-UI, Angular
+                Material, and Bootstrap to faithfully implement designs with a
+                keen eye for detail. Proficient in Git and Azure DevOps for
+                version control and collaboration, and skilled in using Postman
+                for API testing, I ensure that the technical aspects of web
+                development are handled with utmost efficiency.
               </Typography>
             </Paper>
           </FadeInWhenVisible>

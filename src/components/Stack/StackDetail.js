@@ -16,6 +16,12 @@ import { DiCss3 } from "react-icons/di";
 import { TbBrandNextjs } from "react-icons/tb";
 import { FaAngular } from "react-icons/fa";
 import { FaBootstrap } from "react-icons/fa";
+import { SiCsharp } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
+import { SiMicrosoftazure } from "react-icons/si";
+import { SiDotnet } from "react-icons/si";
+import { FaRobot } from "react-icons/fa";
+import { SiAzuredevops } from "react-icons/si";
 
 import FadeInWhenVisible from "../../utils/FadeInWhenVisible";
 
@@ -201,6 +207,78 @@ const StackDetail = () => {
                 }
               />
             </FadeInWhenVisible>
+            <FadeInWhenVisible delay={2.8}>
+              <StackItem
+                name="C#"
+                icon={
+                  <SiCsharp
+                    style={{
+                      color: "#68217a",
+                    }}
+                  />
+                }
+              />
+            </FadeInWhenVisible>
+            <FadeInWhenVisible delay={3.0}>
+              <StackItem
+                name=".NET"
+                icon={
+                  <SiDotnet
+                    style={{
+                      color: "#512bd4",
+                    }}
+                  />
+                }
+              />
+            </FadeInWhenVisible>
+            <FadeInWhenVisible delay={3.2}>
+              <StackItem
+                name="Java"
+                icon={
+                  <FaJava
+                    style={{
+                      color: "#007396",
+                    }}
+                  />
+                }
+              />
+            </FadeInWhenVisible>
+            <FadeInWhenVisible delay={3.4}>
+              <StackItem
+                name="Azure DevOps"
+                icon={
+                  <SiAzuredevops
+                    style={{
+                      color: "#0078d7",
+                    }}
+                  />
+                }
+              />
+            </FadeInWhenVisible>
+            <FadeInWhenVisible delay={3.6}>
+              <StackItem
+                name="Azure"
+                icon={
+                  <SiMicrosoftazure
+                    style={{
+                      color: "#0089d6",
+                    }}
+                  />
+                }
+              />
+            </FadeInWhenVisible>
+            <FadeInWhenVisible delay={3.8}>
+              <StackItem
+                name="GitHub Copilot"
+                icon={
+                  <FaRobot
+                    style={{
+                      color: "#2da44e",
+                    }}
+                  />
+                }
+              />
+            </FadeInWhenVisible>
           </ul>
         </Card>
       </div>
@@ -257,14 +335,20 @@ const StackDetail = () => {
             <h3>Professional Experience</h3>
             <ul>
               <li>Nexi Online payment enterprise: React, Redux, Sagas.</li>
-              <li>American company automotive project: Angular, RxJS.</li>
+              <li>
+                American automotive project (Current): Angular, RxJS, Azure
+                DevOps, C#, Java, Gen AI, GitHub Copilot. Managing project
+                coordination and supporting the development team.
+              </li>
             </ul>
 
             <h3>Always Learning, Always Creating</h3>
             <p>
-              In my free time, I experiment with Next.js and MongoDB in a
-              personal side project, pushing the boundaries of my full-stack
-              development skills.
+              In my free time, I experiment with Next.js and MongoDB in
+              personal side projects, pushing the boundaries of my full-stack
+              development skills. Currently deepening my knowledge of C# and
+              .NET framework to enhance my backend development capabilities and
+              better support my team in the automotive project.
             </p>
 
             <p>

@@ -1,6 +1,5 @@
 import React from "react";
 import classes from "./Projects.module.css";
-import { FaHammer } from "react-icons/fa";
 
 import weather from "../../assets/weather-app.png";
 import doc from "../../assets/doctor-webapp.png";

@@ -5,44 +5,56 @@ export const aboutData = [
                 have always liked technology and my original plan was to study
                 informatics at University. I followed another path up to now and
                 I am ready to take up a new challgend as a front end developer.
-                Currently looking for a junior front end web developer position.
-                I am interested in smart working only position but willing to
-                occasionally travel (even abroad) to work for meeting or other
-                business needs. Open to offers and discussion.`,
+                Currently working on an automotive project using Angular, Azure
+                DevOps, C#, Java, Gen AI, and GitHub Copilot, while managing
+                project coordination. I am interested in smart working only
+                position but willing to occasionally travel (even abroad) to
+                work for meeting or other business needs. Open to offers and
+                discussion.`,
     id: 0,
   },
   {
     title: "Overview and skills",
-    text: `    I have been self teaching through courses,tutorials and projects
-            HTML5, CSS, JS, React js framework. Good knowledge of ES6 pratices
-            such as arrowfunctios ,spread operator and destructuring. I have
-            completed 3 online courses and one is ongoing(certificates and
-            details upon request). I get myself up-to-date with latest techs
-            from most reliable sources such as MDN, W3school, freecodecamp,
-            stackoverflow and many more.`,
+    text: `    I have been self teaching through courses, tutorials and projects
+            HTML5, CSS, JS, React js framework, Angular, and backend
+            technologies. Good knowledge of ES6 practices such as arrow
+            functions, spread operator and destructuring. I have completed
+            multiple online courses and continue to expand my knowledge
+            (certificates and details upon request). I get myself up-to-date
+            with latest techs from most reliable sources such as MDN, W3school,
+            freecodecamp, stackoverflow and many more. Currently working with
+            Angular, Azure DevOps, C#, Java, Gen AI, and GitHub Copilot in an
+            automotive project while managing project coordination and studying
+            .NET framework.`,
     id: 1,
   },
   {
     title: "Front End",
-    text: `   I use React as main framework, specifically CRA setting. I am able
-            to use Material UI for an easier and consistent visual
-            implementation, CSS modules as well as plain CSS(flex-box and
-            flex-grid). I have some knowledge of preprocessor SCSS. I Use chrome
-            Dev tools to debug on a daily basis. Version control Git and GitHub.
+    text: `   I use React and Angular as main frameworks. Experienced with CRA
+            setting and Angular CLI. I am able to use Material UI and Angular
+            Material for an easier and consistent visual implementation, CSS
+            modules as well as plain CSS (flex-box and flex-grid). I have
+            knowledge of preprocessor SCSS. I use Chrome Dev tools to debug on
+            a daily basis. Version control with Git, GitHub, and Azure DevOps.
             Learned to fetch data from APIs using both fetch and axios package.
-            Currently improving with NEXT JS, Context API and REDUX. I know how
-            to Use Formik as an easier way to implement forms from scratch. I
+            Experience with NEXT JS, Context API, REDUX, and RxJS. I know how
+            to use Formik as an easier way to implement forms from scratch. I
             use Yup library as a tool for validation. .ENV to store sensitive
-            data like API_KEYS.`,
+            data like API_KEYS. Currently using GitHub Copilot to enhance
+            development productivity.`,
     id: 2,
   },
   {
     title: "BackEnd",
-    text: `  Use of NODE js/EXPRESS. Specifically how to run a server and connect
-            back end to front end. Took a course in detail on Node Js, Express,
-            mongoDB.Mongoose. Using CRUD to relate with Database. MVC
-            architecture Using middlewares such as Helmet, Sharp, bodyparser,
-            cookieParser. Create routes and test them with PostMan.`,
+    text: `  Use of NODE js/EXPRESS, C#, .NET, and Java. Specifically how to run
+            a server and connect back end to front end. Took a course in detail
+            on Node Js, Express, mongoDB.Mongoose. Using CRUD to relate with
+            Database. MVC architecture. Using middlewares such as Helmet, Sharp,
+            bodyparser, cookieParser. Create routes and test them with PostMan.
+            Currently studying C# and .NET framework to enhance backend
+            development skills and support the team in the automotive project.
+            Working with Azure DevOps for CI/CD pipelines and project
+            management.`,
     id: 3,
   },
   {
@@ -53,7 +65,10 @@ export const aboutData = [
             everything on their own to achieve the best outcomes, especially in
             tech. I am resilient and I work well even under pressure. I believe
             also that being punctual and precise make me a good candidate for
-            any job position. I am honest and I know my limits.`,
+            any job position. I am honest and I know my limits. Currently, I
+            leverage these soft skills in my role as project coordinator for an
+            automotive project, managing team collaboration and supporting
+            developers in achieving project goals.`,
     id: 4,
   },
   {

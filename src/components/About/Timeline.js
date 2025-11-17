@@ -18,11 +18,12 @@ const Timeline = () => {
               </span>
             </div>
             <div className={classes.desc}>
-              Working for an IT consulting company on an American automotive
-              project. Using Angular, Azure DevOps, backend technologies including
-              C#, SQL and Java, Gen AI, and GitHub Copilot. Managing project
-              coordination and team support while continuously studying C#, .NET,
-              and SQL. Also continuing to learn and make side projects in React,
+              Working at Capgemini on CNH Industrial automotive project since May
+              2023. Frontend developer in an international team using Angular 11,
+              TypeScript, Angular Material, RxJS, Azure DevOps. Developing new
+              features, bug fixing, performance improvement, following best
+              practices for code reuse. Also supporting the Backend team with C#,
+              .NET framework and SQL. Continuing to make side projects in React,
               Next.js and MongoDB.
             </div>
           </div>
@@ -34,16 +35,18 @@ const Timeline = () => {
             <div className={classes["flag-wrapper"]}>
               <span className={classes.hexa}></span>
               <span className={classes.flag}>
-                Electronic payment enterprise
+                Nexi - Banking sector
               </span>
               <span className={classes["time-wrapper"]}>
-                <span className={classes.time}>2022</span>
+                <span className={classes.time}>May 2022 - May 2023</span>
               </span>
             </div>
             <div className={classes.desc}>
-              Worked in an electronic payments enterprise as a front end
-              developer. Developed new features and mantained existing code
-              across different projects in React.
+              Worked at ISCS Consulting for Nexi (banking payments giant) as a
+              Frontend Developer. Worked on Cardholders Project and Backoffice
+              Project using React, Redux, Sagas, React Class and Functional
+              Components. Developed new features and bug fixing, working closely
+              with Backend team, Graphic Designers, Scrum masters and testers.
             </div>
           </div>
         </li>

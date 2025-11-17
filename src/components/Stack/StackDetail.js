@@ -335,47 +335,83 @@ const StackDetail = () => {
             <h3>Certifications & Advanced Training</h3>
             <ul>
               <li>
-                Angular Level 1 Certification - Angular Training (2024)
+                Angular SSR in Depth (formerly Angular Universal) - Udemy (October
+                2025)
               </li>
               <li>
-                Reactive Angular Course (with RxJs, Angular 20) - Udemy (2025)
+                Reactive Angular Course (with RxJs, Angular 20) - Udemy
+                (September 2025)
               </li>
               <li>
-                RxJS and Angular Signals Fundamentals - Pluralsight (2025)
+                RxJS and Angular Signals Fundamentals - Pluralsight (April 2025)
+              </li>
+              <li>
+                GitHub Copilot Fundamentals: AI Paired Programming - Pluralsight
+                (June 2024)
+              </li>
+              <li>
+                Angular Template-driven Forms - Pluralsight (May 2024)
+              </li>
+              <li>
+                Intermediate Web and Front end Development - Coursera (March
+                2024)
+              </li>
+              <li>
+                MongoDB: CRUD Operations: Insert and Find Documents - MongoDB
+                (January 2024)
+              </li>
+              <li>
+                MongoDB and the Document Model - MongoDB (January 2024)
+              </li>
+              <li>
+                MongoDB: getting started with atlas - MongoDB (January 2024)
+              </li>
+              <li>
+                Connecting to a MongoDB Database - MongoDB (January 2024)
               </li>
               <li>
                 Application Security and Secure Coding Training Angular 2+ -
-                Codebashing (2023)
+                Codebashing (October 2023)
               </li>
               <li>
-                Understanding TypeScript - Udemy (2023)
+                Angular – The Complete Guide (2023) - Maximilian Schwarzmuller,
+                Udemy (October 2023)
+              </li>
+              <li>
+                Understanding TypeScript - Maximilian Schwarzmuller, Udemy
+                (September 2023)
               </li>
               <li>
                 Node.js, Express, MongoDB & More: The Complete Bootcamp 2022 -
-                Udemy
+                Udemy (September 2021 - January 2022)
               </li>
               <li>
-                MongoDB and the Document Model - MongoDB (2024)
+                React – The Complete Guide (including Hooks, React Router, Redux)
+                - Maximilian Schwarzmuller, Udemy (March - June 2021)
               </li>
               <li>
-                MongoDB: getting started with atlas - MongoDB (2024)
+                The Complete JavaScript Course: From Zero to Expert - Jonas
+                Schmedtmann, Udemy (November 2020 - March 2021)
               </li>
               <li>
-                Connecting to a MongoDB Database - MongoDB (2024)
-              </li>
-              <li>
-                Intermediate Web and Front end Development - Coursera (2024)
+                HTML, CSS and Javascript for Web Developers - Johns Hopkins
+                University, Coursera (September - November 2020)
               </li>
             </ul>
 
             <h3>Professional Experience</h3>
             <ul>
-              <li>Nexi Online payment enterprise: React, Redux, Sagas.</li>
               <li>
-                American automotive project (Current): Angular, RxJS, Azure
-                DevOps, C#, SQL, backend technologies including Java, Gen AI,
-                GitHub Copilot. Managing project coordination and supporting the
-                development team.
+                Capgemini - CNH Industrial Project (May 2023 - Present): Frontend
+                Developer working with Angular 11, TypeScript, Angular Material,
+                RxJS, Azure DevOps, .NET. Developing new features, bug fixing,
+                performance improvement. Supporting Backend team with C#, .NET
+                framework and SQL.
+              </li>
+              <li>
+                ISCS Consulting - Nexi (May 2022 - May 2023): Frontend Developer
+                working on Cardholders and Backoffice Projects using React, Redux,
+                Sagas, React Class and Functional Components.
               </li>
             </ul>
 

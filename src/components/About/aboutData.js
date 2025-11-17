@@ -2,73 +2,73 @@ export const aboutData = [
   {
     title: "About Domenico",
     text: ` My name is Domenico. I am 32 years old and I am from Italy. I
-                have always liked technology and my original plan was to study
-                informatics at University. I followed another path up to now and
-                I am ready to take up a new challgend as a front end developer.
-                Currently working on an automotive project using Angular, Azure
-                DevOps, C#, SQL, Gen AI, and GitHub Copilot, while managing
-                project coordination. I am interested in smart working only
-                position but willing to occasionally travel (even abroad) to
-                work for meeting or other business needs. Open to offers and
-                discussion.`,
+                started as a self-taught developer and have always been passionate
+                about technology. I started my study journey at the end of 2020 and
+                in 2022 I got my first corporate job in the financial sector. This
+                experience helped me improve both technical and soft skills. I feel
+                like I am improving daily and strive to become a full stack
+                developer. Currently working at Capgemini on CNH Industrial
+                automotive project using Angular, TypeScript, Azure DevOps, C#,
+                .NET, and SQL. I am interested in smart working positions but
+                willing to occasionally travel (even abroad) for meetings or other
+                business needs. Open to offers and discussion.`,
     id: 0,
   },
   {
     title: "Overview and skills",
-    text: `    I have been self teaching through courses, tutorials and projects
-            HTML5, CSS, JS, React js framework, Angular, and backend
-            technologies. Good knowledge of ES6 practices such as arrow
-            functions, spread operator and destructuring. I have completed
+    text: `    I started my study journey at the end of 2020, self-teaching through
+            courses, tutorials and projects in HTML5, CSS, JS, React, Angular,
+            and backend technologies. Good knowledge of ES6 practices such as
+            arrow functions, spread operator and destructuring. I have completed
             multiple online courses and continue to expand my knowledge
-            (certificates and details upon request). I get myself up-to-date
-            with latest techs from most reliable sources such as MDN, W3school,
-            freecodecamp, stackoverflow and many more. Currently working with
-            Angular, Azure DevOps, C#, SQL, Gen AI, and GitHub Copilot in an
-            automotive project while managing project coordination and studying
-            .NET framework and SQL.`,
+            (certificates and details available). I get myself up-to-date with
+            latest techs from most reliable sources such as MDN, W3school,
+            freecodecamp, stackoverflow and many more. Currently working at
+            Capgemini since May 2023 as Frontend Developer with Angular 11,
+            TypeScript, Angular Material, RxJS, Azure DevOps. Also supporting
+            Backend team with C#, .NET framework and SQL.`,
     id: 1,
   },
   {
     title: "Front End",
     text: `   I use React and Angular as main frameworks. Experienced with CRA
-            setting and Angular CLI. I am able to use Material UI and Angular
-            Material for an easier and consistent visual implementation, CSS
-            modules as well as plain CSS (flex-box and flex-grid). I have
-            knowledge of preprocessor SCSS. I use Chrome Dev tools to debug on
-            a daily basis. Version control with Git, GitHub, and Azure DevOps.
-            Learned to fetch data from APIs using both fetch and axios package.
-            Experience with NEXT JS, Context API, REDUX, and RxJS. I know how
-            to use Formik as an easier way to implement forms from scratch. I
-            use Yup library as a tool for validation. .ENV to store sensitive
-            data like API_KEYS. Currently using GitHub Copilot to enhance
-            development productivity.`,
+            setting and Angular CLI. Working with Angular 11, TypeScript, Angular
+            Material, RxJS in current project. I am able to use Material UI and
+            Angular Material for consistent visual implementation, CSS modules as
+            well as plain CSS (flex-box and flex-grid). I have knowledge of
+            preprocessor SCSS. I use Chrome Dev tools to debug on a daily basis.
+            Version control with Git, GitHub, and Azure DevOps. Learned to fetch
+            data from APIs using both fetch and axios package. Experience with
+            Next.js, Context API, Redux, Sagas, and RxJS. I know how to use
+            Formik for forms and Yup library for validation. .ENV to store
+            sensitive data like API_KEYS.`,
     id: 2,
   },
   {
     title: "BackEnd",
     text: `  Use of NODE js/EXPRESS, C#, .NET, and SQL. Specifically how to run
             a server and connect back end to front end. Took a course in detail
-            on Node Js, Express, mongoDB.Mongoose. Using CRUD to relate with
+            on Node Js, Express, MongoDB, Mongoose. Using CRUD to relate with
             Database. MVC architecture. Using middlewares such as Helmet, Sharp,
             bodyparser, cookieParser. Create routes and test them with PostMan.
-            Currently studying C#, .NET framework, and SQL to enhance backend
-            development skills and support the team in the automotive project.
-            Working with Azure DevOps for CI/CD pipelines and project
-            management. Some exposure to Java in backend systems.`,
+            Currently at Capgemini supporting the Backend team with C#, .NET
+            framework and SQL on the CNH Industrial automotive project. Working
+            with Azure DevOps for CI/CD pipelines and project management.`,
     id: 3,
   },
   {
     title: "Past and Present",
-    text: `    I have been working as a ICU Nurse both in the UK and in Italy since
+    text: `    I have been working as an ICU Nurse both in the UK and in Italy since
             2013. This job improved my interpersonal and communicative skills.
-            Team work plays a pivotal role in my job and I believe no one can do
+            Teamwork plays a pivotal role in my job and I believe no one can do
             everything on their own to achieve the best outcomes, especially in
             tech. I am resilient and I work well even under pressure. I believe
             also that being punctual and precise make me a good candidate for
-            any job position. I am honest and I know my limits. Currently, I
-            leverage these soft skills in my role as project coordinator for an
-            automotive project, managing team collaboration and supporting
-            developers in achieving project goals.`,
+            any job position. I am honest and I know my limits. My background as
+            an intensive care nurse is definitely an asset in terms of social and
+            communication skills. I am comfortable within international teams as
+            I have lived in the UK for 7 years, which has allowed me to improve
+            both the English language (C2 level) and integrate with other cultures.`,
     id: 4,
   },
   {

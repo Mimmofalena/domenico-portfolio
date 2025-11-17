@@ -36,12 +36,13 @@ export const aboutData = [
             Material, RxJS in current project. I am able to use Material UI and
             Angular Material for consistent visual implementation, CSS modules as
             well as plain CSS (flex-box and flex-grid). I have knowledge of
-            preprocessor SCSS. I use Chrome Dev tools to debug on a daily basis.
-            Version control with Git, GitHub, and Azure DevOps. Learned to fetch
-            data from APIs using both fetch and axios package. Experience with
-            Next.js, Context API, Redux, Sagas, and RxJS. I know how to use
-            Formik for forms and Yup library for validation. .ENV to store
-            sensitive data like API_KEYS.`,
+            preprocessor SCSS and Tailwind CSS. I use Chrome Dev tools to debug
+            on a daily basis. Version control with Git, GitHub, and Azure DevOps.
+            Learned to fetch data from APIs using both fetch and axios package.
+            Experience with Next.js, Context API, Redux, Sagas, and RxJS. I know
+            how to use Formik for forms and Yup library for validation. In side
+            projects, I use modern tools like shadcn and Tailwind CSS for rapid
+            UI development. .ENV to store sensitive data like API_KEYS.`,
     id: 2,
   },
   {
@@ -72,12 +73,24 @@ export const aboutData = [
     id: 4,
   },
   {
+    title: "Innovation and AI",
+    text: `    I am an early adopter of generative AI technologies and always stay
+            up to date with the latest trends in AI-assisted development. I was
+            among the first to implement and promote the use of instructions.md
+            files in workspaces to improve consistency in AI outputs. This
+            innovative approach has helped enhance code quality and development
+            efficiency in my projects. I actively explore and integrate new AI
+            tools and methodologies to optimize development workflows and deliver
+            better results.`,
+    id: 5,
+  },
+  {
     title: "Curiosities and hobbies",
     text: `    I made an e-commerce with Wordpress in 2016 selling few items! I am
             a sociable person. I love sports, outdoor activities and playing
             videogames. I love to travel and my dream is to visit all the 7
             wonders! I have already visited the Coliseum and Chitchen Itza.
             Hoping this pandemic gets under control to be able to travel again.`,
-    id: 5,
+    id: 6,
   },
 ];

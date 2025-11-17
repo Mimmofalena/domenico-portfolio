@@ -416,11 +416,19 @@ const StackDetail = () => {
 
             <h3>Always Learning, Always Creating</h3>
             <p>
-              In my free time, I experiment with Next.js and MongoDB in
-              personal side projects, pushing the boundaries of my full-stack
-              development skills. Currently deepening my knowledge of C#, .NET
-              framework, and SQL to enhance my backend development capabilities
-              and better support my team in the automotive project.
+              In my free time, I experiment with Next.js, MongoDB, shadcn, and
+              Tailwind CSS in personal side projects, pushing the boundaries of my
+              full-stack development skills. Currently deepening my knowledge of
+              C#, .NET framework, and SQL to enhance my backend development
+              capabilities and better support my team in the automotive project.
+            </p>
+
+            <p>
+              I'm an early adopter of generative AI technologies, always staying
+              up to date with the latest trends. I was among the first to
+              implement and promote the use of instructions.md files in workspaces
+              to improve consistency in AI outputs, demonstrating innovation in
+              AI-assisted development workflows.
             </p>
 
             <p>

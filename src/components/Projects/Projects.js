@@ -1,11 +1,11 @@
 import React from "react";
 import classes from "./Projects.module.css";
-import { FaHammer } from "react-icons/fa";
 
 import weather from "../../assets/weather-app.png";
 import doc from "../../assets/doctor-webapp.png";
 import pig from "../../assets/pig-game.png";
 import todo from "../../assets/todoapp-with-redux.png";
+import bnb from "../../assets/bnb-casa-vacanza.png";
 
 import Card from "../../utils/Card";
 import LinkButton from "../../utils/LinkButton";
@@ -16,10 +16,16 @@ import "slick-carousel/slick/slick-theme.css";
 const Projects = () => {
   const carouselItems = [
     {
+      image: bnb,
+      description:
+        "B&B Casa Vacanza website built with Next.js 14+, featuring multi-language support (IT/EN), server-side rendering, and modern responsive design deployed on Vercel.",
+      href: "https://casa-vacanza.vercel.app/en/services",
+    },
+    {
       image: doc,
       description:
         "GP Doctor landing page made with REACT, HTML, CSS, JS, NODEJS, NODEMAILER, FORMIK, MATERIAL UI, FRAMER MOTION, GOOGLE MAPS API,",
-      href: "https://mimmofalena.github.io/dottoressa-marina/",
+      href: "https://www.dottoressatricolimarina.it/",
     },
     {
       image: todo,

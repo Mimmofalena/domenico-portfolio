@@ -2,59 +2,87 @@ export const aboutData = [
   {
     title: "About Domenico",
     text: ` My name is Domenico. I am 32 years old and I am from Italy. I
-                have always liked technology and my original plan was to study
-                informatics at University. I followed another path up to now and
-                I am ready to take up a new challgend as a front end developer.
-                Currently looking for a junior front end web developer position.
-                I am interested in smart working only position but willing to
-                occasionally travel (even abroad) to work for meeting or other
-                business needs. Open to offers and discussion.`,
+                started as a self-taught developer and have always been passionate
+                about technology. I started my study journey at the end of 2020 and
+                in 2022 I got my first corporate job in the financial sector. This
+                experience helped me improve both technical and soft skills. I feel
+                like I am improving daily and strive to become a full stack
+                developer. Currently working in the automotive sector using Angular,
+                TypeScript, Azure DevOps, C#, .NET, and SQL. I am interested in
+                smart working positions but willing to occasionally travel (even
+                abroad) for meetings or other business needs. Open to offers and
+                discussion.`,
     id: 0,
   },
   {
     title: "Overview and skills",
-    text: `    I have been self teaching through courses,tutorials and projects
-            HTML5, CSS, JS, React js framework. Good knowledge of ES6 pratices
-            such as arrowfunctios ,spread operator and destructuring. I have
-            completed 3 online courses and one is ongoing(certificates and
-            details upon request). I get myself up-to-date with latest techs
-            from most reliable sources such as MDN, W3school, freecodecamp,
-            stackoverflow and many more.`,
+    text: `    I started my study journey at the end of 2020, self-teaching through
+            courses, tutorials and projects in HTML5, CSS, JS, React, Angular,
+            and backend technologies. Good knowledge of ES6 practices such as
+            arrow functions, spread operator and destructuring. I have completed
+            multiple online courses and continue to expand my knowledge
+            (certificates and details available). I get myself up-to-date with
+            latest techs from most reliable sources such as MDN, W3school,
+            freecodecamp, stackoverflow and many more. Currently working in IT
+            consulting since May 2023 as Frontend Developer with Angular 11,
+            TypeScript, Angular Material, RxJS, Azure DevOps. Also supporting
+            Backend team with C#, .NET framework and SQL.`,
     id: 1,
   },
   {
     title: "Front End",
-    text: `   I use React as main framework, specifically CRA setting. I am able
-            to use Material UI for an easier and consistent visual
-            implementation, CSS modules as well as plain CSS(flex-box and
-            flex-grid). I have some knowledge of preprocessor SCSS. I Use chrome
-            Dev tools to debug on a daily basis. Version control Git and GitHub.
+    text: `   I use React and Angular as main frameworks. Experienced with CRA
+            setting and Angular CLI. Working with Angular 11, TypeScript, Angular
+            Material, RxJS in current project. I am able to use Material UI and
+            Angular Material for consistent visual implementation, CSS modules as
+            well as plain CSS (flex-box and flex-grid). I have knowledge of
+            preprocessor SCSS and Tailwind CSS. I use Chrome Dev tools to debug
+            on a daily basis. Version control with Git, GitHub, and Azure DevOps.
             Learned to fetch data from APIs using both fetch and axios package.
-            Currently improving with NEXT JS, Context API and REDUX. I know how
-            to Use Formik as an easier way to implement forms from scratch. I
-            use Yup library as a tool for validation. .ENV to store sensitive
-            data like API_KEYS.`,
+            Experience with Next.js, Context API, Redux, Sagas, and RxJS. I know
+            how to use Formik for forms and Yup library for validation. In side
+            projects, I use modern tools like shadcn and Tailwind CSS for rapid
+            UI development. .ENV to store sensitive data like API_KEYS.`,
     id: 2,
   },
   {
     title: "BackEnd",
-    text: `  Use of NODE js/EXPRESS. Specifically how to run a server and connect
-            back end to front end. Took a course in detail on Node Js, Express,
-            mongoDB.Mongoose. Using CRUD to relate with Database. MVC
-            architecture Using middlewares such as Helmet, Sharp, bodyparser,
-            cookieParser. Create routes and test them with PostMan.`,
+    text: `  Use of NODE js/EXPRESS, C#, .NET, and SQL. Specifically how to run
+            a server and connect back end to front end. Took a course in detail
+            on Node Js, Express, MongoDB, Mongoose. Using CRUD to relate with
+            Database. MVC architecture. Using middlewares such as Helmet, Sharp,
+            bodyparser, cookieParser. Create routes and test them with PostMan.
+            Currently supporting the Backend team with C#, .NET framework and SQL
+            in the automotive sector. Working with Azure DevOps for CI/CD
+            pipelines and project management.`,
     id: 3,
   },
   {
     title: "Past and Present",
-    text: `    I have been working as a ICU Nurse both in the UK and in Italy since
+    text: `    I have been working as an ICU Nurse both in the UK and in Italy since
             2013. This job improved my interpersonal and communicative skills.
-            Team work plays a pivotal role in my job and I believe no one can do
+            Teamwork plays a pivotal role in my job and I believe no one can do
             everything on their own to achieve the best outcomes, especially in
             tech. I am resilient and I work well even under pressure. I believe
             also that being punctual and precise make me a good candidate for
-            any job position. I am honest and I know my limits.`,
+            any job position. I am honest and I know my limits. My background as
+            an intensive care nurse is definitely an asset in terms of social and
+            communication skills. I am comfortable within international teams as
+            I have lived in the UK for 7 years, which has allowed me to improve
+            both the English language (C2 level) and integrate with other cultures.`,
     id: 4,
+  },
+  {
+    title: "Innovation and AI",
+    text: `    I am an early adopter of generative AI technologies and always stay
+            up to date with the latest trends in AI-assisted development. I was
+            among the first to implement and promote the use of instructions.md
+            files in workspaces to improve consistency in AI outputs. This
+            innovative approach has helped enhance code quality and development
+            efficiency in my projects. I actively explore and integrate new AI
+            tools and methodologies to optimize development workflows and deliver
+            better results.`,
+    id: 5,
   },
   {
     title: "Curiosities and hobbies",
@@ -63,6 +91,6 @@ export const aboutData = [
             videogames. I love to travel and my dream is to visit all the 7
             wonders! I have already visited the Coliseum and Chitchen Itza.
             Hoping this pandemic gets under control to be able to travel again.`,
-    id: 5,
+    id: 6,
   },
 ];

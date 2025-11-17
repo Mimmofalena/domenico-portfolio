@@ -402,14 +402,13 @@ const StackDetail = () => {
             <h3>Professional Experience</h3>
             <ul>
               <li>
-                Capgemini - CNH Industrial Project (May 2023 - Present): Frontend
-                Developer working with Angular 11, TypeScript, Angular Material,
-                RxJS, Azure DevOps, .NET. Developing new features, bug fixing,
-                performance improvement. Supporting Backend team with C#, .NET
-                framework and SQL.
+                Automotive Sector (May 2023 - Present): Frontend Developer working
+                with Angular 11, TypeScript, Angular Material, RxJS, Azure DevOps,
+                .NET. Developing new features, bug fixing, performance improvement.
+                Supporting Backend team with C#, .NET framework and SQL.
               </li>
               <li>
-                ISCS Consulting - Nexi (May 2022 - May 2023): Frontend Developer
+                Digital Payments Sector (May 2022 - May 2023): Frontend Developer
                 working on Cardholders and Backoffice Projects using React, Redux,
                 Sagas, React Class and Functional Components.
               </li>

@@ -18,8 +18,8 @@ const Timeline = () => {
               </span>
             </div>
             <div className={classes.desc}>
-              Working at Capgemini on CNH Industrial automotive project since May
-              2023. Frontend developer in an international team using Angular 11,
+              Working in IT consulting in the automotive sector since May 2023.
+              Frontend developer in an international team using Angular 11,
               TypeScript, Angular Material, RxJS, Azure DevOps. Developing new
               features, bug fixing, performance improvement, following best
               practices for code reuse. Also supporting the Backend team with C#,
@@ -35,18 +35,18 @@ const Timeline = () => {
             <div className={classes["flag-wrapper"]}>
               <span className={classes.hexa}></span>
               <span className={classes.flag}>
-                Nexi - Banking sector
+                Digital payments sector
               </span>
               <span className={classes["time-wrapper"]}>
                 <span className={classes.time}>May 2022 - May 2023</span>
               </span>
             </div>
             <div className={classes.desc}>
-              Worked at ISCS Consulting for Nexi (banking payments giant) as a
-              Frontend Developer. Worked on Cardholders Project and Backoffice
-              Project using React, Redux, Sagas, React Class and Functional
-              Components. Developed new features and bug fixing, working closely
-              with Backend team, Graphic Designers, Scrum masters and testers.
+              Worked in IT consulting for a banking payments company as a Frontend
+              Developer. Worked on Cardholders Project and Backoffice Project using
+              React, Redux, Sagas, React Class and Functional Components. Developed
+              new features and bug fixing, working closely with Backend team,
+              Graphic Designers, Scrum masters and testers.
             </div>
           </div>
         </li>

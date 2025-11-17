@@ -7,11 +7,11 @@ export const aboutData = [
                 in 2022 I got my first corporate job in the financial sector. This
                 experience helped me improve both technical and soft skills. I feel
                 like I am improving daily and strive to become a full stack
-                developer. Currently working at Capgemini on CNH Industrial
-                automotive project using Angular, TypeScript, Azure DevOps, C#,
-                .NET, and SQL. I am interested in smart working positions but
-                willing to occasionally travel (even abroad) for meetings or other
-                business needs. Open to offers and discussion.`,
+                developer. Currently working in the automotive sector using Angular,
+                TypeScript, Azure DevOps, C#, .NET, and SQL. I am interested in
+                smart working positions but willing to occasionally travel (even
+                abroad) for meetings or other business needs. Open to offers and
+                discussion.`,
     id: 0,
   },
   {
@@ -23,8 +23,8 @@ export const aboutData = [
             multiple online courses and continue to expand my knowledge
             (certificates and details available). I get myself up-to-date with
             latest techs from most reliable sources such as MDN, W3school,
-            freecodecamp, stackoverflow and many more. Currently working at
-            Capgemini since May 2023 as Frontend Developer with Angular 11,
+            freecodecamp, stackoverflow and many more. Currently working in IT
+            consulting since May 2023 as Frontend Developer with Angular 11,
             TypeScript, Angular Material, RxJS, Azure DevOps. Also supporting
             Backend team with C#, .NET framework and SQL.`,
     id: 1,
@@ -51,9 +51,9 @@ export const aboutData = [
             on Node Js, Express, MongoDB, Mongoose. Using CRUD to relate with
             Database. MVC architecture. Using middlewares such as Helmet, Sharp,
             bodyparser, cookieParser. Create routes and test them with PostMan.
-            Currently at Capgemini supporting the Backend team with C#, .NET
-            framework and SQL on the CNH Industrial automotive project. Working
-            with Azure DevOps for CI/CD pipelines and project management.`,
+            Currently supporting the Backend team with C#, .NET framework and SQL
+            in the automotive sector. Working with Azure DevOps for CI/CD
+            pipelines and project management.`,
     id: 3,
   },
   {

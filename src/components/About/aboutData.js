@@ -6,7 +6,7 @@ export const aboutData = [
                 informatics at University. I followed another path up to now and
                 I am ready to take up a new challgend as a front end developer.
                 Currently working on an automotive project using Angular, Azure
-                DevOps, C#, Java, Gen AI, and GitHub Copilot, while managing
+                DevOps, C#, Gen AI, and GitHub Copilot, while managing
                 project coordination. I am interested in smart working only
                 position but willing to occasionally travel (even abroad) to
                 work for meeting or other business needs. Open to offers and
@@ -23,7 +23,7 @@ export const aboutData = [
             (certificates and details upon request). I get myself up-to-date
             with latest techs from most reliable sources such as MDN, W3school,
             freecodecamp, stackoverflow and many more. Currently working with
-            Angular, Azure DevOps, C#, Java, Gen AI, and GitHub Copilot in an
+            Angular, Azure DevOps, C#, Gen AI, and GitHub Copilot in an
             automotive project while managing project coordination and studying
             .NET framework.`,
     id: 1,
@@ -46,7 +46,7 @@ export const aboutData = [
   },
   {
     title: "BackEnd",
-    text: `  Use of NODE js/EXPRESS, C#, .NET, and Java. Specifically how to run
+    text: `  Use of NODE js/EXPRESS, C#, and .NET. Specifically how to run
             a server and connect back end to front end. Took a course in detail
             on Node Js, Express, mongoDB.Mongoose. Using CRUD to relate with
             Database. MVC architecture. Using middlewares such as Helmet, Sharp,
@@ -54,7 +54,7 @@ export const aboutData = [
             Currently studying C# and .NET framework to enhance backend
             development skills and support the team in the automotive project.
             Working with Azure DevOps for CI/CD pipelines and project
-            management.`,
+            management. Some exposure to Java in backend systems.`,
     id: 3,
   },
   {

@@ -17,7 +17,6 @@ import { TbBrandNextjs } from "react-icons/tb";
 import { FaAngular } from "react-icons/fa";
 import { FaBootstrap } from "react-icons/fa";
 import { SiCsharp } from "react-icons/si";
-import { FaJava } from "react-icons/fa";
 import { SiMicrosoftazure } from "react-icons/si";
 import { SiDotnet } from "react-icons/si";
 import { FaRobot } from "react-icons/fa";
@@ -233,18 +232,6 @@ const StackDetail = () => {
             </FadeInWhenVisible>
             <FadeInWhenVisible delay={3.2}>
               <StackItem
-                name="Java"
-                icon={
-                  <FaJava
-                    style={{
-                      color: "#007396",
-                    }}
-                  />
-                }
-              />
-            </FadeInWhenVisible>
-            <FadeInWhenVisible delay={3.4}>
-              <StackItem
                 name="Azure DevOps"
                 icon={
                   <SiAzuredevops
@@ -255,7 +242,7 @@ const StackDetail = () => {
                 }
               />
             </FadeInWhenVisible>
-            <FadeInWhenVisible delay={3.6}>
+            <FadeInWhenVisible delay={3.4}>
               <StackItem
                 name="Azure"
                 icon={
@@ -267,7 +254,7 @@ const StackDetail = () => {
                 }
               />
             </FadeInWhenVisible>
-            <FadeInWhenVisible delay={3.8}>
+            <FadeInWhenVisible delay={3.6}>
               <StackItem
                 name="GitHub Copilot"
                 icon={
@@ -332,13 +319,50 @@ const StackDetail = () => {
               </li>
             </ul>
 
+            <h3>Certifications & Advanced Training</h3>
+            <ul>
+              <li>
+                Angular Level 1 Certification - Angular Training (2024)
+              </li>
+              <li>
+                Reactive Angular Course (with RxJs, Angular 20) - Udemy (2025)
+              </li>
+              <li>
+                RxJS and Angular Signals Fundamentals - Pluralsight (2025)
+              </li>
+              <li>
+                Application Security and Secure Coding Training Angular 2+ -
+                Codebashing (2023)
+              </li>
+              <li>
+                Understanding TypeScript - Udemy (2023)
+              </li>
+              <li>
+                Node.js, Express, MongoDB & More: The Complete Bootcamp 2022 -
+                Udemy
+              </li>
+              <li>
+                MongoDB and the Document Model - MongoDB (2024)
+              </li>
+              <li>
+                MongoDB: getting started with atlas - MongoDB (2024)
+              </li>
+              <li>
+                Connecting to a MongoDB Database - MongoDB (2024)
+              </li>
+              <li>
+                Intermediate Web and Front end Development - Coursera (2024)
+              </li>
+            </ul>
+
             <h3>Professional Experience</h3>
             <ul>
               <li>Nexi Online payment enterprise: React, Redux, Sagas.</li>
               <li>
                 American automotive project (Current): Angular, RxJS, Azure
-                DevOps, C#, Java, Gen AI, GitHub Copilot. Managing project
-                coordination and supporting the development team.
+                DevOps, C#, backend technologies including Java, Gen AI, GitHub
+                Copilot. Managing project coordination and supporting the
+                development team.
               </li>
             </ul>
 

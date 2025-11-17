@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+# Domenico Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive portfolio website showcasing my journey as a Frontend Developer, built with React 19 and modern web technologies.
 
-## Available Scripts
+## 🚀 Live Demo
 
-In the project directory, you can run:
+Visit the portfolio: [https://mimmofalena.github.io/domenico-portfolio/](https://mimmofalena.github.io/domenico-portfolio/)
 
-### `npm start`
+## 📋 About
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This portfolio website presents my professional experience, technical skills, projects, and certifications as a Frontend Developer specializing in React and Angular. The site features:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **About Section**: My background and professional journey
+- **Tech Stack**: Technologies and tools I work with
+- **Projects**: Showcase of my work and contributions
+- **Contact**: Ways to connect with me
 
-### `npm test`
+## 🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React 19.2.0** - Latest version with modern features
+- **React Router 7** - Client-side routing
+- **Material-UI (MUI) 7** - Component library
+- **Framer Motion 12** - Animation library
+- **React Icons 4** - Icon library
+- **Emotion** - CSS-in-JS styling
+- **Slick Carousel** - Image carousel component
 
-### `npm run build`
+## 🏃 Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js (v14 or higher)
+- npm or yarn
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. Clone the repository:
+```bash
+git clone https://github.com/Mimmofalena/domenico-portfolio.git
+cd domenico-portfolio
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Install dependencies:
+```bash
+npm install --legacy-peer-deps
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Start the development server:
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The site will open at [http://localhost:3000/domenico-portfolio](http://localhost:3000/domenico-portfolio)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Building for Production
 
-## Learn More
+```bash
+npm run build
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This creates an optimized production build in the `build` folder.
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Deploy to GitHub Pages:
+```bash
+npm run deploy
+```
 
-### `npm run build` fails to minify
+## 📁 Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+domenico-portfolio/
+├── public/          # Static files
+├── src/
+│   ├── components/  # React components
+│   │   ├── About/
+│   │   ├── Carousel/
+│   │   ├── Contact/
+│   │   ├── Footer/
+│   │   ├── Header/
+│   │   ├── PageContent/
+│   │   ├── Projects/
+│   │   ├── Stack/
+│   │   └── Welcome/
+│   ├── utils/       # Utility components and functions
+│   ├── assets/      # Images and media
+│   ├── App.js       # Main application component
+│   └── index.js     # Application entry point
+└── package.json     # Dependencies and scripts
+```
+
+## 👨‍💻 Professional Background
+
+- **Current Role**: Frontend Developer in the Automotive Sector (May 2023 - Present)
+  - Technologies: Angular 11, TypeScript, Angular Material, RxJS, Azure DevOps, .NET, C#, SQL
+  
+- **Previous Role**: Frontend Developer in Digital Payments (May 2022 - May 2023)
+  - Technologies: React, Redux, Sagas, React Class and Functional Components
+
+## 📄 License
+
+This project is open source and available for viewing. Please contact me for usage permissions.
+
+## 📧 Contact
+
+Feel free to reach out through the contact form on the portfolio website or connect with me on LinkedIn.
+
+---
+
+Built with ❤️ using React

@@ -20,9 +20,9 @@ const Timeline = () => {
             <div className={classes.desc}>
               Working for an IT consulting company on an American automotive
               project. Using Angular, Azure DevOps, backend technologies including
-              C# and Java, Gen AI, and GitHub Copilot. Managing project
-              coordination and team support while continuously studying C# and
-              .NET. Also continuing to learn and make side projects in React,
+              C#, SQL and Java, Gen AI, and GitHub Copilot. Managing project
+              coordination and team support while continuously studying C#, .NET,
+              and SQL. Also continuing to learn and make side projects in React,
               Next.js and MongoDB.
             </div>
           </div>

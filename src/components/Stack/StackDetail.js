@@ -21,6 +21,7 @@ import { SiMicrosoftazure } from "react-icons/si";
 import { SiDotnet } from "react-icons/si";
 import { FaRobot } from "react-icons/fa";
 import { SiAzuredevops } from "react-icons/si";
+import { SiMysql } from "react-icons/si";
 
 import FadeInWhenVisible from "../../utils/FadeInWhenVisible";
 
@@ -266,6 +267,18 @@ const StackDetail = () => {
                 }
               />
             </FadeInWhenVisible>
+            <FadeInWhenVisible delay={3.8}>
+              <StackItem
+                name="SQL"
+                icon={
+                  <SiMysql
+                    style={{
+                      color: "#00758f",
+                    }}
+                  />
+                }
+              />
+            </FadeInWhenVisible>
           </ul>
         </Card>
       </div>
@@ -360,8 +373,8 @@ const StackDetail = () => {
               <li>Nexi Online payment enterprise: React, Redux, Sagas.</li>
               <li>
                 American automotive project (Current): Angular, RxJS, Azure
-                DevOps, C#, backend technologies including Java, Gen AI, GitHub
-                Copilot. Managing project coordination and supporting the
+                DevOps, C#, SQL, backend technologies including Java, Gen AI,
+                GitHub Copilot. Managing project coordination and supporting the
                 development team.
               </li>
             </ul>
@@ -370,9 +383,9 @@ const StackDetail = () => {
             <p>
               In my free time, I experiment with Next.js and MongoDB in
               personal side projects, pushing the boundaries of my full-stack
-              development skills. Currently deepening my knowledge of C# and
-              .NET framework to enhance my backend development capabilities and
-              better support my team in the automotive project.
+              development skills. Currently deepening my knowledge of C#, .NET
+              framework, and SQL to enhance my backend development capabilities
+              and better support my team in the automotive project.
             </p>
 
             <p>

@@ -31,10 +31,10 @@ const StackList = () => {
                 align with given design specifications.
               </Typography>
               <Typography variant="body1" gutterBottom>
-                My backend capabilities include Node.js, MongoDB, C#, and .NET,
-                ensuring robust server-side functionality and effective
+                My backend capabilities include Node.js, MongoDB, C#, .NET, and
+                SQL, ensuring robust server-side functionality and effective
                 database management. Currently working on an automotive project
-                where I use Angular, Azure DevOps, C#, Gen AI, and GitHub
+                where I use Angular, Azure DevOps, C#, SQL, Gen AI, and GitHub
                 Copilot, while managing project coordination and supporting the
                 development team. I utilize tools like Material-UI, Angular
                 Material, and Bootstrap to faithfully implement designs with a

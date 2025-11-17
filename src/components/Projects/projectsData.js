@@ -2,11 +2,49 @@ import weather from "../../assets/weather-app.png";
 import doc from "../../assets/doctor-webapp.png";
 import pig from "../../assets/pig-game.png";
 import todo from "../../assets/todoapp-with-redux.png";
+import bnb from "../../assets/bnb-casa-vacanza.png";
 
 export const projectsData = [
   {
+    title: "B&B Casa Vacanza",
+    href: "https://casa-vacanza.vercel.app/en/services",
+    src: bnb,
+    alt: "B&B Website",
+    descriptionProject: (
+      <div>
+        <h3>Project Overview: B&B Casa Vacanza Website&nbsp;</h3>
+        <p>
+          A modern bed and breakfast website built with Next.js, featuring
+          multi-language support, service showcase, and booking information.
+          This project demonstrates full-stack development capabilities with
+          server-side rendering and optimal performance.
+        </p>
+      </div>
+    ),
+
+    descriptionTech: (
+      <div>
+        <h4>Technologies Employed:</h4>
+        <br />
+        <ul>
+          <li>Frontend Framework: Next.js 14+ with App Router</li>
+          <li>Styling: CSS Modules and Tailwind CSS</li>
+          <li>Internationalization: Multi-language support (IT/EN)</li>
+          <li>Deployment: Vercel platform</li>
+          <li>Performance: Server-Side Rendering (SSR) and optimization</li>
+          <li>Responsive Design: Mobile-first approach</li>
+        </ul>
+        <p>
+          This project showcases modern web development practices using Next.js,
+          providing an optimal user experience with fast page loads and SEO
+          optimization, essential for a hospitality business online presence.
+        </p>
+      </div>
+    ),
+  },
+  {
     title: "Doctor page",
-    href: "https://mimmofalena.github.io/dottoressa-marina/",
+    href: "https://www.dottoressatricolimarina.it/",
     src: doc,
     alt: "Doctor",
     descriptionProject: (

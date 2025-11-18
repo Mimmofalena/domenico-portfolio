@@ -3,8 +3,10 @@ import TypeWriter from "typewriter-effect";
 import { motion } from "framer-motion";
 import classes from "./Welcome.module.css";
 import Card from "../../utils/Card";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 const Welcome = () => {
+  const { t } = useLanguage();
   return (
     <div className={classes.container}>
       <Card>
@@ -17,14 +19,13 @@ const Welcome = () => {
             <div className={classes.imgContainer}>
               <h2 className={classes.typewriter}>
                 <TypeWriter
+                  key={t("welcome.typewriter1")}
                   onInit={(typewriter) => {
                     typewriter
-                      .typeString(
-                        `  Hello, My name is Domenico and I am a web developer...`
-                      )
+                      .typeString(t("welcome.typewriter1"))
                       .pauseFor(100)
                       .deleteAll()
-                      .typeString("Welcome to my page 😊")
+                      .typeString(t("welcome.typewriter2"))
                       .start();
                   }}
                 />

@@ -3,15 +3,18 @@ import classes from "./Header.module.css";
 import { NavLink } from "react-router-dom";
 import { CgDetailsMore } from "react-icons/cg";
 import HeaderList from "./HeaderList";
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 const Header = () => {
+  const { t } = useLanguage();
   const [isOpen, setIsOpen] = useState(true);
   const menuHandler = () => {
     setIsOpen(!isOpen);
   };
   return (
     <div className={classes.header}>
-      <h2 className={classes.logo}>DOMENICO PORTFOLIO</h2>
+      <h2 className={classes.logo}>{t("header.logo")}</h2>
       <div className={classes.menu}>
         {isOpen ? (
           <h2 className={classes.more} onClick={menuHandler}>
@@ -33,7 +36,7 @@ const Header = () => {
                 }
                 onClick={menuHandler}
               >
-                Home
+                {t("header.home")}
               </NavLink>
 
               <NavLink
@@ -43,7 +46,7 @@ const Header = () => {
                 }
                 onClick={menuHandler}
               >
-                Projects
+                {t("header.projects")}
               </NavLink>
               <NavLink
                 to="domenico-portfolio/stack"
@@ -52,7 +55,7 @@ const Header = () => {
                 }
                 onClick={menuHandler}
               >
-                Stack
+                {t("header.stack")}
               </NavLink>
               <NavLink
                 to="domenico-portfolio/about"
@@ -61,13 +64,15 @@ const Header = () => {
                 }
                 onClick={menuHandler}
               >
-                About
+                {t("header.about")}
               </NavLink>
+              <LanguageSwitcher />
             </div>
           </>
         )}
       </div>
       <HeaderList className={classes.largeScreen} />
+      <LanguageSwitcher />
     </div>
     // </div>
   );

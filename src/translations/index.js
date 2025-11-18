@@ -18,11 +18,11 @@ export const translations = {
     },
     projectsPage: {
       title: "My projects",
-      intro: "This section dedicated to my personal and academic projects. In this area, I am pleased to share with you a selection of works that I have created independently or during my educational journey. I would like to clarify that projects carried out for the companies I have collaborated with are not included in this space. I deeply respect the confidentiality and privacy aspects, therefore such works remain confidential and cannot be publicly displayed.",
+      intro: "This section is dedicated to my personal and academic projects. In this area, I am pleased to share with you a selection of works that I have created independently or during my educational journey. I would like to clarify that projects carried out for the companies I have collaborated with are not included in this space. I deeply respect the confidentiality and privacy aspects, therefore such works remain confidential and cannot be publicly displayed.",
       carousel: {
         bnb: "B&B Casa Vacanza website built with Next.js 14+, featuring multi-language support (IT/EN), server-side rendering, and modern responsive design deployed on Vercel.",
         doctor: "GP Doctor landing page made with REACT, HTML, CSS, JS, NODEJS, NODEMAILER, FORMIK, MATERIAL UI, FRAMER MOTION, GOOGLE MAPS API,",
-        todo: "Todo App which helped me improving Javascript methods such as filtering objects.Made using REACT, HTML, CSS, JS, REDUX, Local storage",
+        todo: "Todo App which helped me improving Javascript methods such as filtering objects. Made using REACT, HTML, CSS, JS, REDUX, Local storage",
         weather: "Simple weather app to practice fetching data. Made with HTML, CSS, JS, AJAX, OPEN WEATHER API, COUNTRY FLAGS API ",
         pig: "Simple turn based game that helped me practice JS fundamentals. Made using plain HTML, CSS, JS",
       },
@@ -41,7 +41,7 @@ export const translations = {
       title5: "Innovation and AI",
       text5: `I am an early adopter of generative AI technologies and always stay up to date with the latest trends in AI-assisted development. I was among the first to implement and promote the use of instructions.md files in workspaces to improve consistency in AI outputs. This innovative approach has helped enhance code quality and development efficiency in my projects. I actively explore and integrate new AI tools and methodologies to optimize development workflows and deliver better results.`,
       title6: "Curiosities and hobbies",
-      text6: `I made an e-commerce with Wordpress in 2016 selling few items! I am a sociable person. I love sports, outdoor activities and playing videogames. I love to travel and my dream is to visit all the 7 wonders! I have already visited the Coliseum and Chitchen Itza. Hoping this pandemic gets under control to be able to travel again.`,
+      text6: `I made an e-commerce with Wordpress in 2016 selling few items! I am a sociable person. I love sports, outdoor activities and playing videogames. I love to travel and my dream is to visit all the 7 wonders! I have already visited the Coliseum and Chichen Itza. Hoping this pandemic gets under control to be able to travel again.`,
     },
     projects: {
       bnb: {

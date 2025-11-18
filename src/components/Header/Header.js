@@ -72,7 +72,9 @@ const Header = () => {
         )}
       </div>
       <HeaderList className={classes.largeScreen} />
-      <LanguageSwitcher />
+      <div className={classes.desktopSwitcher}>
+        <LanguageSwitcher />
+      </div>
     </div>
     // </div>
   );

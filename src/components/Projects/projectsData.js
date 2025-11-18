@@ -93,12 +93,15 @@ export const getProjectsData = (language) => {
           <h4>{t.projects.weather.featuresTitle}</h4>
           <br />
           <ul>
-            {t.projects.weather.features.map((item, idx) => (
-              <li key={idx}>
-                <strong>{item.split(":")[0]}:</strong>
-                {item.split(":").slice(1).join(":")}
-              </li>
-            ))}
+            {t.projects.weather.features.map((item, idx) => {
+              const parts = item.split(":");
+              return (
+                <li key={idx}>
+                  <strong>{parts[0]}:</strong>
+                  {parts.slice(1).join(":")}
+                </li>
+              );
+            })}
           </ul>
         </div>
       ),
@@ -126,12 +129,15 @@ export const getProjectsData = (language) => {
           <h4>{t.projects.pig.gameTitle}</h4>
           <br />
           <ul>
-            {t.projects.pig.gameFeatures.map((item, idx) => (
-              <li key={idx}>
-                <strong>{item.split(":")[0]}:</strong>
-                {item.split(":").slice(1).join(":")}
-              </li>
-            ))}
+            {t.projects.pig.gameFeatures.map((item, idx) => {
+              const parts = item.split(":");
+              return (
+                <li key={idx}>
+                  <strong>{parts[0]}:</strong>
+                  {parts.slice(1).join(":")}
+                </li>
+              );
+            })}
           </ul>
         </div>
       ),

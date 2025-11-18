@@ -1,12 +1,16 @@
 import React from "react";
-import { projectsData } from "./projectsData";
+import { getProjectsData } from "./projectsData";
 import ProjectsDetail from "./ProjectsDetail";
 import classes from "./Projects.module.css";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 const ProjectsList = () => {
+  const { language, t } = useLanguage();
+  const projectsData = getProjectsData(language);
+
   return (
     <>
-      <h2 className={classes.detailTitle}>My projects</h2>
+      <h2 className={classes.detailTitle}>{t("projectsPage.title")}</h2>
       <div className={classes.containerDetail}>
         {projectsData.map((item) => {
           return (

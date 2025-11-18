@@ -16,6 +16,17 @@ export const translations = {
       github: "GitHub",
       linkedin: "LinkedIn",
     },
+    projectsPage: {
+      title: "My projects",
+      intro: "This section dedicated to my personal and academic projects. In this area, I am pleased to share with you a selection of works that I have created independently or during my educational journey. I would like to clarify that projects carried out for the companies I have collaborated with are not included in this space. I deeply respect the confidentiality and privacy aspects, therefore such works remain confidential and cannot be publicly displayed.",
+      carousel: {
+        bnb: "B&B Casa Vacanza website built with Next.js 14+, featuring multi-language support (IT/EN), server-side rendering, and modern responsive design deployed on Vercel.",
+        doctor: "GP Doctor landing page made with REACT, HTML, CSS, JS, NODEJS, NODEMAILER, FORMIK, MATERIAL UI, FRAMER MOTION, GOOGLE MAPS API,",
+        todo: "Todo App which helped me improving Javascript methods such as filtering objects.Made using REACT, HTML, CSS, JS, REDUX, Local storage",
+        weather: "Simple weather app to practice fetching data. Made with HTML, CSS, JS, AJAX, OPEN WEATHER API, COUNTRY FLAGS API ",
+        pig: "Simple turn based game that helped me practice JS fundamentals. Made using plain HTML, CSS, JS",
+      },
+    },
     about: {
       title: "About Domenico",
       text0: `My name is Domenico. I am 32 years old and I am from Italy. I started as a self-taught developer and have always been passionate about technology. I started my study journey at the end of 2020 and in 2022 I got my first corporate job in the financial sector. This experience helped me improve both technical and soft skills. I feel like I am improving daily and strive to become a full stack developer. Currently working in the automotive sector using Angular, TypeScript, Azure DevOps, C#, .NET, and SQL. I am interested in smart working positions but willing to occasionally travel (even abroad) for meetings or other business needs. Open to offers and discussion.`,
@@ -132,6 +143,17 @@ export const translations = {
       title: "Mettiti in contatto",
       github: "GitHub",
       linkedin: "LinkedIn",
+    },
+    projectsPage: {
+      title: "I miei progetti",
+      intro: "Questa sezione è dedicata ai miei progetti personali e accademici. In quest'area, sono lieto di condividere con te una selezione di lavori che ho creato in modo indipendente o durante il mio percorso educativo. Vorrei chiarire che i progetti realizzati per le aziende con cui ho collaborato non sono inclusi in questo spazio. Rispetto profondamente gli aspetti di riservatezza e privacy, pertanto tali lavori rimangono confidenziali e non possono essere mostrati pubblicamente.",
+      carousel: {
+        bnb: "Sito web B&B Casa Vacanza costruito con Next.js 14+, dotato di supporto multilingue (IT/EN), rendering lato server e design responsive moderno distribuito su Vercel.",
+        doctor: "Landing page del Medico di Base realizzata con REACT, HTML, CSS, JS, NODEJS, NODEMAILER, FORMIK, MATERIAL UI, FRAMER MOTION, GOOGLE MAPS API,",
+        todo: "App Todo che mi ha aiutato a migliorare i metodi Javascript come il filtraggio degli oggetti. Realizzata usando REACT, HTML, CSS, JS, REDUX, Local storage",
+        weather: "Semplice app meteo per esercitarmi nel recupero dati. Realizzata con HTML, CSS, JS, AJAX, OPEN WEATHER API, COUNTRY FLAGS API ",
+        pig: "Semplice gioco a turni che mi ha aiutato a esercitarmi con i fondamenti di JS. Realizzato usando HTML, CSS, JS puro",
+      },
     },
     about: {
       title: "Su Domenico",

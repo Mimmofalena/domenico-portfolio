@@ -12,37 +12,35 @@ import LinkButton from "../../utils/LinkButton";
 import CarouselComponent from "../Carousel/CarouselComponent";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 const Projects = () => {
+  const { t } = useLanguage();
+
   const carouselItems = [
     {
       image: bnb,
-      description:
-        "B&B Casa Vacanza website built with Next.js 14+, featuring multi-language support (IT/EN), server-side rendering, and modern responsive design deployed on Vercel.",
+      description: t("projectsPage.carousel.bnb"),
       href: "https://casa-vacanza.vercel.app/en/services",
     },
     {
       image: doc,
-      description:
-        "GP Doctor landing page made with REACT, HTML, CSS, JS, NODEJS, NODEMAILER, FORMIK, MATERIAL UI, FRAMER MOTION, GOOGLE MAPS API,",
+      description: t("projectsPage.carousel.doctor"),
       href: "https://www.dottoressatricolimarina.it/",
     },
     {
       image: todo,
-      description:
-        "Todo App which helped me improving Javascript methods such as filtering objects.Made using REACT, HTML, CSS, JS, REDUX, Local storage",
+      description: t("projectsPage.carousel.todo"),
       href: "https://mimmofalena.github.io/Todo-REDUX/",
     },
     {
       image: weather,
-      description:
-        "Simple weather app to practice fetching data. Made with HTML, CSS, JS, AJAX, OPEN WEATHER API, COUNTRY FLAGS API ",
+      description: t("projectsPage.carousel.weather"),
       href: "https://checktheclouds.netlify.app/",
     },
     {
       image: pig,
-      description:
-        "Simple turn based game that helped me practice JS fundamentals. Made using plain HTML, CSS, JS",
+      description: t("projectsPage.carousel.pig"),
       href: "https://mimmofalena.github.io/pig-game/",
     },
   ];
@@ -67,13 +65,7 @@ const Projects = () => {
             <FaHammer />
           </div> */}
           <p style={{ color: "#DDD", padding: "1rem" }}>
-            This section dedicated to my personal and academic projects.&nbsp;
-            In this area, I am pleased to share with you a selection of works
-            that I have created independently or during my educational journey.
-            &nbsp;I would like to clarify that projects carried out for the
-            companies I have collaborated with are not included in this space. I
-            deeply respect the confidentiality and privacy aspects, therefore
-            such works remain confidential and cannot be publicly displayed.
+            {t("projectsPage.intro")}
           </p>
           <CarouselComponent items={carouselItems} autoplay="false" />
           <LinkButton to="/domenico-portfolio/projects" />

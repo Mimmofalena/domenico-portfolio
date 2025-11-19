@@ -1,8 +1,32 @@
 .container {
-  /* background-color: var(--primary); */
+  text-align: center;
+  padding: 2rem 1rem;
 }
 
 .typewriter {
-  /* letter-spacing: 0.08em; */
-  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--primary-color-font);
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.4;
+}
+
+@media screen and (min-width: 768px) {
+  .typewriter {
+    font-size: 2.5rem;
+    min-height: 80px;
+  }
+  
+  .container {
+    padding: 3rem 2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .typewriter {
+    font-size: 3rem;
+  }
 }

@@ -1,11 +1,16 @@
-.title {
-  margin-bottom: 0.5rem;
-  font-size: 20px;
-}
 .container {
-  background-color: var(--tertiary-color-bg);
-  padding: 4rem 0;
+  background: linear-gradient(135deg, var(--secondary-color-bg) 0%, var(--tertiary-color-bg) 100%);
+  padding: 5rem 0;
   position: relative;
+}
+
+.container > p {
+  color: var(--text-light);
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.8;
 }
 
 /* shape divider 1*/

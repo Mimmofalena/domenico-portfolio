@@ -1,34 +1,36 @@
 import React from "react";
 import classes from "./Timeline.module.css";
 import FadeInWhenVisible from "../../utils/FadeInWhenVisible";
+import { motion } from "framer-motion";
 
 const Timeline = () => {
   return (
     <ul className={classes.timeline}>
-      {/* //item 1 */}
-
-      <FadeInWhenVisible delay={0.2}>
-        <li>
-          <div className={classes["direction-l"]}>
-            <div className={classes["flag-wrapper"]}>
-              <span className={classes.hexa}></span>
-              <span className={classes.flag}>Current</span>
-              <span className={classes["time-wrapper"]}>
-                <span className={classes.time}>2024</span>
-              </span>
-            </div>
-            <div className={classes.desc}>
-              Working in IT consulting in the automotive sector since May 2023.
-              Frontend developer in an international team using Angular 11,
-              TypeScript, Angular Material, RxJS, Azure DevOps. Developing new
-              features, bug fixing, performance improvement, following best
-              practices for code reuse. Also supporting the Backend team with C#,
-              .NET framework and SQL. Continuing to make side projects in React,
-              Next.js and MongoDB.
-            </div>
+      {/* //item 1 - Always visible immediately */}
+      <motion.li
+        initial={{ opacity: 0, scale: 0 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.3 }}
+      >
+        <div className={classes["direction-l"]}>
+          <div className={classes["flag-wrapper"]}>
+            <span className={classes.hexa}></span>
+            <span className={classes.flag}>Current</span>
+            <span className={classes["time-wrapper"]}>
+              <span className={classes.time}>2024</span>
+            </span>
           </div>
-        </li>
-      </FadeInWhenVisible>
+          <div className={classes.desc}>
+            Working in IT consulting in the automotive sector since May 2023.
+            Frontend developer in an international team using Angular 11,
+            TypeScript, Angular Material, RxJS, Azure DevOps. Developing new
+            features, bug fixing, performance improvement, following best
+            practices for code reuse. Also supporting the Backend team with C#,
+            .NET framework and SQL. Continuing to make side projects in React,
+            Next.js and MongoDB.
+          </div>
+        </div>
+      </motion.li>
       <FadeInWhenVisible delay={0.2}>
         <li>
           <div className={classes["direction-r"]}>

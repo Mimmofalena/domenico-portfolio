@@ -7,9 +7,9 @@ import { GrMonitor } from "react-icons/gr";
 import { Container, Paper, Typography, Box, Chip } from "@mui/material";
 
 const StackList = () => {
-  const frontendTechs = ["React", "Next.js", "Angular 11", "TypeScript", "HTML5", "CSS3", "SASS", "Material-UI"];
-  const backendTechs = ["Node.js", "C#", ".NET", "SQL", "MongoDB"];
-  const tools = ["Git", "Azure DevOps", "Postman"];
+  const frontendTechs = ["React", "Next.js", "Angular 11", "TypeScript", "HTML5", "CSS3", "SASS", "Material-UI", "RxJS"];
+  const backendTechs = ["Node.js", "C#", ".NET", "SQL", "MongoDB", "Express"];
+  const tools = ["Git", "Azure DevOps", "Postman", "NPM"];
 
   return (
     <div className={classes.container}>
@@ -20,33 +20,28 @@ const StackList = () => {
         <Container component="main">
           <FadeInWhenVisible delay={0.2}>
             <Paper style={{ padding: "30px", marginTop: "20px" }}>
-              <Typography variant="h5" gutterBottom style={{ fontWeight: 700, marginBottom: "1.5rem" }}>
+              <Typography variant="h5" gutterBottom style={{ fontWeight: 700, marginBottom: "2.5rem", textAlign: "center" }}>
                 Tech Stack
               </Typography>
-              
-              <Typography variant="body1" gutterBottom style={{ marginBottom: "2rem", lineHeight: 1.8 }}>
-                Frontend Developer with full-stack experience, specializing in transforming designs into 
-                functional, responsive web applications. Currently working in the automotive sector.
-              </Typography>
 
-              <Box style={{ marginBottom: "2rem" }}>
+              <Box style={{ marginBottom: "2.5rem" }}>
                 <Typography variant="h6" style={{ fontWeight: 600, marginBottom: "1rem", color: "#0f3460" }}>
                   Frontend
                 </Typography>
-                <Box style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem" }}>
+                <Box style={{ display: "flex", flexWrap: "wrap", gap: "0.75rem" }}>
                   {frontendTechs.map(tech => (
-                    <Chip key={tech} label={tech} style={{ backgroundColor: "#00adb5", color: "white", fontWeight: 500 }} />
+                    <Chip key={tech} label={tech} style={{ backgroundColor: "#00adb5", color: "white", fontWeight: 500, fontSize: "0.9rem", padding: "0.5rem" }} />
                   ))}
                 </Box>
               </Box>
 
-              <Box style={{ marginBottom: "2rem" }}>
+              <Box style={{ marginBottom: "2.5rem" }}>
                 <Typography variant="h6" style={{ fontWeight: 600, marginBottom: "1rem", color: "#0f3460" }}>
                   Backend & Database
                 </Typography>
-                <Box style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem" }}>
+                <Box style={{ display: "flex", flexWrap: "wrap", gap: "0.75rem" }}>
                   {backendTechs.map(tech => (
-                    <Chip key={tech} label={tech} style={{ backgroundColor: "#2e5c8a", color: "white", fontWeight: 500 }} />
+                    <Chip key={tech} label={tech} style={{ backgroundColor: "#2e5c8a", color: "white", fontWeight: 500, fontSize: "0.9rem", padding: "0.5rem" }} />
                   ))}
                 </Box>
               </Box>
@@ -55,9 +50,9 @@ const StackList = () => {
                 <Typography variant="h6" style={{ fontWeight: 600, marginBottom: "1rem", color: "#0f3460" }}>
                   Tools & DevOps
                 </Typography>
-                <Box style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem" }}>
+                <Box style={{ display: "flex", flexWrap: "wrap", gap: "0.75rem" }}>
                   {tools.map(tool => (
-                    <Chip key={tool} label={tool} style={{ backgroundColor: "#16213e", color: "white", fontWeight: 500 }} />
+                    <Chip key={tool} label={tool} style={{ backgroundColor: "#16213e", color: "white", fontWeight: 500, fontSize: "0.9rem", padding: "0.5rem" }} />
                   ))}
                 </Box>
               </Box>

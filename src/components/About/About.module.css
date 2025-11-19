@@ -3,6 +3,34 @@
   padding: 2rem 0;
 }
 
+.title {
+  text-align: center;
+  margin: 3rem 0 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color-font);
+}
+
+.text {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  background: var(--section-bg);
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--highlight-color);
+  line-height: 1.8;
+  color: var(--primary-color-font);
+  font-size: 1.05rem;
+  list-style: none;
+}
+
+.text:before {
+  content: "✓ ";
+  color: var(--highlight-color);
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;

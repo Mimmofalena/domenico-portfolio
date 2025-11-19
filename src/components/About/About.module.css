@@ -61,15 +61,16 @@
 }
 
 .quote {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-style: italic;
-  color: var(--text-gray);
+  color: var(--primary-color-font);
   line-height: 1.8;
-  padding: 1.5rem;
-  background: var(--section-bg);
+  padding: 2rem;
+  background: var(--primary-color-bg);
   border-left: 4px solid var(--highlight-color);
   border-radius: 8px;
   text-align: left;
+  box-shadow: var(--card-shadow);
 }
 
 @media screen and (min-width: 768px) {
@@ -80,8 +81,8 @@
   }
   
   .quote {
-    font-size: 1.2rem;
-    padding: 2rem;
+    font-size: 1.3rem;
+    padding: 2.5rem;
   }
 }
 

@@ -94,6 +94,10 @@
   font-weight: 600;
 }
 
+.desktopSwitcher {
+  display: none;
+}
+
 /* small tablet styles */
 
 @media screen and (min-width: 620px) {
@@ -112,6 +116,10 @@
   }
   .menu {
     display: none;
+  }
+  .desktopSwitcher {
+    display: block;
+    padding-right: 2rem;
   }
   .inactive {
     margin-left: auto;

@@ -1,8 +1,10 @@
 import React from "react";
 import classes from "./Header.module.css";
 import { NavLink } from "react-router-dom";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 const HeaderList = (props) => {
+  const { t } = useLanguage();
   return (
     <div className={props.className}>
       <NavLink
@@ -13,7 +15,7 @@ const HeaderList = (props) => {
           isActive ? classes.active : classes.inactive
         }
       >
-        Home
+        {t("header.home")}
       </NavLink>
 
       <NavLink
@@ -22,7 +24,7 @@ const HeaderList = (props) => {
           isActive ? classes.active : classes.inactive
         }
       >
-        Projects
+        {t("header.projects")}
       </NavLink>
       <NavLink
         to="domenico-portfolio/stack"
@@ -30,7 +32,7 @@ const HeaderList = (props) => {
           isActive ? classes.active : classes.inactive
         }
       >
-        Stack
+        {t("header.stack")}
       </NavLink>
       <NavLink
         to="domenico-portfolio/about"
@@ -38,7 +40,7 @@ const HeaderList = (props) => {
           isActive ? classes.active : classes.inactive
         }
       >
-        About
+        {t("header.about")}
       </NavLink>
     </div>
   );

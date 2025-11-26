@@ -5,8 +5,10 @@ import LinkButton from "../../utils/LinkButton";
 import FadeInWhenVisible from "../../utils/FadeInWhenVisible";
 import { GrMonitor } from "react-icons/gr";
 import { Container, Paper, Typography, Box, Chip } from "@mui/material";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 const StackList = () => {
+  const { t } = useLanguage();
   const frontendTechs = ["React", "Next.js", "Angular 11", "TypeScript", "HTML5", "CSS3", "SASS", "Material-UI", "RxJS"];
   const backendTechs = ["Node.js", "C#", ".NET", "SQL", "MongoDB", "Express"];
   const tools = ["Git", "Azure DevOps", "Postman", "NPM"];
@@ -21,12 +23,12 @@ const StackList = () => {
           <FadeInWhenVisible delay={0.2}>
             <Paper style={{ padding: "30px", marginTop: "20px" }}>
               <Typography variant="h5" gutterBottom style={{ fontWeight: 700, marginBottom: "2.5rem", textAlign: "center" }}>
-                Tech Stack
+                {t("stackPage.title")}
               </Typography>
 
               <Box style={{ marginBottom: "2.5rem" }}>
                 <Typography variant="h6" style={{ fontWeight: 600, marginBottom: "1rem", color: "#0f3460" }}>
-                  Frontend
+                  {t("stackPage.frontend")}
                 </Typography>
                 <Box style={{ display: "flex", flexWrap: "wrap", gap: "0.75rem" }}>
                   {frontendTechs.map(tech => (
@@ -37,7 +39,7 @@ const StackList = () => {
 
               <Box style={{ marginBottom: "2.5rem" }}>
                 <Typography variant="h6" style={{ fontWeight: 600, marginBottom: "1rem", color: "#0f3460" }}>
-                  Backend & Database
+                  {t("stackPage.backendDatabase")}
                 </Typography>
                 <Box style={{ display: "flex", flexWrap: "wrap", gap: "0.75rem" }}>
                   {backendTechs.map(tech => (
@@ -48,7 +50,7 @@ const StackList = () => {
 
               <Box>
                 <Typography variant="h6" style={{ fontWeight: 600, marginBottom: "1rem", color: "#0f3460" }}>
-                  Tools & DevOps
+                  {t("stackPage.toolsDevops")}
                 </Typography>
                 <Box style={{ display: "flex", flexWrap: "wrap", gap: "0.75rem" }}>
                   {tools.map(tool => (

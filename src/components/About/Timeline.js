@@ -2,8 +2,10 @@ import React from "react";
 import classes from "./Timeline.module.css";
 import FadeInWhenVisible from "../../utils/FadeInWhenVisible";
 import { motion } from "framer-motion";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 const Timeline = () => {
+  const { t } = useLanguage();
   return (
     <ul className={classes.timeline}>
       {/* //item 1 - Always visible immediately */}
@@ -15,19 +17,13 @@ const Timeline = () => {
         <div className={classes["direction-l"]}>
           <div className={classes["flag-wrapper"]}>
             <span className={classes.hexa}></span>
-            <span className={classes.flag}>Current</span>
+            <span className={classes.flag}>{t("timeline.current.flag")}</span>
             <span className={classes["time-wrapper"]}>
-              <span className={classes.time}>2024</span>
+              <span className={classes.time}>{t("timeline.current.time")}</span>
             </span>
           </div>
           <div className={classes.desc}>
-            Working in IT consulting in the automotive sector since May 2023.
-            Frontend developer in an international team using Angular 11,
-            TypeScript, Angular Material, RxJS, Azure DevOps. Developing new
-            features, bug fixing, performance improvement, following best
-            practices for code reuse. Also supporting the Backend team with C#,
-            .NET framework and SQL. Continuing to make side projects in React,
-            Next.js and MongoDB.
+            {t("timeline.current.desc")}
           </div>
         </div>
       </motion.li>
@@ -37,18 +33,14 @@ const Timeline = () => {
             <div className={classes["flag-wrapper"]}>
               <span className={classes.hexa}></span>
               <span className={classes.flag}>
-                Digital payments sector
+                {t("timeline.digitalPayments.flag")}
               </span>
               <span className={classes["time-wrapper"]}>
-                <span className={classes.time}>May 2022 - May 2023</span>
+                <span className={classes.time}>{t("timeline.digitalPayments.time")}</span>
               </span>
             </div>
             <div className={classes.desc}>
-              Worked in IT consulting for a banking payments company as a Frontend
-              Developer. Worked on Cardholders Project and Backoffice Project using
-              React, Redux, Sagas, React Class and Functional Components. Developed
-              new features and bug fixing, working closely with Backend team,
-              Graphic Designers, Scrum masters and testers.
+              {t("timeline.digitalPayments.desc")}
             </div>
           </div>
         </li>
@@ -58,14 +50,13 @@ const Timeline = () => {
           <div className={classes["direction-l"]}>
             <div className={classes["flag-wrapper"]}>
               <span className={classes.hexa}></span>
-              <span className={classes.flag}>Developed IT skills</span>
+              <span className={classes.flag}>{t("timeline.developedIT.flag")}</span>
               <span className={classes["time-wrapper"]}>
-                <span className={classes.time}>2021</span>
+                <span className={classes.time}>{t("timeline.developedIT.time")}</span>
               </span>
             </div>
             <div className={classes.desc}>
-              Refreshed IT foundation and studied trending technologies such as
-              React and ES6.
+              {t("timeline.developedIT.desc")}
             </div>
           </div>
         </li>
@@ -76,15 +67,13 @@ const Timeline = () => {
           <div className={classes["direction-r"]}>
             <div className={classes["flag-wrapper"]}>
               <span className={classes.hexa}></span>
-              <span className={classes.flag}>Back to Italy</span>
+              <span className={classes.flag}>{t("timeline.backToItaly.flag")}</span>
               <span className={classes["time-wrapper"]}>
-                <span className={classes.time}>2020</span>
+                <span className={classes.time}>{t("timeline.backToItaly.time")}</span>
               </span>
             </div>
             <div className={classes.desc}>
-              I moved back to Italy and I commenced study web development whilst
-              working as first line Intensive care unit nurse during COVID
-              pandemic
+              {t("timeline.backToItaly.desc")}
             </div>
           </div>
         </li>
@@ -94,14 +83,13 @@ const Timeline = () => {
           <div className={classes["direction-l"]}>
             <div className={classes["flag-wrapper"]}>
               <span className={classes.hexa}></span>
-              <span className={classes.flag}>Australia</span>
+              <span className={classes.flag}>{t("timeline.australia.flag")}</span>
               <span className={classes["time-wrapper"]}>
-                <span className={classes.time}>2019-2020</span>
+                <span className={classes.time}>{t("timeline.australia.time")}</span>
               </span>
             </div>
             <div className={classes.desc}>
-              Took 1 gap year. I travelled and worked across the East coast of
-              Australia and Tasmania
+              {t("timeline.australia.desc")}
             </div>
           </div>
         </li>
@@ -111,17 +99,15 @@ const Timeline = () => {
           <div className={classes["direction-r"]}>
             <div className={classes["flag-wrapper"]}>
               <span className={classes.hexa}></span>
-              <span className={classes.flag}>Moved to the UK</span>
+              <span className={classes.flag}>{t("timeline.movedToUK.flag")}</span>
               <span className={classes["time-wrapper"]}>
-                <span className={classes.time}>2013-2019</span>
+                <span className={classes.time}>{t("timeline.movedToUK.time")}</span>
               </span>
             </div>
             <div className={classes.desc}>
-              My first as nurse in Northern Ireland. 6 months after I moved to
-              England where I worked mainly for the NHS. <br />
+              {t("timeline.movedToUK.desc")} <br />
               <br />
-              Whilst in the UK I created my first Wordpress E-commerce site with
-              few sales
+              {t("timeline.movedToUK.desc2")}
             </div>
           </div>
         </li>
@@ -131,13 +117,13 @@ const Timeline = () => {
           <div className={classes["direction-l"]}>
             <div className={classes["flag-wrapper"]}>
               <span className={classes.hexa}></span>
-              <span className={classes.flag}>Nursing Degree</span>
+              <span className={classes.flag}>{t("timeline.nursingDegree.flag")}</span>
               <span className={classes["time-wrapper"]}>
-                <span className={classes.time}>2009-2012</span>
+                <span className={classes.time}>{t("timeline.nursingDegree.time")}</span>
               </span>
             </div>
             <div className={classes.desc}>
-              Took nursing degree with 109/110 mark at University of Messina
+              {t("timeline.nursingDegree.desc")}
             </div>
           </div>
         </li>
@@ -148,14 +134,13 @@ const Timeline = () => {
           <div className={classes["direction-r"]}>
             <div className={classes["flag-wrapper"]}>
               <span className={classes.hexa}></span>
-              <span className={classes.flag}>Italian Army</span>
+              <span className={classes.flag}>{t("timeline.italianArmy.flag")}</span>
               <span className={classes["time-wrapper"]}>
-                <span className={classes.time}>2008-2009</span>
+                <span className={classes.time}>{t("timeline.italianArmy.time")}</span>
               </span>
             </div>
             <div className={classes.desc}>
-              I spent 1 year in the army as volunteer. Fantastic life experience
-              away from my home town. I spent 7 months in Rome.
+              {t("timeline.italianArmy.desc")}
             </div>
           </div>
         </li>
@@ -166,15 +151,13 @@ const Timeline = () => {
           <div className={classes["direction-l"]}>
             <div className={classes["flag-wrapper"]}>
               <span className={classes.hexa}></span>
-              <span className={classes.flag}>Finished High School</span>
+              <span className={classes.flag}>{t("timeline.highSchool.flag")}</span>
               <span className={classes["time-wrapper"]}>
-                <span className={classes.time}>2008</span>
+                <span className={classes.time}>{t("timeline.highSchool.time")}</span>
               </span>
             </div>
             <div className={classes.desc}>
-              High School G.Marconi in Messina. Main subject where electronics
-              and telecommunications. We used pascal, CAD,CISCO certification,
-              programmed little chips using hex code.
+              {t("timeline.highSchool.desc")}
             </div>
           </div>
         </li>

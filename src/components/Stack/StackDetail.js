@@ -424,11 +424,15 @@ const StackDetail = () => {
             </p>
 
             <p>
-              I'm an early adopter of generative AI technologies, always staying
-              up to date with the latest trends. I was among the first to
-              implement and promote the use of instructions.md files in workspaces
-              to improve consistency in AI outputs, demonstrating innovation in
-              AI-assisted development workflows.
+              I'm an early adopter of generative AI technologies and have been
+              consistently using AI tools for over two years to enhance my
+              productivity. These tools help me delegate tedious and repetitive
+              tasks, while I maintain a "man in the loop" approach to ensure
+              quality, accuracy, and reliability of the code. I was among the
+              first to implement and promote the use of instructions.md files in
+              workspaces to improve consistency in AI outputs. This innovative
+              methodology has helped enhance code quality and development
+              efficiency in my projects.
             </p>
 
             <p>

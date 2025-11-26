@@ -59,7 +59,7 @@ const CarouselComponent = ({ items }) => {
                   maxWidth: "100%",
                   overflow: "hidden",
                   width: "100%",
-                  objectFit: "cover",
+                  objectFit: "contain",
                 }}
                 src={item.image}
                 alt={`Slide ${index}`}

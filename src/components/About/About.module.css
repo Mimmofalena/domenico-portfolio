@@ -1,6 +1,6 @@
 .container {
   background-color: var(--primary-color-bg);
-  padding: 2rem 0;
+  padding: 0.5rem 0;
 }
 
 .title {
@@ -36,7 +36,7 @@
   grid-template-columns: 1fr;
   gap: 2rem;
   align-items: center;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   max-width: 1200px;
   margin: 0 auto;
 }

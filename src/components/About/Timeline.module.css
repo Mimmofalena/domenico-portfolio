@@ -5,10 +5,11 @@
   height: 35px;
   width: 60px;
   font-size: 22px;
-  background: #f0f0f0;
-  color: #3c3c3c;
+  background: var(--highlight-color);
+  color: var(--secondary-color-font);
   position: relative;
   margin-top: 15px;
+  box-shadow: 0 2px 8px rgba(0, 173, 181, 0.3);
 }
 
 .hexa:before {
@@ -17,7 +18,7 @@
   left: 0;
   width: 0;
   height: 0;
-  border-bottom: 15px solid #f0f0f0;
+  border-bottom: 15px solid var(--highlight-color);
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
   top: -15px;
@@ -31,16 +32,19 @@
   height: 0;
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
-  border-top: 15px solid #f0f0f0;
+  border-top: 15px solid var(--highlight-color);
   bottom: -15px;
 }
 
 .timeline {
   position: relative;
-  padding: 0;
+  padding: 2rem 0;
   width: 100%;
   margin-top: 20px;
   list-style-type: none;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .timeline:before {
@@ -49,52 +53,17 @@
   top: 0;
   content: " ";
   display: block;
-  width: 2px;
+  width: 4px;
   height: 100%;
-  margin-left: -1px;
-  background: rgb(213, 213, 213);
-  background: -moz-linear-gradient(
-    top,
-    rgba(213, 213, 213, 0) 0%,
-    rgb(213, 213, 213) 8%,
-    rgb(213, 213, 213) 92%,
-    rgba(213, 213, 213, 0) 100%
-  );
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(0%, rgba(30, 87, 153, 1)),
-    color-stop(100%, rgba(125, 185, 232, 1))
-  );
-  background: -webkit-linear-gradient(
-    top,
-    rgba(213, 213, 213, 0) 0%,
-    rgb(213, 213, 213) 8%,
-    rgb(213, 213, 213) 92%,
-    rgba(213, 213, 213, 0) 100%
-  );
-  background: -o-linear-gradient(
-    top,
-    rgba(213, 213, 213, 0) 0%,
-    rgb(213, 213, 213) 8%,
-    rgb(213, 213, 213) 92%,
-    rgba(213, 213, 213, 0) 100%
-  );
-  background: -ms-linear-gradient(
-    top,
-    rgba(213, 213, 213, 0) 0%,
-    rgb(213, 213, 213) 8%,
-    rgb(213, 213, 213) 92%,
-    rgba(213, 213, 213, 0) 100%
-  );
+  margin-left: -2px;
   background: linear-gradient(
-    to bottom,
-    rgba(213, 213, 213, 0) 0%,
-    rgb(213, 213, 213) 8%,
-    rgb(213, 213, 213) 92%,
-    rgba(213, 213, 213, 0) 100%
+    180deg,
+    rgba(0, 173, 181, 0) 0%,
+    var(--highlight-color) 8%,
+    var(--highlight-color) 92%,
+    rgba(0, 173, 181, 0) 100%
   );
+  border-radius: 2px;
   z-index: 5;
 }
 
@@ -103,10 +72,10 @@
 }
 
 .timeline .hexa {
-  width: 16px;
-  height: 10px;
+  width: 20px;
+  height: 12px;
   position: absolute;
-  background: var(--secondary-color-bg);
+  background: var(--highlight-color);
   z-index: 5;
   left: 0;
   right: 0;
@@ -117,17 +86,17 @@
 }
 
 .timeline .hexa:before {
-  border-bottom: 5px solid var(--secondary-color-bg);
-  border-left-width: 8px;
-  border-right-width: 8px;
-  top: -4px;
+  border-bottom: 6px solid var(--highlight-color);
+  border-left-width: 10px;
+  border-right-width: 10px;
+  top: -5px;
 }
 
 .timeline .hexa:after {
-  border-left-width: 8px;
-  border-right-width: 8px;
-  border-top: 5px solid var(--secondary-color-bg);
-  bottom: -4px;
+  border-left-width: 10px;
+  border-right-width: 10px;
+  border-top: 6px solid var(--highlight-color);
+  bottom: -5px;
 }
 
 .direction-l,
@@ -140,17 +109,21 @@
 .flag-wrapper {
   text-align: center;
   position: relative;
+  margin-bottom: 1rem;
 }
 
 .flag {
   position: relative;
-  display: inline;
-  background: rgb(255, 255, 255);
+  display: inline-block;
+  background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-color-light) 100%);
+  color: var(--secondary-color-font);
   font-weight: 600;
+  font-size: 1.1rem;
   z-index: 15;
-  padding: 6px 10px;
-  text-align: left;
-  border-radius: 5px;
+  padding: 12px 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
 }
 
 .direction-l .flag:after,
@@ -158,70 +131,46 @@
   content: "";
   position: absolute;
   left: 50%;
-  top: -15px;
+  top: -10px;
   height: 0;
   width: 0;
-  margin-left: -8px;
+  margin-left: -10px;
   border: solid transparent;
-  border-bottom-color: rgb(255, 255, 255);
-  border-width: 8px;
+  border-bottom-color: var(--accent-color);
+  border-width: 10px;
   pointer-events: none;
-}
-
-.direction-l .flag {
-  -webkit-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15),
-    0 0 1px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
-  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
-}
-
-.direction-r .flag {
-  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15),
-    0 0 1px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
 }
 
 .time-wrapper {
   display: block;
   position: relative;
-  margin: 4px 0 0 0;
+  margin: 0.75rem 0;
   z-index: 14;
   line-height: 1em;
   color: var(--primary-color-font);
 }
 
-.direction-l .time-wrapper {
-  float: none;
-}
-
-.direction-r .time-wrapper {
-  float: none;
-}
-
 .time {
-  background: var(--primary-color-bg);
+  background: var(--section-bg);
   display: inline-block;
-  padding: 8px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--text-gray);
+  font-size: 0.95rem;
 }
 
 .desc {
   position: relative;
-  margin: 1em 0 0 0;
-  padding: 1em;
-  background: rgb(254, 254, 254);
-  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  margin: 1.5em 1em 0 1em;
+  padding: 1.5em;
+  background: var(--primary-color-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
   z-index: 15;
-}
-
-.direction-l .desc,
-.direction-r .desc {
-  position: relative;
-  margin: 1em 1em 0 1em;
-  padding: 1em;
-  z-index: 15;
+  line-height: 1.6;
+  color: var(--primary-color-font);
+  border-left: 4px solid var(--highlight-color);
 }
 
 @media (min-width: 768px) {

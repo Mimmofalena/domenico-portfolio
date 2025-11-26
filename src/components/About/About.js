@@ -33,11 +33,12 @@ const About = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            <q className={classes.quote}>
-              Happiness is an attitude of mind, bord of the simple determination
-              to be happy under all outward circumstances. <br />
-              J.Donald Walters
-            </q>
+            <blockquote className={classes.quote}>
+              "Happiness is an attitude of mind, born of the simple determination to be happy under all outward circumstances."
+              <footer style={{ marginTop: "1rem", fontWeight: 600, color: "var(--accent-color)" }}>
+                — J. Donald Walters
+              </footer>
+            </blockquote>
           </motion.div>
         </div>
         <Welcome />

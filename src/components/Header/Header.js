@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import classes from "./Header.module.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { CgDetailsMore } from "react-icons/cg";
 import HeaderList from "./HeaderList";
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
@@ -14,7 +14,9 @@ const Header = () => {
   };
   return (
     <div className={classes.header}>
-      <h2 className={classes.logo}>{t("header.logo")}</h2>
+      <Link to="/domenico-portfolio" className={classes.logoLink}>
+        <h2 className={classes.logo}>{t("header.logo")}</h2>
+      </Link>
       <div className={classes.menu}>
         {isOpen ? (
           <h2 className={classes.more} onClick={menuHandler}>

@@ -6,22 +6,23 @@
 
 .button {
   padding: 0.5rem 1rem;
-  border: 2px solid #333;
+  border: 2px solid var(--secondary-color-font);
   background: transparent;
-  color: #333;
+  color: var(--secondary-color-font);
   cursor: pointer;
   font-weight: 600;
   font-size: 0.9rem;
-  border-radius: 4px;
+  border-radius: 6px;
   transition: all 0.3s ease;
 }
 
 .button:hover {
-  background: #333;
-  color: white;
+  background: var(--secondary-color-font);
+  color: var(--secondary-color-bg);
 }
 
 .button.active {
-  background: #333;
-  color: white;
+  background: var(--highlight-color);
+  color: var(--secondary-color-font);
+  border-color: var(--highlight-color);
 }

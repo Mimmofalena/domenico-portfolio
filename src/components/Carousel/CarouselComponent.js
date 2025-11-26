@@ -8,22 +8,23 @@ const CarouselComponent = ({ items }) => {
   const theme = useTheme();
 
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
+    arrows: true,
     responsive: [
       {
         breakpoint: theme.breakpoints.values.sm,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: false,
         },
       },
-      // You can add more breakpoints here
     ],
   };
 
@@ -38,10 +39,18 @@ const CarouselComponent = ({ items }) => {
             style={{ textDecoration: "none", color: "inherit" }}
           >
             <Paper
-              elevation={3}
-              sx={{ textAlign: "center", color: theme.palette.text.secondary }}
+              elevation={6}
+              sx={{ 
+                textAlign: "center", 
+                borderRadius: "12px",
+                overflow: "hidden",
+                transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                "&:hover": {
+                  transform: "translateY(-8px)",
+                  boxShadow: "0 10px 30px rgba(0, 0, 0, 0.3)",
+                }
+              }}
             >
-              {/* Image and Description */}
               <Box
                 component="img"
                 sx={{
@@ -51,21 +60,19 @@ const CarouselComponent = ({ items }) => {
                   overflow: "hidden",
                   width: "100%",
                   objectFit: "cover",
-                  // objectPosition: "left center",
                 }}
                 src={item.image}
                 alt={`Slide ${index}`}
               />
               <Box
                 sx={{
-                  padding: theme.spacing(2),
-                  backgroundColor: "#000",
-                  color: "#FFF",
-                  border: "1px solid #FFF",
-                  boxShadow: "2px 4px 8px #333",
+                  padding: theme.spacing(3),
+                  background: "linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)",
+                  color: "#e4e4e4",
+                  borderTop: "3px solid #00adb5",
                 }}
               >
-                <p>{item.description}</p>
+                <p style={{ margin: 0, lineHeight: 1.6, fontSize: "1rem" }}>{item.description}</p>
               </Box>
             </Paper>
           </a>

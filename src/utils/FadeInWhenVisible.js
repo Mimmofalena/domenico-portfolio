@@ -6,7 +6,7 @@ const FadeInWhenVisible = ({ delay, children }) => {
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true }}
+      viewport={{ once: true, amount: 0.1 }}
       transition={{ duration: 0.3, delay }}
       variants={{
         visible: { opacity: 1, scale: 1 },

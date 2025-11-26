@@ -4,9 +4,13 @@ import Card from "../../utils/Card";
 import LinkButton from "../../utils/LinkButton";
 import FadeInWhenVisible from "../../utils/FadeInWhenVisible";
 import { GrMonitor } from "react-icons/gr";
-import { Container, Paper, Typography } from "@mui/material";
+import { Container, Paper, Typography, Box, Chip } from "@mui/material";
 
 const StackList = () => {
+  const frontendTechs = ["React", "Next.js", "Angular 11", "TypeScript", "HTML5", "CSS3", "SASS", "Material-UI", "RxJS"];
+  const backendTechs = ["Node.js", "C#", ".NET", "SQL", "MongoDB", "Express"];
+  const tools = ["Git", "Azure DevOps", "Postman", "NPM"];
+
   return (
     <div className={classes.container}>
       <Card>
@@ -15,36 +19,43 @@ const StackList = () => {
         </div>
         <Container component="main">
           <FadeInWhenVisible delay={0.2}>
-            <Paper style={{ padding: "20px", marginTop: "20px" }}>
-              <Typography variant="h5" gutterBottom>
+            <Paper style={{ padding: "30px", marginTop: "20px" }}>
+              <Typography variant="h5" gutterBottom style={{ fontWeight: 700, marginBottom: "2.5rem", textAlign: "center" }}>
                 Tech Stack
               </Typography>
-              <Typography variant="body1" gutterBottom>
-                As a Frontend Developer with experience in full-stack
-                development, I excel in transforming design mockups into
-                fully-functional websites. My skill set includes a strong
-                foundation in JavaScript, HTML, and CSS, enabling me to develop
-                responsive and interactive web interfaces with precision. I am
-                proficient in React and Next.js for frontend development, and
-                Angular for enterprise applications. Currently working in the
-                automotive sector using Angular 11, TypeScript, Angular Material,
-                and RxJS. Through my experience with SASS, I am adept at applying
-                advanced styling techniques to align with given design
-                specifications.
-              </Typography>
-              <Typography variant="body1" gutterBottom>
-                My backend capabilities include Node.js, MongoDB, C#, .NET, and
-                SQL, ensuring robust server-side functionality and effective
-                database management. In my current role, I support the Backend team
-                with C#, .NET framework and SQL while developing new features, bug
-                fixing, and performance improvements on the frontend. I utilize
-                tools like Material-UI, Angular Material, and Bootstrap to
-                faithfully implement designs with a keen eye for detail. Proficient
-                in Git and Azure DevOps for version control and collaboration, and
-                skilled in using Postman for API testing, I ensure that the
-                technical aspects of web development are handled with utmost
-                efficiency.
-              </Typography>
+
+              <Box style={{ marginBottom: "2.5rem" }}>
+                <Typography variant="h6" style={{ fontWeight: 600, marginBottom: "1rem", color: "#0f3460" }}>
+                  Frontend
+                </Typography>
+                <Box style={{ display: "flex", flexWrap: "wrap", gap: "0.75rem" }}>
+                  {frontendTechs.map(tech => (
+                    <Chip key={tech} label={tech} style={{ backgroundColor: "#00adb5", color: "white", fontWeight: 500, fontSize: "0.9rem", padding: "0.5rem" }} />
+                  ))}
+                </Box>
+              </Box>
+
+              <Box style={{ marginBottom: "2.5rem" }}>
+                <Typography variant="h6" style={{ fontWeight: 600, marginBottom: "1rem", color: "#0f3460" }}>
+                  Backend & Database
+                </Typography>
+                <Box style={{ display: "flex", flexWrap: "wrap", gap: "0.75rem" }}>
+                  {backendTechs.map(tech => (
+                    <Chip key={tech} label={tech} style={{ backgroundColor: "#2e5c8a", color: "white", fontWeight: 500, fontSize: "0.9rem", padding: "0.5rem" }} />
+                  ))}
+                </Box>
+              </Box>
+
+              <Box>
+                <Typography variant="h6" style={{ fontWeight: 600, marginBottom: "1rem", color: "#0f3460" }}>
+                  Tools & DevOps
+                </Typography>
+                <Box style={{ display: "flex", flexWrap: "wrap", gap: "0.75rem" }}>
+                  {tools.map(tool => (
+                    <Chip key={tool} label={tool} style={{ backgroundColor: "#16213e", color: "white", fontWeight: 500, fontSize: "0.9rem", padding: "0.5rem" }} />
+                  ))}
+                </Box>
+              </Box>
             </Paper>
           </FadeInWhenVisible>
         </Container>

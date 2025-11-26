@@ -1,8 +1,50 @@
 .container {
-  /* background-color: var(--primary); */
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, rgba(15, 52, 96, 0.05) 0%, rgba(0, 173, 181, 0.05) 100%);
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroContent {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .typewriter {
-  /* letter-spacing: 0.08em; */
-  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color-font);
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.4;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 4rem 2rem;
+    min-height: 350px;
+  }
+  
+  .typewriter {
+    font-size: 3rem;
+    min-height: 150px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 5rem 2rem;
+    min-height: 400px;
+  }
+  
+  .typewriter {
+    font-size: 3.5rem;
+    min-height: 180px;
+  }
 }

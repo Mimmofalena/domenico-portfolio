@@ -1,28 +1,81 @@
 .container {
-  background-color: white;
+  background-color: var(--section-bg);
+  padding: 4rem 2rem;
 }
+
 .title {
   text-align: center;
-  margin-bottom: 0.5rem;
-  font-size: 20px;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color-font);
 }
+
 .containerIcons {
-  /* width: 50%; */
   display: flex;
-  align-self: center;
-  justify-content: space-around;
-  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: 0 auto;
 }
+
 .containerIcon {
   display: flex;
-  margin-top: 0.5rem;
-  margin-right: 0.5rem;
-  margin-left: 0.5rem;
-  transition: 0.5s ease;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 2rem;
+  background: var(--primary-color-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+  transition: all 0.3s ease;
+  min-width: 150px;
+  text-decoration: none;
 }
+
 .containerIcon:hover {
-  transform: scale(1.2);
+  transform: translateY(-8px);
+  box-shadow: var(--card-shadow-hover);
+  background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-color-light) 100%);
+  color: var(--secondary-color-font);
 }
+
+.containerIcon:hover .icon {
+  color: var(--secondary-color-font);
+}
+
+.containerIcon:hover p {
+  color: var(--secondary-color-font);
+}
+
 .icon {
-  font-size: 1.5rem;
+  font-size: 3rem;
+  color: var(--accent-color);
+  transition: all 0.3s ease;
+}
+
+.containerIcon p {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-color-font);
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+  
+  .containerIcons {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .containerIcon {
+    width: 100%;
+    max-width: 300px;
+  }
 }

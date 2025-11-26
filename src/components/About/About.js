@@ -6,8 +6,10 @@ import LinkButton from "../../utils/LinkButton";
 import { motion } from "framer-motion";
 import domenicoPicture from "../../assets/immagine-curriculum.jpg";
 import Welcome from "../Welcome/Welcome";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 const About = () => {
+  const { t } = useLanguage();
   return (
     <div className={classes.container}>
       <Card>
@@ -22,7 +24,7 @@ const About = () => {
             <img
               className={classes.image}
               src={domenicoPicture}
-              alt="Ragazzo sorridente"
+              alt={t("common.smilingPerson")}
             />
           </motion.div>
 
@@ -34,9 +36,9 @@ const About = () => {
             viewport={{ once: true }}
           >
             <blockquote className={classes.quote}>
-              "Happiness is an attitude of mind, born of the simple determination to be happy under all outward circumstances."
+              {t("common.quote")}
               <footer style={{ marginTop: "1rem", fontWeight: 600, color: "var(--accent-color)" }}>
-                — J. Donald Walters
+                {t("common.quoteAuthor")}
               </footer>
             </blockquote>
           </motion.div>

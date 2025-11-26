@@ -24,15 +24,24 @@ import { SiAzuredevops } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
 
 import FadeInWhenVisible from "../../utils/FadeInWhenVisible";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 const StackDetail = () => {
   const location = useLocation();
+  const { t } = useLanguage();
+  
+  const buildingFoundationItems = t("stackPage.buildingFoundationItems");
+  const honingSkillsItems = t("stackPage.honingSkillsItems");
+  const expandingHorizonsItems = t("stackPage.expandingHorizonsItems");
+  const certificationItems = t("stackPage.certificationItems");
+  const professionalExperienceItems = t("stackPage.professionalExperienceItems");
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
   return (
     <>
-      <h2 className={classes.detailTitle}>Tech Stack</h2>
+      <h2 className={classes.detailTitle}>{t("stackPage.title")}</h2>
       <div className={classes.container}>
         <div className={classes["custom-shape-divider-bottom-1647593320"]}>
           <svg
@@ -284,162 +293,58 @@ const StackDetail = () => {
       </div>
       <Card>
         <div className={classes.textContainer}>
-          <section class={classes.bio}>
-            <h2>About Me</h2>
+          <section className={classes.bio}>
+            <h2>{t("stackPage.aboutMe")}</h2>
             <p>
-              I'm on a mission to create exceptional user experiences through
-              the power of code. My journey as a self-taught front-end developer
-              began in November 2020, fueled by a thirst for knowledge and a
-              passion for building beautiful, functional web applications.
+              {t("stackPage.aboutMeIntro")}
             </p>
 
-            <h3>Building a Strong Foundation</h3>
+            <h3>{t("stackPage.buildingFoundation")}</h3>
             <ul>
-              <li>
-                Johns Hopkins University web development course: HTML, CSS,
-                JavaScript fundamentals.
-              </li>
-              <li>
-                Jonas Schmedtmann's "The complete Javascript Course: from zero
-                to expert": ES6 syntax, DOM manipulation, asynchronous
-                programming, code refactoring.
-              </li>
+              {Array.isArray(buildingFoundationItems) && buildingFoundationItems.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
             </ul>
 
-            <h3>Honing My Skills</h3>
+            <h3>{t("stackPage.honingSkills")}</h3>
             <ul>
-              <li>
-                FreeCodeCamp challenges: Sharpened CSS skills through articles,
-                YouTube videos, and practice.
-              </li>
-              <li>
-                Maximilian Schwarzmüller's React course: Functional components,
-                React hooks, API interactions, reusable components (Doctor Page
-                project).
-              </li>
+              {Array.isArray(honingSkillsItems) && honingSkillsItems.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
             </ul>
 
-            <h3>Expanding My Horizons</h3>
+            <h3>{t("stackPage.expandingHorizons")}</h3>
             <ul>
-              <li>
-                Material UI project: Explored advanced front-end development
-                techniques.
-              </li>
-              <li>
-                Jonas Schmedtmann's Node.js course: Node.js with Express,
-                MongoDB, Heroku deployment (Natours Project). Used Nodemailer in
-                individual projects.
-              </li>
+              {Array.isArray(expandingHorizonsItems) && expandingHorizonsItems.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
             </ul>
 
-            <h3>Certifications & Advanced Training</h3>
+            <h3>{t("stackPage.certifications")}</h3>
             <ul>
-              <li>
-                Angular SSR in Depth (formerly Angular Universal) - Udemy (October
-                2025)
-              </li>
-              <li>
-                Reactive Angular Course (with RxJs, Angular 20) - Udemy
-                (September 2025)
-              </li>
-              <li>
-                RxJS and Angular Signals Fundamentals - Pluralsight (April 2025)
-              </li>
-              <li>
-                GitHub Copilot Fundamentals: AI Paired Programming - Pluralsight
-                (June 2024)
-              </li>
-              <li>
-                Angular Template-driven Forms - Pluralsight (May 2024)
-              </li>
-              <li>
-                Intermediate Web and Front end Development - Coursera (March
-                2024)
-              </li>
-              <li>
-                MongoDB: CRUD Operations: Insert and Find Documents - MongoDB
-                (January 2024)
-              </li>
-              <li>
-                MongoDB and the Document Model - MongoDB (January 2024)
-              </li>
-              <li>
-                MongoDB: getting started with atlas - MongoDB (January 2024)
-              </li>
-              <li>
-                Connecting to a MongoDB Database - MongoDB (January 2024)
-              </li>
-              <li>
-                Application Security and Secure Coding Training Angular 2+ -
-                Codebashing (October 2023)
-              </li>
-              <li>
-                Angular – The Complete Guide (2023) - Maximilian Schwarzmuller,
-                Udemy (October 2023)
-              </li>
-              <li>
-                Understanding TypeScript - Maximilian Schwarzmuller, Udemy
-                (September 2023)
-              </li>
-              <li>
-                Node.js, Express, MongoDB & More: The Complete Bootcamp 2022 -
-                Udemy (September 2021 - January 2022)
-              </li>
-              <li>
-                React – The Complete Guide (including Hooks, React Router, Redux)
-                - Maximilian Schwarzmuller, Udemy (March - June 2021)
-              </li>
-              <li>
-                The Complete JavaScript Course: From Zero to Expert - Jonas
-                Schmedtmann, Udemy (November 2020 - March 2021)
-              </li>
-              <li>
-                HTML, CSS and Javascript for Web Developers - Johns Hopkins
-                University, Coursera (September - November 2020)
-              </li>
+              {Array.isArray(certificationItems) && certificationItems.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
             </ul>
 
-            <h3>Professional Experience</h3>
+            <h3>{t("stackPage.professionalExperience")}</h3>
             <ul>
-              <li>
-                Automotive Sector (May 2023 - Present): Frontend Developer working
-                with Angular 11, TypeScript, Angular Material, RxJS, Azure DevOps,
-                .NET. Developing new features, bug fixing, performance improvement.
-                Supporting Backend team with C#, .NET framework and SQL.
-              </li>
-              <li>
-                Digital Payments Sector (May 2022 - May 2023): Frontend Developer
-                working on Cardholders and Backoffice Projects using React, Redux,
-                Sagas, React Class and Functional Components.
-              </li>
+              {Array.isArray(professionalExperienceItems) && professionalExperienceItems.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
             </ul>
 
-            <h3>Always Learning, Always Creating</h3>
+            <h3>{t("stackPage.alwaysLearning")}</h3>
             <p>
-              In my free time, I experiment with Next.js, MongoDB, shadcn, and
-              Tailwind CSS in personal side projects, pushing the boundaries of my
-              full-stack development skills. Currently deepening my knowledge of
-              C#, .NET framework, and SQL to enhance my backend development
-              capabilities and better support my team in the automotive project.
+              {t("stackPage.alwaysLearningText")}
             </p>
 
             <p>
-              I'm an early adopter of generative AI technologies and have been
-              consistently using AI tools for over two years to enhance my
-              productivity. These tools help me delegate tedious and repetitive
-              tasks, while I maintain a "man in the loop" approach to ensure
-              quality, accuracy, and reliability of the code. I was among the
-              first to implement and promote the use of instructions.md files in
-              workspaces to improve consistency in AI outputs. This innovative
-              methodology has helped enhance code quality and development
-              efficiency in my projects.
+              {t("stackPage.aiText")}
             </p>
 
             <p>
-              I'm constantly seeking new challenges and opportunities to learn
-              and grow as a developer. If you're looking for a passionate and
-              dedicated individual with a diverse skillset and a commitment to
-              excellence, I'd love to connect!
+              {t("stackPage.closingText")}
             </p>
           </section>
         </div>

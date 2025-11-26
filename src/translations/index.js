@@ -189,8 +189,8 @@ export const translations = {
       didYouKnow: "Did you know?",
       facts: [
         "I love sports. I did martial arts for almost 10 years. I won Italian light contact muay thai Championship in 2008 and 2nd place in 2009 in Rome. Currently doing Cross Fit.",
-        "I love to travel. I would like to see all the 7 wonders! I have already visited Chitchen Itza and the Coliseum. Also, I could not believe that the Reef in Mexico had brighter colors than the Great Barrier Reef in Australia!",
-        "I like videogames especially RTS. I was in top 10 in Age of Empires 3 in Italy and currenly between the first 1000 in Age of Empires 4. Currently enjoying streaming on Twitch.",
+        "I love to travel. I would like to see all the 7 wonders! I have already visited Chichen Itza and the Coliseum. Also, I could not believe that the Reef in Mexico had brighter colors than the Great Barrier Reef in Australia!",
+        "I like videogames especially RTS. I was in top 10 in Age of Empires 3 in Italy and currently between the first 1000 in Age of Empires 4. Currently enjoying streaming on Twitch.",
       ],
     },
     timeline: {

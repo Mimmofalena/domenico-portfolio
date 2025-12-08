@@ -30,9 +30,6 @@ const StackDetail = () => {
   const location = useLocation();
   const { t } = useLanguage();
   
-  const buildingFoundationItems = t("stackPage.buildingFoundationItems");
-  const honingSkillsItems = t("stackPage.honingSkillsItems");
-  const expandingHorizonsItems = t("stackPage.expandingHorizonsItems");
   const certificationItems = t("stackPage.certificationItems");
   const professionalExperienceItems = t("stackPage.professionalExperienceItems");
 
@@ -299,23 +296,9 @@ const StackDetail = () => {
               {t("stackPage.aboutMeIntro")}
             </p>
 
-            <h3>{t("stackPage.buildingFoundation")}</h3>
+            <h3>{t("stackPage.professionalExperience")}</h3>
             <ul>
-              {Array.isArray(buildingFoundationItems) && buildingFoundationItems.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-
-            <h3>{t("stackPage.honingSkills")}</h3>
-            <ul>
-              {Array.isArray(honingSkillsItems) && honingSkillsItems.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-
-            <h3>{t("stackPage.expandingHorizons")}</h3>
-            <ul>
-              {Array.isArray(expandingHorizonsItems) && expandingHorizonsItems.map((item, index) => (
+              {Array.isArray(professionalExperienceItems) && professionalExperienceItems.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
             </ul>
@@ -323,13 +306,6 @@ const StackDetail = () => {
             <h3>{t("stackPage.certifications")}</h3>
             <ul>
               {Array.isArray(certificationItems) && certificationItems.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-
-            <h3>{t("stackPage.professionalExperience")}</h3>
-            <ul>
-              {Array.isArray(professionalExperienceItems) && professionalExperienceItems.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
             </ul>

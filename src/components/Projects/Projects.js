@@ -60,7 +60,7 @@ const Projects = () => {
             ></path>
           </svg>
         </div>
-        <Card>
+        <Card className={classes.contentCard}>
           {/* <div className={classes.iconContainer}>
             <FaHammer />
           </div> */}

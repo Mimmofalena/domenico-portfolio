@@ -61,7 +61,7 @@ const Welcome = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, delay: 0.2 }}
         >
-          <img src={domenicoPicture} alt="Domenico Cucinotta" className={classes.avatar} />
+          <img src={domenicoPicture} alt="Domenico Cucinotta" className={classes.avatar} loading="eager" />
         </motion.div>
       </div>
     </div>

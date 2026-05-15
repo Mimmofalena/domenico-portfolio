@@ -138,6 +138,10 @@ export const translations = {
       quote: '"Happiness is an attitude of mind, born of the simple determination to be happy under all outward circumstances."',
       quoteAuthor: "— J. Donald Walters",
     },
+    notFound: {
+      message: "Page not found",
+      goHome: "Back to Home",
+    },
     stackPage: {
       title: "Tech Stack",
       frontend: "Frontend",
@@ -387,6 +391,10 @@ export const translations = {
       smilingPerson: "Persona sorridente",
       quote: '"La felicità è un atteggiamento mentale, nato dalla semplice determinazione di essere felici in tutte le circostanze esteriori."',
       quoteAuthor: "— J. Donald Walters",
+    },
+    notFound: {
+      message: "Pagina non trovata",
+      goHome: "Torna alla Home",
     },
     stackPage: {
       title: "Stack Tecnologico",

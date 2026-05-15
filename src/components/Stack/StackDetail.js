@@ -4,42 +4,52 @@ import classes from "./Stack.module.css";
 
 import StackItem from "./StackItem";
 import Card from "../../utils/Card";
-import { DiReact } from "react-icons/di";
-import { DiJavascript } from "react-icons/di";
-import { DiHtml5 } from "react-icons/di";
-import { DiNodejsSmall } from "react-icons/di";
-import { DiMongodb } from "react-icons/di";
-import { SiMui } from "react-icons/si";
-import { BiGitBranch } from "react-icons/bi";
-import { SiPostman } from "react-icons/si";
-import { DiCss3 } from "react-icons/di";
-import { TbBrandNextjs } from "react-icons/tb";
-import { FaAngular } from "react-icons/fa";
-import { FaBootstrap } from "react-icons/fa";
-import { FaMobileAlt } from "react-icons/fa";
-import { FaProjectDiagram } from "react-icons/fa";
-import { FaRobot } from "react-icons/fa";
-import { FaTerminal } from "react-icons/fa";
-import { SiCsharp } from "react-icons/si";
-import { SiMicrosoftazure } from "react-icons/si";
-import { SiDotnet } from "react-icons/si";
-import { SiIonic } from "react-icons/si";
-import { SiAzuredevops } from "react-icons/si";
-import { SiMysql } from "react-icons/si";
-
 import FadeInWhenVisible from "../../utils/FadeInWhenVisible";
 import { useLanguage } from "../../contexts/LanguageContext";
+
+import { DiReact, DiJavascript, DiHtml5, DiNodejsSmall, DiMongodb, DiCss3 } from "react-icons/di";
+import { SiMui, SiPostman, SiCsharp, SiDotnet, SiMicrosoftazure, SiAzuredevops, SiMysql, SiIonic } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
+import { FaAngular, FaBootstrap, FaMobileAlt, FaRobot, FaProjectDiagram, FaTerminal } from "react-icons/fa";
+import { BiGitBranch } from "react-icons/bi";
+
+const stackItems = [
+  { name: "JavaScript", icon: DiJavascript, color: "#efd81d", category: "frontend" },
+  { name: "HTML", icon: DiHtml5, color: "#e96228", category: "frontend" },
+  { name: "CSS", icon: DiCss3, color: "#2862e9", category: "frontend" },
+  { name: "React", icon: DiReact, color: "#03d1f7", category: "frontend" },
+  { name: "Angular", icon: FaAngular, color: "#d32f2f", category: "frontend" },
+  { name: "Next.js", icon: TbBrandNextjs, color: "#000", category: "frontend" },
+  { name: "Node.js", icon: DiNodejsSmall, color: "#7cb701", category: "backend" },
+  { name: "MongoDB", icon: DiMongodb, color: "#138d4d", category: "backend" },
+  { name: "Material UI", icon: SiMui, color: "#007bf7", category: "frontend" },
+  { name: "Bootstrap", icon: FaBootstrap, color: "#4c0bce", category: "frontend" },
+  { name: "C#", icon: SiCsharp, color: "#68217a", category: "backend" },
+  { name: ".NET", icon: SiDotnet, color: "#512bd4", category: "backend" },
+  { name: "SQL", icon: SiMysql, color: "#00758f", category: "backend" },
+  { name: "Git", icon: BiGitBranch, color: "#e84d31", category: "tools" },
+  { name: "Postman", icon: SiPostman, color: "#f76935", category: "tools" },
+  { name: "Azure", icon: SiMicrosoftazure, color: "#0089d6", category: "tools" },
+  { name: "Azure DevOps", icon: SiAzuredevops, color: "#0078d7", category: "tools" },
+  { name: "Ionic", icon: SiIonic, color: "#3880ff", category: "mobile" },
+  { name: "Capacitor", icon: FaMobileAlt, color: "#119EFF", category: "mobile" },
+  { name: "GitHub Copilot", icon: FaRobot, color: "#2da44e", category: "ai" },
+  { name: "N8N", icon: FaProjectDiagram, color: "#ea4b71", category: "ai" },
+  { name: "Ollama", icon: FaRobot, color: "#7c3aed", category: "ai" },
+  { name: "Opencode", icon: FaTerminal, color: "#10b981", category: "ai" },
+];
 
 const StackDetail = () => {
   const location = useLocation();
   const { t } = useLanguage();
-  
+
   const certificationItems = t("stackPage.certificationItems");
   const professionalExperienceItems = t("stackPage.professionalExperienceItems");
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
+
   return (
     <>
       <h2 className={classes.detailTitle}>{t("stackPage.title")}</h2>
@@ -60,295 +70,15 @@ const StackDetail = () => {
 
         <Card>
           <ul className={classes.gridList}>
-            <FadeInWhenVisible delay={0.2}>
-              <StackItem
-                className={classes.javascript}
-                name="Js"
-                icon={
-                  <DiJavascript
-                    style={{
-                      color: "#efd81d",
-                    }}
-                  />
-                }
-              />
-            </FadeInWhenVisible>
-            <FadeInWhenVisible delay={0.4}>
-              <StackItem
-                name="HTML"
-                icon={
-                  <DiHtml5
-                    style={{
-                      color: "#e96228",
-                    }}
-                  />
-                }
-              />
-            </FadeInWhenVisible>
-            <FadeInWhenVisible delay={0.6}>
-              <StackItem
-                name="CSS"
-                icon={
-                  <DiCss3
-                    style={{
-                      color: "#2862e9",
-                    }}
-                  />
-                }
-              />
-            </FadeInWhenVisible>
-            <FadeInWhenVisible delay={0.8}>
-              <StackItem
-                name="React"
-                icon={
-                  <DiReact
-                    style={{
-                      color: "#03d1f7",
-                    }}
-                  />
-                }
-              />
-            </FadeInWhenVisible>
-            <FadeInWhenVisible delay={1}>
-              <StackItem
-                name="Node"
-                icon={
-                  <DiNodejsSmall
-                    style={{
-                      color: "#7cb701",
-                    }}
-                  />
-                }
-              />
-            </FadeInWhenVisible>
-            <FadeInWhenVisible delay={1.2}>
-              <StackItem
-                name="Mongo"
-                icon={
-                  <DiMongodb
-                    style={{
-                      color: "#138d4d",
-                    }}
-                  />
-                }
-              />
-            </FadeInWhenVisible>
-            <FadeInWhenVisible delay={1.4}>
-              <StackItem
-                name="Material"
-                icon={
-                  <SiMui
-                    style={{
-                      color: "#007bf7",
-                    }}
-                  />
-                }
-              />
-            </FadeInWhenVisible>
-            <FadeInWhenVisible delay={1.6}>
-              <StackItem
-                name="Git"
-                icon={
-                  <BiGitBranch
-                    style={{
-                      color: "#e84d31",
-                    }}
-                  />
-                }
-              />
-            </FadeInWhenVisible>
-            <FadeInWhenVisible delay={1.8}>
-              <StackItem
-                name="PostMan"
-                icon={
-                  <SiPostman
-                    style={{
-                      color: "#f76935",
-                    }}
-                  />
-                }
-              />
-            </FadeInWhenVisible>
-            <FadeInWhenVisible delay={2.0}>
-              <StackItem
-                name="Nextjs"
-                icon={
-                  <TbBrandNextjs
-                    style={{
-                      color: "#000",
-                    }}
-                  />
-                }
-              />
-            </FadeInWhenVisible>
-            <FadeInWhenVisible delay={2.2}>
-              <StackItem
-                name="Angular"
-                icon={
-                  <FaAngular
-                    style={{
-                      color: "#d32f2f",
-                    }}
-                  />
-                }
-              />
-            </FadeInWhenVisible>
-            <FadeInWhenVisible delay={2.4}>
-              <StackItem
-                name="Angular Material"
-                icon={
-                  <FaAngular
-                    style={{
-                      color: "#f76935",
-                    }}
-                  />
-                }
-              />
-            </FadeInWhenVisible>
-            <FadeInWhenVisible delay={2.6}>
-              <StackItem
-                name="Bootstrap"
-                icon={
-                  <FaBootstrap
-                    style={{
-                      color: "#4c0bce",
-                    }}
-                  />
-                }
-              />
-            </FadeInWhenVisible>
-            <FadeInWhenVisible delay={2.8}>
-              <StackItem
-                name="C#"
-                icon={
-                  <SiCsharp
-                    style={{
-                      color: "#68217a",
-                    }}
-                  />
-                }
-              />
-            </FadeInWhenVisible>
-            <FadeInWhenVisible delay={3.0}>
-              <StackItem
-                name=".NET"
-                icon={
-                  <SiDotnet
-                    style={{
-                      color: "#512bd4",
-                    }}
-                  />
-                }
-              />
-            </FadeInWhenVisible>
-            <FadeInWhenVisible delay={3.2}>
-              <StackItem
-                name="Azure DevOps"
-                icon={
-                  <SiAzuredevops
-                    style={{
-                      color: "#0078d7",
-                    }}
-                  />
-                }
-              />
-            </FadeInWhenVisible>
-            <FadeInWhenVisible delay={3.4}>
-              <StackItem
-                name="Azure"
-                icon={
-                  <SiMicrosoftazure
-                    style={{
-                      color: "#0089d6",
-                    }}
-                  />
-                }
-              />
-            </FadeInWhenVisible>
-            <FadeInWhenVisible delay={3.6}>
-              <StackItem
-                name="GitHub Copilot"
-                icon={
-                  <FaRobot
-                    style={{
-                      color: "#2da44e",
-                    }}
-                  />
-                }
-              />
-            </FadeInWhenVisible>
-            <FadeInWhenVisible delay={3.8}>
-              <StackItem
-                name="SQL"
-                icon={
-                  <SiMysql
-                    style={{
-                      color: "#00758f",
-                    }}
-                  />
-                }
-              />
-            </FadeInWhenVisible>
-            <FadeInWhenVisible delay={4.0}>
-              <StackItem
-                name="Ionic"
-                icon={
-                  <SiIonic
-                    style={{
-                      color: "#3880ff",
-                    }}
-                  />
-                }
-              />
-            </FadeInWhenVisible>
-            <FadeInWhenVisible delay={4.2}>
-              <StackItem
-                name="Capacitor"
-                icon={
-                  <FaMobileAlt
-                    style={{
-                      color: "#119EFF",
-                    }}
-                  />
-                }
-              />
-            </FadeInWhenVisible>
-            <FadeInWhenVisible delay={4.4}>
-              <StackItem
-                name="N8N"
-                icon={
-                  <FaProjectDiagram
-                    style={{
-                      color: "#ea4b71",
-                    }}
-                  />
-                }
-              />
-            </FadeInWhenVisible>
-            <FadeInWhenVisible delay={4.6}>
-              <StackItem
-                name="Ollama"
-                icon={
-                  <FaRobot
-                    style={{
-                      color: "#7c3aed",
-                    }}
-                  />
-                }
-              />
-            </FadeInWhenVisible>
-            <FadeInWhenVisible delay={4.8}>
-              <StackItem
-                name="Opencode"
-                icon={
-                  <FaTerminal
-                    style={{
-                      color: "#10b981",
-                    }}
-                  />
-                }
-              />
-            </FadeInWhenVisible>
+            {stackItems.map((item, index) => (
+              <FadeInWhenVisible key={item.name} delay={Math.min(index * 0.06, 0.8)}>
+                <StackItem
+                  name={item.name}
+                  category={item.category}
+                  icon={<item.icon style={{ color: item.color }} />}
+                />
+              </FadeInWhenVisible>
+            ))}
           </ul>
         </Card>
       </div>
@@ -356,9 +86,7 @@ const StackDetail = () => {
         <div className={classes.textContainer}>
           <section className={classes.bio}>
             <h2>{t("stackPage.aboutMe")}</h2>
-            <p>
-              {t("stackPage.aboutMeIntro")}
-            </p>
+            <p>{t("stackPage.aboutMeIntro")}</p>
 
             <h3>{t("stackPage.professionalExperience")}</h3>
             <ul>
@@ -375,17 +103,9 @@ const StackDetail = () => {
             </ul>
 
             <h3>{t("stackPage.alwaysLearning")}</h3>
-            <p>
-              {t("stackPage.alwaysLearningText")}
-            </p>
-
-            <p>
-              {t("stackPage.aiText")}
-            </p>
-
-            <p>
-              {t("stackPage.closingText")}
-            </p>
+            <p>{t("stackPage.alwaysLearningText")}</p>
+            <p>{t("stackPage.aiText")}</p>
+            <p>{t("stackPage.closingText")}</p>
           </section>
         </div>
       </Card>

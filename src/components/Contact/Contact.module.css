@@ -33,13 +33,33 @@
   transition: all 0.3s ease;
   min-width: 150px;
   text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.containerIcon::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-color-light) 100%);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  z-index: 0;
+  border-radius: var(--border-radius);
 }
 
 .containerIcon:hover {
   transform: translateY(-8px);
   box-shadow: var(--card-shadow-hover);
-  background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-color-light) 100%);
-  color: var(--secondary-color-font);
+}
+
+.containerIcon:hover::before {
+  opacity: 1;
+}
+
+.containerIcon > * {
+  position: relative;
+  z-index: 1;
 }
 
 .containerIcon:hover .icon {
@@ -68,12 +88,12 @@
   .title {
     font-size: 2rem;
   }
-  
+
   .containerIcons {
     flex-direction: column;
     gap: 1.5rem;
   }
-  
+
   .containerIcon {
     width: 100%;
     max-width: 300px;

@@ -6,14 +6,19 @@ import PageContent from "./components/PageContent/PageContent";
 import Footer from "./components/Footer/Footer";
 import AboutDetail from "./components/About/AboutDetail";
 import StackDetail from "./components/Stack/StackDetail";
+import NotFound from "./components/NotFound/NotFound";
+import ScrollToTop from "./components/UI/ScrollToTop";
 
 import ProjectsList from "./components/Projects/ProjectsList";
 
 function App() {
   return (
     <div className={classes.app}>
+      <a href="#main-content" className={classes.skipLink}>
+        Skip to content
+      </a>
       <Header />
-      <div className={classes.main}>
+      <main id="main-content" role="main" className={classes.main}>
         <Routes>
           <Route path="/domenico-portfolio/" element={<PageContent />} />
           <Route path="/domenico-portfolio/about" element={<AboutDetail />} />
@@ -23,9 +28,10 @@ function App() {
           />
           <Route path="/domenico-portfolio/stack" element={<StackDetail />} />
 
-          <Route path="*" element={<h1>NOT FOUND</h1>} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
-      </div>
+      </main>
+      <ScrollToTop />
       <Footer />
     </div>
   );

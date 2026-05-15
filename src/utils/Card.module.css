@@ -1,12 +1,30 @@
 .card {
-  padding: 1rem 1rem;
+  position: relative;
+  padding: var(--space-6);
   display: flex;
   flex-direction: column;
   text-align: center;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--border-radius);
+  transition: all var(--transition-base);
 }
 
-@media screen and (min-width: 768px) {
+.cardLight {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: var(--card-shadow);
+}
+
+.card:hover {
+  box-shadow: var(--card-shadow-hover);
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
   .card {
-    padding: 3rem 2rem;
+    padding: var(--space-12) var(--space-8);
   }
 }

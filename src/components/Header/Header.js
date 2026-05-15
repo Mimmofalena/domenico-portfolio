@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import classes from "./Header.module.css";
 import { NavLink, Link } from "react-router-dom";
-import { CgDetailsMore } from "react-icons/cg";
+import { RiMenuLine, RiCloseLine } from "react-icons/ri";
 import HeaderList from "./HeaderList";
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 import { useLanguage } from "../../contexts/LanguageContext";
@@ -13,25 +13,24 @@ const Header = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className={classes.header}>
+    <header className={classes.header} role="banner">
       <Link to="/domenico-portfolio" className={classes.logoLink}>
         <h2 className={classes.logo}>{t("header.logo")}</h2>
       </Link>
       <div className={classes.menu}>
         {isOpen ? (
-          <h2 className={classes.more} onClick={menuHandler}>
-            <CgDetailsMore />
-          </h2>
+          <button className={classes.more} onClick={menuHandler} aria-label="Open menu">
+            <RiMenuLine />
+          </button>
         ) : (
           <>
             <div className={classes.mask} onClick={menuHandler} />
             <div className={classes.openMenu}>
-              <p className={classes.close} onClick={menuHandler}>
-                X
-              </p>
+              <button className={classes.close} onClick={menuHandler} aria-label="Close menu">
+                <RiCloseLine />
+              </button>
               <NavLink
                 end
-                // style={{ textDecoration: "none", color: "black" }}
                 to="domenico-portfolio"
                 className={({ isActive }) =>
                   isActive ? classes.active : classes.inactive
@@ -77,8 +76,7 @@ const Header = () => {
       <div className={classes.desktopSwitcher}>
         <LanguageSwitcher />
       </div>
-    </div>
-    // </div>
+    </header>
   );
 };
 

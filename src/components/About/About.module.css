@@ -12,23 +12,33 @@
 }
 
 .text {
+  position: relative;
   margin-bottom: 1.5rem;
-  padding: 1.5rem;
-  background: var(--section-bg);
+  padding: 1.5rem 1.5rem 1.5rem 2.5rem;
+  background: var(--primary-color-bg);
   border-radius: var(--border-radius);
   border-left: 4px solid var(--highlight-color);
+  box-shadow: var(--card-shadow);
   line-height: 1.8;
   color: var(--primary-color-font);
   font-size: 1.05rem;
   list-style: none;
+  transition: all var(--transition-base);
+}
+
+.text:hover {
+  transform: translateX(4px);
+  box-shadow: var(--card-shadow-hover);
 }
 
 .text:before {
-  content: "✓ ";
+  content: "✦";
+  position: absolute;
+  left: 0.75rem;
+  top: 1.5rem;
   color: var(--highlight-color);
+  font-size: 1rem;
   font-weight: bold;
-  font-size: 1.2rem;
-  margin-right: 0.5rem;
 }
 
 .grid {

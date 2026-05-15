@@ -173,6 +173,60 @@
   border-left: 4px solid var(--highlight-color);
 }
 
+/* Mobile: single column timeline */
+@media (max-width: 767px) {
+  .timeline:before {
+    left: 24px;
+  }
+
+  .timeline li {
+    padding: 1.5em 0;
+  }
+
+  .timeline .hexa {
+    left: 14px !important;
+    right: auto !important;
+    top: 6px !important;
+  }
+
+  .direction-l,
+  .direction-r {
+    float: none;
+    width: 100%;
+    text-align: left;
+    padding-left: 48px;
+  }
+
+  .flag-wrapper {
+    text-align: left;
+    display: block;
+  }
+
+  .flag {
+    text-align: left;
+    display: inline-block;
+  }
+
+  .direction-l .flag:after,
+  .direction-r .flag:after {
+    left: -10px;
+    top: 50%;
+    margin-top: -8px;
+    border-bottom-color: transparent;
+    border-right-color: var(--accent-color);
+    border-width: 8px;
+  }
+
+  .desc {
+    margin: 1em 0 0 0;
+  }
+
+  .time-wrapper {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
+
 @media (min-width: 768px) {
   .timeline {
     width: 660px;

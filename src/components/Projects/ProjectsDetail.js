@@ -11,7 +11,7 @@ const ProjectsDetail = (props) => {
     // <Card>
     <div className={classes.listItem}>
       <a href={props.href} className={classes.itemImg}>
-        <img src={props.src} alt={props.alt} />
+        <img src={props.src} alt={props.alt} loading="lazy" />
       </a>
       <div className={classes.content}>
         <div className={classes.detailDescription}></div>

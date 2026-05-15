@@ -13,16 +13,21 @@
   padding: 0.5rem 0;
 }
 
+.header nav a {
+  text-decoration: none;
+}
+
 .mask {
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .largeScreen {
@@ -39,6 +44,12 @@
   cursor: pointer;
   font-size: 1.8rem;
   transition: transform 0.3s ease;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
 }
 
 .more:hover {
@@ -60,15 +71,17 @@
   padding: 2rem 1.5rem;
   z-index: 100;
   box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3);
-  animation: slideIn 0.3s ease-out;
+  animation: slideIn 0.35s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 @keyframes slideIn {
   from {
     transform: translateX(100%);
+    opacity: 0;
   }
   to {
     transform: translateX(0);
+    opacity: 1;
   }
 }
 
@@ -139,6 +152,12 @@
   padding: 0.5rem;
   margin-bottom: 2rem;
   transition: transform 0.3s ease;
+  background: none;
+  border: none;
+  color: var(--secondary-color-font);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .close:hover {
@@ -200,9 +219,10 @@
     left: 50%;
     width: 0;
     height: 3px;
-    background: var(--highlight-color);
-    transition: width 0.3s ease;
+    background: linear-gradient(90deg, var(--highlight-color), var(--accent-color-light));
+    transition: width 0.3s ease, left 0.3s ease;
     transform: translateX(-50%);
+    border-radius: 2px;
   }
   
   .inactive:hover {
@@ -239,8 +259,9 @@
     left: 50%;
     width: 80%;
     height: 3px;
-    background: var(--highlight-color);
+    background: linear-gradient(90deg, var(--highlight-color), var(--accent-color-light));
     transform: translateX(-50%);
+    border-radius: 2px;
   }
 }
 

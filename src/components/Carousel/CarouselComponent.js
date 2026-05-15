@@ -63,6 +63,7 @@ const CarouselComponent = ({ items }) => {
                 }}
                 src={item.image}
                 alt={`Slide ${index}`}
+                loading="lazy"
               />
               <Box
                 sx={{

@@ -1,50 +1,150 @@
 .container {
-  text-align: center;
-  padding: 3rem 1rem;
-  background: linear-gradient(135deg, rgba(15, 52, 96, 0.05) 0%, rgba(0, 173, 181, 0.05) 100%);
-  min-height: 300px;
+  background: linear-gradient(135deg, var(--hero-bg-start) 0%, var(--hero-bg-end) 100%);
+  color: var(--secondary-color-font);
+  padding: 5rem 2rem 4rem;
+  min-height: 92vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.heroContent {
-  max-width: 900px;
+.heroInner {
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 3rem;
 }
 
-.typewriter {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--primary-color-font);
-  min-height: 120px;
+.heroText {
+  flex: 1;
+  text-align: center;
+}
+
+.greeting {
+  font-size: 1.05rem;
+  color: var(--highlight-color);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--secondary-color-font);
+  margin: 0 0 0.5rem;
+  line-height: 1.15;
+}
+
+.title {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.typewriterWrap {
+  font-size: 1.1rem;
+  color: var(--highlight-color);
+  font-weight: 600;
+  min-height: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.ctaRow {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
   justify-content: center;
-  line-height: 1.4;
-  margin: 0;
+}
+
+.ctaPrimary {
+  display: inline-block;
+  background: var(--highlight-color);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.85rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background var(--transition-base), transform var(--transition-base), box-shadow var(--transition-base);
+  box-shadow: 0 4px 15px rgba(6, 182, 212, 0.35);
+}
+
+.ctaPrimary:hover {
+  background: var(--highlight-color-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(6, 182, 212, 0.5);
+}
+
+.ctaSecondary {
+  display: inline-block;
+  background: transparent;
+  color: var(--secondary-color-font);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.85rem 2rem;
+  border-radius: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  transition: border-color var(--transition-base), color var(--transition-base), transform var(--transition-base);
+}
+
+.ctaSecondary:hover {
+  border-color: var(--highlight-color);
+  color: var(--highlight-color);
+  transform: translateY(-3px);
+}
+
+.heroImage {
+  flex-shrink: 0;
+}
+
+.avatar {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--highlight-color);
+  box-shadow: 0 0 0 8px rgba(6, 182, 212, 0.15), 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    padding: 4rem 2rem;
-    min-height: 350px;
+  .heroInner {
+    flex-direction: row;
+    text-align: left;
+    gap: 4rem;
   }
-  
-  .typewriter {
-    font-size: 3rem;
-    min-height: 150px;
+
+  .heroText {
+    text-align: left;
+  }
+
+  .ctaRow {
+    justify-content: flex-start;
+  }
+
+  .name {
+    font-size: 3.8rem;
+  }
+
+  .avatar {
+    width: 280px;
+    height: 280px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
-    padding: 5rem 2rem;
-    min-height: 400px;
+  .name {
+    font-size: 4.5rem;
   }
-  
-  .typewriter {
-    font-size: 3.5rem;
-    min-height: 180px;
+
+  .avatar {
+    width: 320px;
+    height: 320px;
   }
 }

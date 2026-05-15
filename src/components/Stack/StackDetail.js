@@ -16,10 +16,14 @@ import { DiCss3 } from "react-icons/di";
 import { TbBrandNextjs } from "react-icons/tb";
 import { FaAngular } from "react-icons/fa";
 import { FaBootstrap } from "react-icons/fa";
+import { FaMobileAlt } from "react-icons/fa";
+import { FaProjectDiagram } from "react-icons/fa";
+import { FaRobot } from "react-icons/fa";
+import { FaTerminal } from "react-icons/fa";
 import { SiCsharp } from "react-icons/si";
 import { SiMicrosoftazure } from "react-icons/si";
 import { SiDotnet } from "react-icons/si";
-import { FaRobot } from "react-icons/fa";
+import { SiIonic } from "react-icons/si";
 import { SiAzuredevops } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
 
@@ -280,6 +284,66 @@ const StackDetail = () => {
                   <SiMysql
                     style={{
                       color: "#00758f",
+                    }}
+                  />
+                }
+              />
+            </FadeInWhenVisible>
+            <FadeInWhenVisible delay={4.0}>
+              <StackItem
+                name="Ionic"
+                icon={
+                  <SiIonic
+                    style={{
+                      color: "#3880ff",
+                    }}
+                  />
+                }
+              />
+            </FadeInWhenVisible>
+            <FadeInWhenVisible delay={4.2}>
+              <StackItem
+                name="Capacitor"
+                icon={
+                  <FaMobileAlt
+                    style={{
+                      color: "#119EFF",
+                    }}
+                  />
+                }
+              />
+            </FadeInWhenVisible>
+            <FadeInWhenVisible delay={4.4}>
+              <StackItem
+                name="N8N"
+                icon={
+                  <FaProjectDiagram
+                    style={{
+                      color: "#ea4b71",
+                    }}
+                  />
+                }
+              />
+            </FadeInWhenVisible>
+            <FadeInWhenVisible delay={4.6}>
+              <StackItem
+                name="Ollama"
+                icon={
+                  <FaRobot
+                    style={{
+                      color: "#7c3aed",
+                    }}
+                  />
+                }
+              />
+            </FadeInWhenVisible>
+            <FadeInWhenVisible delay={4.8}>
+              <StackItem
+                name="Opencode"
+                icon={
+                  <FaTerminal
+                    style={{
+                      color: "#10b981",
                     }}
                   />
                 }

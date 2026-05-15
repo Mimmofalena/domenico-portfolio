@@ -9,8 +9,10 @@ import { useLanguage } from "../../contexts/LanguageContext";
 
 const StackList = () => {
   const { t } = useLanguage();
-  const frontendTechs = ["React", "Next.js", "Angular 11", "TypeScript", "HTML5", "CSS3", "SASS", "Material-UI", "RxJS"];
+  const frontendTechs = ["Angular", "React", "Next.js", "TypeScript", "RxJS", "Angular Signals", "HTML5", "CSS3", "SCSS", "Tailwind CSS", "Angular Material", "Material-UI", "shadcn"];
   const backendTechs = ["Node.js", "C#", ".NET", "SQL", "MongoDB", "Express"];
+  const mobileTechs = ["Ionic", "Capacitor", "Angular"];
+  const aiTools = ["GitHub Copilot", "N8N", "Ollama", "Opencode"];
   const tools = ["Git", "Azure DevOps", "Postman", "NPM"];
 
   return (
@@ -44,6 +46,28 @@ const StackList = () => {
                 <Box style={{ display: "flex", flexWrap: "wrap", gap: "0.75rem" }}>
                   {backendTechs.map(tech => (
                     <Chip key={tech} label={tech} style={{ backgroundColor: "#2e5c8a", color: "white", fontWeight: 500, fontSize: "0.9rem", padding: "0.5rem" }} />
+                  ))}
+                </Box>
+              </Box>
+
+              <Box style={{ marginBottom: "2.5rem" }}>
+                <Typography variant="h6" style={{ fontWeight: 600, marginBottom: "1rem", color: "#0f3460" }}>
+                  {t("stackPage.mobile")}
+                </Typography>
+                <Box style={{ display: "flex", flexWrap: "wrap", gap: "0.75rem" }}>
+                  {mobileTechs.map(tech => (
+                    <Chip key={tech} label={tech} style={{ backgroundColor: "#0891b2", color: "white", fontWeight: 500, fontSize: "0.9rem", padding: "0.5rem" }} />
+                  ))}
+                </Box>
+              </Box>
+
+              <Box style={{ marginBottom: "2.5rem" }}>
+                <Typography variant="h6" style={{ fontWeight: 600, marginBottom: "1rem", color: "#0f3460" }}>
+                  {t("stackPage.aiTools")}
+                </Typography>
+                <Box style={{ display: "flex", flexWrap: "wrap", gap: "0.75rem" }}>
+                  {aiTools.map(tool => (
+                    <Chip key={tool} label={tool} style={{ backgroundColor: "#6d28d9", color: "white", fontWeight: 500, fontSize: "0.9rem", padding: "0.5rem" }} />
                   ))}
                 </Box>
               </Box>

@@ -8,7 +8,7 @@ import { useLanguage } from "../../contexts/LanguageContext";
 const Contact = () => {
   const { t } = useLanguage();
   return (
-    <div className={classes.container}>
+    <div className={classes.container} id="contact-section">
       <Card>
         <h2 className={classes.title}>{t("contact.title")}</h2>
 

@@ -24,27 +24,36 @@ body {
 } */
 
 :root {
-  /* Professional color palette */
+  /* Color palette */
   --primary-color-bg: #ffffff;
-  --secondary-color-bg: #1a1a2e;
-  --tertiary-color-bg: #16213e;
-  --accent-color: #0f3460;
-  --accent-color-light: #2e5c8a;
-  --highlight-color: #00adb5;
-  --section-bg: #f8f9fa;
-  
+  --secondary-color-bg: #0d1117;
+  --tertiary-color-bg: #161b22;
+  --accent-color: #1a56db;
+  --accent-color-light: #3b82f6;
+  --highlight-color: #06b6d4;
+  --highlight-color-dark: #0891b2;
+  --section-bg: #f1f5f9;
+  --hero-bg-start: #0d1117;
+  --hero-bg-end: #1e293b;
+
   /* Font colors */
-  --primary-color-font: #1a1a2e;
-  --secondary-color-font: #ffffff;
-  --tertiary-color-font: #ffffff;
-  --text-gray: #6c757d;
-  --text-light: #e4e4e4;
-  
+  --primary-color-font: #0f172a;
+  --secondary-color-font: #f8fafc;
+  --tertiary-color-font: #f8fafc;
+  --text-gray: #64748b;
+  --text-light: #cbd5e1;
+
+  /* Typography */
+  --font-heading: "Inter", "Segoe UI", sans-serif;
+  --font-weight-heading: 800;
+
   /* Spacing */
   --section-padding: 4rem 2rem;
-  --border-radius: 12px;
-  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-  --card-shadow-hover: 0 10px 20px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1);
+  --border-radius: 14px;
+  --border-radius-sm: 8px;
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.06);
+  --card-shadow-hover: 0 12px 28px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.1);
+  --transition-base: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* RESET */
@@ -62,13 +71,13 @@ img {
 
 body {
   margin: 0;
-  font-family: "Inter", "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", 
+  font-family: "Inter", "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Oxygen", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--primary-color-font);
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 code {

@@ -5,7 +5,6 @@ import Card from "../../utils/Card";
 import LinkButton from "../../utils/LinkButton";
 import { motion } from "framer-motion";
 import domenicoPicture from "../../assets/immagine-curriculum.jpg";
-import Welcome from "../Welcome/Welcome";
 import { useLanguage } from "../../contexts/LanguageContext";
 
 const About = () => {
@@ -43,9 +42,6 @@ const About = () => {
             </blockquote>
           </motion.div>
         </div>
-        <Welcome />
-
-        {/* <p className={classes.text}>{`${text}`}</p> */}
 
         <LinkButton to="/domenico-portfolio/about" />
       </Card>

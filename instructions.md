@@ -30,13 +30,9 @@ This is a personal portfolio website for Domenico Falena, a Frontend Developer w
 - **Slick Carousel 1.8.1** - Carousel CSS/assets
 
 ### Development Tools
-- **React Scripts 5.0.1** - Build tooling and development server
-- **Web Vitals 2.1.3** - Performance metrics
-
-### Testing Libraries
-- **@testing-library/react 16.3.0** - React testing utilities
-- **@testing-library/jest-dom 5.16.1** - Custom Jest matchers
-- **@testing-library/user-event 14.6.1** - User interaction simulation
+- **Vite 8** - Build tooling and development server (migrated from Create React App / react-scripts)
+- **ESLint 10** - Linting (`eslint.config.js`, flat config)
+- **Web Vitals 2.1.x** - Performance metrics
 
 ### Additional Libraries
 - **FontAwesome** - Additional icon support
@@ -100,10 +96,8 @@ domenico-portfolio/
 
 2. **Install dependencies**:
    ```bash
-   npm install --legacy-peer-deps
+   npm install
    ```
-   
-   Note: `--legacy-peer-deps` is required due to React 19 peer dependency conflicts with some packages.
 
 3. **Start development server**:
    ```bash
@@ -133,10 +127,13 @@ Deploys the application to GitHub Pages:
 - Publishes to GitHub Pages
 - Updates the live site at `https://mimmofalena.github.io/domenico-portfolio/`
 
-### `npm test`
-Launches the test runner in interactive watch mode.
-- Currently, no tests are implemented
-- Test infrastructure is available via React Testing Library
+### `npm run preview`
+Serves the production build locally at `http://localhost:4173/domenico-portfolio/`.
+
+### `npm run lint`
+Runs ESLint on the whole project.
+
+No automated tests are currently implemented.
 
 ## Development Guidelines
 
@@ -187,17 +184,7 @@ The site is configured to deploy to GitHub Pages with a custom homepage path.
 
 ### Dependency Management
 - Regular updates via `npm audit` and `npm update`
-- Use of npm `overrides` to patch vulnerable nested dependencies:
-  - nth-check: ^2.1.1 (ReDoS vulnerability)
-  - postcss: ^8.4.31 (parsing vulnerability)
-  - glob: ^11.0.0 (command injection)
-  - svgo: ^3.0.0 (DOM clobbering)
-
-### Known Moderate Vulnerabilities
-Two moderate vulnerabilities in webpack-dev-server (development-only):
-- These only affect development mode, not production builds
-- Attack vector requires developers to access malicious sites during development
-- Cannot be fixed without breaking react-scripts compatibility
+- Migrated from Create React App to Vite: `npm audit` reports 0 vulnerabilities (see `docs/npm-audit-2026-09-24.md`)
 
 ## Performance Optimization
 
@@ -214,17 +201,7 @@ Two moderate vulnerabilities in webpack-dev-server (development-only):
 
 ## Browser Support
 
-Based on browserslist configuration:
-
-**Production**:
-- > 0.2% market share
-- Not dead browsers
-- Not Opera Mini
-
-**Development**:
-- Latest Chrome
-- Latest Firefox
-- Latest Safari
+Vite's default build target (`baseline-widely-available`): modern evergreen browsers (Chrome, Edge, Firefox, Safari).
 
 ## React 19 Migration Notes
 
@@ -246,18 +223,18 @@ This project has been upgraded from React 17 to React 19. Key changes:
 ## Troubleshooting
 
 ### Development Server Won't Start
-- Ensure all dependencies are installed: `npm install --legacy-peer-deps`
-- Check Node.js version (14+)
+- Ensure all dependencies are installed: `npm install`
+- Check Node.js version (^20.19.0 or >=22.12.0)
 - Clear cache: `npm cache clean --force`
 
 ### Build Fails
 - Remove `node_modules` and `package-lock.json`
-- Reinstall: `npm install --legacy-peer-deps`
+- Reinstall: `npm install`
 - Check for disk space
 
 ### Icons Not Displaying
 - Ensure react-icons version is 4.12.0 (v5 removed required icons)
-- If updated accidentally, downgrade: `npm install react-icons@4.12.0 --legacy-peer-deps`
+- If updated accidentally, downgrade: `npm install react-icons@4.12.0`
 
 ## Future Enhancements
 

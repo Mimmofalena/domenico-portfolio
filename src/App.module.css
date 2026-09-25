@@ -27,3 +27,8 @@
 .skipLink:focus {
   top: 0;
 }
+
+/* Placeholder shown while a lazy loaded page is downloaded: keeps the footer from jumping up */
+.pageLoader {
+  min-height: 100vh;
+}

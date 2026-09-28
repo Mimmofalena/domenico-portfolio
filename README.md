@@ -24,12 +24,13 @@ This portfolio website presents my professional experience, technical skills, pr
 - **React Icons 4** - Icon library
 - **Emotion** - CSS-in-JS styling
 - **Slick Carousel** - Image carousel component
+- **Vite 8** - Build tool and development server
 
 ## 🏃 Getting Started
 
 ### Prerequisites
 
-- Node.js (v14 or higher)
+- Node.js (^20.19.0 or >=22.12.0, required by Vite 8)
 - npm or yarn
 
 ### Installation
@@ -42,7 +43,7 @@ cd domenico-portfolio
 
 2. Install dependencies:
 ```bash
-npm install --legacy-peer-deps
+npm install
 ```
 
 3. Start the development server:

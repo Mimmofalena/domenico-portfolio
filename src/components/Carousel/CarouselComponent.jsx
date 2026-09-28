@@ -1,8 +1,11 @@
 import React from "react";
-import Slider from "react-slick";
+import SlickSlider from "react-slick";
 import Paper from "@mui/material/Paper";
 import { useTheme } from "@mui/material/styles";
 import { Box } from "@mui/system";
+
+// react-slick is published as CommonJS: under Vite the component can end up on `.default`
+const Slider = SlickSlider.default ?? SlickSlider;
 
 const CarouselComponent = ({ items }) => {
   const theme = useTheme();
